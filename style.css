@@ -1,0 +1,50 @@
+body{
+    font-family: 'Roboto';
+    background-color: rgb(5, 5, 5);
+    color: white;
+    
+}
+button.button{
+    color: white;
+    margin: auto;
+    padding: 1em 0;
+    font-size: xx-large;
+    font-weight: 700;
+    letter-spacing: 2px;
+    width: 12em;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0.8;
+    align-items: end;
+    margin: 1em;
+    transition: transform 0.3s ease-in !important;
+}
+button.button:hover {
+    transform: scale(0.98) !important;
+    opacity: 60%;
+}
+span.button-icon img{
+    width: 15%;
+    vertical-align: middle;
+    text-align: end;
+}
+button.github{
+    background-image:  linear-gradient(#2e2e2e 1px, transparent 1px),
+    linear-gradient(to right, #2e2e2e 1px, rgb(20, 22, 129) 1px);
+    background-size: 70px 70px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    
+    border: solid 1px #2e2e2e;
+}
+button.instagram{
+    background-image: linear-gradient(to right, rgb(4, 0, 252), rgb(255, 0, 0));
+    border: solid 1px #2e2e2e;
+}
+button.spotify{
+    border: solid 1px #000000;
+opacity: 0.8;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0,
+ #000000 10px ), repeating-linear-gradient( #087a04, #054905 );
+}
+
+
