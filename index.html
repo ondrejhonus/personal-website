@@ -3,15 +3,31 @@
 <head>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <meta charset="UTF-8">
+    <!-- SOL -->
+    <meta property="og:title" content="Socials">
+    <meta property="og:description" content="Links to social medias of Ondřej Honus">
+    <meta name="twitter:title" content="Ondřej Honus's socials">
+    <meta name="twitter:description" content="Social media links of Ondřej Honus">
+    <!--EOSOL-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="icon" href="img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form target="_blank">
+    <header>
+        <nav aria-label="breadcrumb">
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ul>
+          </nav>
+    </header>
+    <main>
+    <form>
     <button class="button github" type="submit" formaction="https://github.com/QWERTYONDRA">
         <span class="button-text">Github</span>
         <span class="button-icon"><img src="img/github.png" alt="github"></span>
@@ -24,6 +40,21 @@
         <span class="button-text">Spotify</span>
         <span class="button-icon"><img src="img/spotify.png" alt="instagram"></span>
     </button>
+    <button class="button twitter" formaction="https://twitter.com/0ndra_honuz">
+        <span class="button-text">Twitter</span>
+        <span class="button-icon"><img src="img/X.png" alt="instagram"></span>
+    </button>
+    <button class="button gmail" formaction="https://mail.google.com/mail/?view=cm&fs=1&to=someone@example.com">
+        <span class="button-text">Gmail</span>
+        <span class="button-icon"><img src="img/gmail.png" alt="instagram"></span>
+    </button>
 </form>
+<hr class="email">
+<p id="email" class="animate__animated animate__zoomInDown"></p>
+</main>
+<footer>
+    <p class="footer">&copy; 2023 - Ondřej Honus</p>
+</footer>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
