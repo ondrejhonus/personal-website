@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 body{
-    font-family: 'Open Sans' !important;
+    font-family: 'Poppins', sans-serif !important;
     background-color: rgb(0, 0, 0);
     color: white;
     margin: auto;
@@ -9,7 +9,17 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    animation: fadeIn 1s forwards;
 }
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
 main{
     width: 70%;
     margin: auto;
@@ -33,14 +43,13 @@ button.button{
     max-width: fit-content;
     text-align: center;
     border-radius: 10px;
-    opacity: 0.8;
     align-items: end;
     margin: 1em;
     transition: transform 0.3s ease-in !important;
     transition: all 0.25s ease !important;
     border: solid 2px rgb(22, 22, 22);
     opacity: 0;
-    animation: fadeIn 1s forwards;
+    animation: fadeInTop 1s forwards;
     position: relative;
 }
 
@@ -57,7 +66,7 @@ span.button-icon img{
 button.github{
     background-color: rgba(20,22,129,1);
     background: repeating-linear-gradient( 45deg, #000000, #000000 8.5px, rgba(20,22,129,1) 8.5px, rgba(20,22,129,1) 42.5px );
-    animation-delay: 0.1s;
+    animation-delay: 0;
 }
 button.instagram{
     background-image: linear-gradient(to right, rgb(4, 0, 252), rgb(255, 0, 0));
@@ -72,7 +81,7 @@ button.twitter{
     background-color: #000000;
     animation-delay: 0.4s;
 }
-button.gmail{
+button.mail{
     color: #ffffff;
     background-image:url(img/google-gradient.png);
     background-position: 0 -128px;
@@ -80,11 +89,22 @@ button.gmail{
     animation-delay: .5s;
 
 }
+.bi-copy{
+    position: relative;
+    opacity: 0;
+    animation: fadeInTop 1s forwards;
+    animation-delay: 0.6s;
+
+}
+.bi-copy:hover{
+    cursor: pointer;
+}
 p#email{
     text-align: center;
     margin: 0.6em;
     font-weight: 600;
     font-size: 24px;
+    animation: fadeInBottom 1s forwards;
 }
 hr.email{
     width: 50%;
@@ -100,7 +120,8 @@ footer {
     margin: 0;
 }
 
-@keyframes fadeIn {
+
+@keyframes fadeInTop {
     from {
       opacity: 0;
       top: -10px;
@@ -110,4 +131,66 @@ footer {
         opacity: 0.8;
         top: 0px;
     }
+  }
+
+  @keyframes fadeInBottom {
+    from {
+      opacity: 0;
+      margin-top: 60px;
+    }
+  
+    to {
+        opacity: 0.8;
+        margin-top: 0;
+    }
+  }
+
+.bg-black{
+    background-color: #000000;
+}
+.breadcrumb{
+    font-size: 16px;
+}
+.breadcrumb a{
+    color: rgb(185, 3, 185);
+}
+.popover{
+    background-color: #000000;
+    border: solid 1px white;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
   }

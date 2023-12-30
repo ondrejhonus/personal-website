@@ -11,50 +11,66 @@
     <!--EOSOL-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="icon" href="img/logo.png">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
 </head>
 <body>
     <header>
         <nav aria-label="breadcrumb">
-            <ul class="breadcrumb">
+            <ol class="breadcrumb bg-black">
               <li class="breadcrumb-item active" aria-current="page">Home</li>
-            </ul>
+              <li class="breadcrumb-item"><a href="#">Projects</a></li>
+              <li class="breadcrumb-item"><a href="#">Games</a></li>
+              <li class="breadcrumb-item"><a href="#">Blog</a></li>
+            </ol>
           </nav>
     </header>
     <main>
-    <form>
-    <button class="button github" type="submit" formaction="https://github.com/QWERTYONDRA">
-        <span class="button-text">Github</span>
-        <span class="button-icon"><img src="img/github.png" alt="github"></span>
-    </button>
-    <button class="button instagram" formaction="https://www.instagram.com/ondrej.honus/">
-        <span class="button-text">Instagram</span>
-        <span class="button-icon"><img src="img/instagram.png" alt="instagram"></span>
-    </button>
-    <button class="button spotify" formaction="https://open.spotify.com/user/ondrasihonda">
-        <span class="button-text">Spotify</span>
-        <span class="button-icon"><img src="img/spotify.png" alt="instagram"></span>
-    </button>
-    <button class="button twitter" formaction="https://twitter.com/0ndra_honuz">
-        <span class="button-text">Twitter</span>
-        <span class="button-icon"><img src="img/X.png" alt="instagram"></span>
-    </button>
-    <button class="button gmail" formaction="https://mail.google.com/mail/?view=cm&fs=1&to=someone@example.com">
-        <span class="button-text">Gmail</span>
-        <span class="button-icon"><img src="img/gmail.png" alt="instagram"></span>
-    </button>
-</form>
-<hr class="email">
-<p id="email" class="animate__animated animate__zoomInDown"></p>
-</main>
-<footer>
-    <p class="footer">&copy; 2023 - Ondřej Honus</p>
-</footer>
-<script src="js/bootstrap.min.js"></script>
+        <form>
+            <button class="button github" type="submit" formaction="https://github.com/QWERTYONDRA">
+                <span class="button-text">Github</span>
+                <span class="button-icon"><img src="img/github.png" alt="github"></span>
+            </button>
+            <button class="button instagram" formaction="https://www.instagram.com/ondrej.honus/">
+                <span class="button-text">Instagram</span>
+                <span class="button-icon"><img src="img/instagram.png" alt="instagram"></span>
+            </button>
+            <button class="button spotify" formaction="https://open.spotify.com/user/ondrasihonda">
+                <span class="button-text">Spotify</span>
+                <span class="button-icon"><img src="img/spotify.png" alt="spotify"></span>
+            </button>
+            <button class="button twitter" formaction="https://twitter.com/0ndra_honuz">
+                <span class="button-text">Twitter</span>
+                <span class="button-icon"><img src="img/X.png" alt="twitter"></span>
+            </button>
+            <button class="button mail" data-toggle="popover" data-content="honusondrej@gmail.com" data-placement="bottom">
+                <span class="button-text">Mail me</span>
+                <span class="button-icon"><img src="img/gmail.png" alt="mail"></span>
+            </button>
+            <div class="tooltip">
+            <i class="bi bi-copy" onclick="emailCopy()">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+            </i>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="footer">&copy; 2023 - Ondřej Honus</p>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+          $('.mail').popover({content: "honusondrej@gmail.com", animation: true}); 
+          $(".mail").hover(function(){
+            $("[data-toggle='popover']").popover('toggle');
+        });
+    });
+        </script>
+    <script src="script.js"></script>
 </body>
 </html>
