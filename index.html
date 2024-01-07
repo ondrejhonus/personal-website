@@ -11,24 +11,24 @@
     <!--EOSOL-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="icon" href="img/logo.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <header>
+        <a href="https://www.buymeacoffee.com/honus" target="_blank"><i class="bi bi-cup-hot-fill"></i></a>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-black">
-              <li class="breadcrumb-item active" aria-current="page">Home</li>
-              <li class="breadcrumb-item"><a href="#">Projects</a></li>
-              <li class="breadcrumb-item"><a href="#">Games</a></li>
-              <li class="breadcrumb-item"><a href="#">Blog</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+                <li class="breadcrumb-item"><a href="#">Projects</a></li>
+                <li class="breadcrumb-item"><a href="#">Games</a></li>
+                <li class="breadcrumb-item"><a href="#">Blog</a></li>
             </ol>
-          </nav>
+        </nav>
     </header>
     <main>
         <form>
@@ -48,29 +48,25 @@
                 <span class="button-text">Twitter</span>
                 <span class="button-icon"><img src="img/X.png" alt="twitter"></span>
             </button>
-            <button class="button mail" data-toggle="popover" data-content="honusondrej@gmail.com" data-placement="bottom">
+            <button class="button mail" data-toggle="popover" data-placement="bottom" data-content="honusondrej@gmail.com" data-trigger="hover">
                 <span class="button-text">Mail me</span>
                 <span class="button-icon"><img src="img/gmail.png" alt="mail"></span>
             </button>
-            <div class="tooltip">
-            <i class="bi bi-copy" onclick="emailCopy()">
-                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-            </i>
-            </div>
+
+            <!-- Updated copy.svg image with popover attributes -->
+            <img src="img/copy.svg" alt="clipboard" class="copy" data-toggle="popover" data-placement="top" data-content="honusondrej@gmail.com" data-trigger="hover" data-class="custom-popover" title="haha" onclick="emailCopy()">
         </form>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="popover"]').popover({
+                    template: '<div class="popover custom-popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
+                });
+            });
+        </script>
     </main>
     <footer>
         <p class="footer">&copy; 2023 - Ondřej Honus</p>
     </footer>
-
-    <script>
-        $(document).ready(function(){
-          $('.mail').popover({content: "honusondrej@gmail.com", animation: true}); 
-          $(".mail").hover(function(){
-            $("[data-toggle='popover']").popover('toggle');
-        });
-    });
-        </script>
     <script src="script.js"></script>
 </body>
 </html>
