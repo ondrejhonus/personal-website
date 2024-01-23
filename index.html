@@ -86,30 +86,23 @@
         </button>
         <button
           class="button mail"
-          data-toggle="popover"
-          data-placement="bottom"
-          data-content="honusondrej@gmail.com"
-          data-trigger="hover"
-        >
+          formaction="mailto:honusondrej@gmail.com">
           <span class="button-text">Mail me</span>
           <span class="button-icon"
             ><img src="img/gmail.png" alt="mail"
           /></span>
-        </button>
-
-        <!-- Updated copy.svg image with popover attributes -->
-        <img
-          src="img/copy.svg"
-          alt="clipboard"
-          class="copy"
-          data-toggle="popover"
-          data-placement="top"
-          data-content="honusondrej@gmail.com"
-          data-trigger="hover"
-          data-class="custom-popover"
-          title="haha"
-          onclick="emailCopy()"
-        />
+        </button><img
+        src="img/copy.svg"
+        alt="clipboard"
+        class="copy"
+        data-toggle="popover"
+        data-placement="top"
+        data-content="honusondrej@gmail.com"
+        data-trigger="hover"
+        data-class="custom-popover"
+        title="Copied to clipboard!"
+        onclick="emailCopy()"
+      />
       </form>
       <script>
         $(document).ready(function () {
@@ -121,7 +114,7 @@
       </script>
     </main>
     <footer>
-      <p class="footer">&copy; 2023 - Ondřej Honus</p>
+      <p class="footer">&copy; 2024 - Ondřej Honus</p>
     </footer>
     <script src="script.js"></script>
   </body>

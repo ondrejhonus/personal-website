@@ -1,0 +1,26 @@
+body{
+    font-family: 'Poppins', sans-serif !important;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    animation: fadeIn 1s forwards;
+}
+@media only screen and (min-width: 1200px) {
+    .cards{
+        display: flex;
+
+    }
+}
+
+
+img.card-img-top{
+    width: 548px;
+    height: 300px;
+    max-width: 100%;
+    padding: 0;
+}

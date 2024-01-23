@@ -154,11 +154,13 @@ footer {
 }
 .breadcrumb{
     font-size: 16px;
+    left: 0 !important;
+    text-align: left;
 }
 .breadcrumb a{
     color: rgb(185, 3, 185);
 }
-.custom-popover {
+.popover-header {
     background-color: #000 !important; /* Black background */
     color: #fff !important; /* White text */
     border: 1px solid #fff; /* White border */
@@ -177,3 +179,12 @@ footer {
     border-radius: 100%;
     color: white;
   }
+.centered{
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+h3.blog{
+    margin-top: 100px;
+}
