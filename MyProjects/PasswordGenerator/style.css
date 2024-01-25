@@ -1,0 +1,65 @@
+body {
+  text-align: center;
+}
+h1 {
+  margin-top: 10%;
+}
+button {
+  padding: 0.7%;
+  margin: 0.5%;
+}
+.passwordLenght {
+  margin-top: 2em;
+  text-align: center;
+  display: block;
+}
+input.InputRange {
+  width: 15%;
+  accent-color: rgb(234, 0, 255);
+}
+input.InputNumber {
+  background-color: black;
+  border: solid white 3px;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+  input.InputRange {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  input.InputRange {
+    width: 30%;
+  }
+}
+.resultDisplay {
+  margin: auto;
+  padding: 0.5em;
+  color: black;
+  overflow: auto;
+  word-wrap: break-word;
+  width: fit-content;
+  max-width: 60%;
+}
+
+label input {
+  display: none;
+}
+
+label span {
+  height: 13px;
+  width: 13px;
+  border: 1px solid grey;
+  display: inline-block;
+  position: relative;
+}
+
+[type="checkbox"]:checked + span:before {
+  content: "\2714";
+  position: absolute;
+  top: -5px;
+  left: 0;
+}

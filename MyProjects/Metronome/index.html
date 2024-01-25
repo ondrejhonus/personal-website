@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Metronome</title>
+  <meta charset="utf-8">
+  <meta property="og:title" content="Metronome">
+  <meta property="og:description" content="Metronome with bpm customization">
+  <meta property="og:image" content="https://github.com/QWERTYONDRA/xyzV3/blob/main/images/socials.png?raw=true">
+  <meta name="twitter:title" content="Metronome counter">
+  <meta name="twitter:description" content="Metronome for musicians">
+  <meta name="twitter:image" content="https://github.com/QWERTYONDRA/xyzV3/blob/main/images/socials.png?raw=true">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="../img/logo.png" />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+  />
+
+  <link rel="stylesheet" href="../MyGames/style.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="animate__fadeIn animate__animated">
+  <header>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb bg-black">
+        <li class="breadcrumb-item"><a href="../../">Home</a></li>
+        <li class="breadcrumb-item"><a href="../">Go Back</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Projects_Metronome</li>
+        <li class="breadcrumb-item"><a href="../../MyGames/">Games</a></li>
+      </ol>
+    </nav>
+  </header>
+  <main>
+    <h1>Metronome</h1>
+    <label for="bpmInput"></label>
+    <p></p>
+    <input type="number" id="bpmInput" placeholder="Enter BPM" min="1" step="1" required>
+    <p></p>
+    <button onclick="startMetronome()">Start Metronome</button>
+    <p></p>
+    <button onclick="stopMetronome()">Stop Metronome</button>
+  </main>
+  <footer>
+    <p class="footer">&copy; 2024 - Ondřej Honus</p>
+  </footer>
+  </script>
+</body>
+
+</html>

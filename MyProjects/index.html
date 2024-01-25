@@ -18,7 +18,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../MyGames/style.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <link
@@ -36,8 +36,8 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-black">
           <li class="breadcrumb-item"><a href="../">Home</a></li>
-          <li class="breadcrumb-item"><a href="../MyProjects/">Projects</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Games</li>
+          <li class="breadcrumb-item active" aria-current="page">Projects</li>
+          <li class="breadcrumb-item"><a href="../MyGames/">Games</a></li>
         </ol>
       </nav>
     </header>
@@ -45,24 +45,67 @@
       <div class="cards">
         <div
           class="card text-white bg-dark"
-          onclick="window.location.href='https://games.ondrejhonus.xyz/FlappyPlane/'"
-          onmouseup="handleMouseDown(event, 'https://games.ondrejhonus.xyz/FlappyPlane/')"
+          onclick="window.location.href='PasswordGenerator/'"
+          onmouseup="handleMouseDown(event, 'PasswordGenerator/')"
           style="cursor: pointer"
         >
-          <img class="card-img-top" src="../img/FlappyPlane.png" alt="Title" />
+          <img
+            class="card-img-top"
+            src="../img/PasswordGenerator.png"
+            alt="Title"
+          />
           <div class="card-body">
-            <h4 class="card-title">Flappy Plane</h4>
+            <h4 class="card-title">Password Generator</h4>
+          </div>
+        </div>
+
+        <div
+          class="card text-white bg-dark"
+          onclick="window.location.href='Metronome/'"
+          onmouseup="handleMouseDown(event, 'Metronome/')"
+          style="cursor: pointer"
+        >
+          <img class="card-img-top" src="../img/Metronome.png" alt="Title" />
+          <div class="card-body">
+            <h4 class="card-title">Metronome</h4>
+          </div>
+        </div>
+
+        <div
+          class="card text-white bg-dark"
+          onclick="window.location.href='https://qwertyondra.github.io/WebHudby/'"
+          onmouseup="handleMouseDown(event, 'https://qwertyondra.github.io/WebHudby/')"
+          style="cursor: pointer"
+        >
+          <img class="card-img-top" src="../img/WebHudby.png" alt="Title" />
+          <div class="card-body">
+            <h4 class="card-title">WebHudby</h4>
           </div>
         </div>
         <div
           class="card text-white bg-dark"
-          onclick="window.location.href='https://dogeball.ondrejhonus.xyz/'"
-          onmouseup="handleMouseDown(event, 'https://dogeball.ondrejhonus.xyz/')"
+          onclick="window.location.href='https://qwertyondra.github.io/programy-data/'"
+          onmouseup="handleMouseDown(event, 'https://qwertyondra.github.io/programy-data/')"
           style="cursor: pointer"
         >
-          <img class="card-img-top" src="../img/DogeBall.png" alt="Title" />
+          <img
+            class="card-img-top"
+            src="../img/ProgramyAData.png"
+            alt="Title"
+          />
           <div class="card-body">
-            <h4 class="card-title">Doge Ball</h4>
+            <h4 class="card-title">Programy a data</h4>
+          </div>
+        </div>
+
+        <div class="card text-white bg-dark" style="cursor: not-allowed">
+          <img
+            class="card-img-top"
+            src="../img/VstupniZarizeni.png"
+            alt="Title"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Vstupní zařízení (disabled)</h4>
           </div>
         </div>
       </div>
