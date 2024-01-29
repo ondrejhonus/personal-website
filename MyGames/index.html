@@ -43,39 +43,28 @@
     </header>
     <main>
       <div class="cards">
+        <a href="https://games.ondrejhonus.xyz/FlappyPlane/" target="_blank">
         <div
           class="card text-white bg-dark"
-          onclick="window.location.href='https://games.ondrejhonus.xyz/FlappyPlane/'"
-          onmouseup="handleMouseDown(event, 'https://games.ondrejhonus.xyz/FlappyPlane/')"
-          style="cursor: pointer"
         >
           <img class="card-img-top" src="../img/FlappyPlane.png" alt="Title" />
           <div class="card-body">
             <h4 class="card-title">Flappy Plane</h4>
           </div>
+        </a>
         </div>
         <div
           class="card text-white bg-dark"
-          onclick="window.location.href='https://dogeball.ondrejhonus.xyz/'"
-          onmouseup="handleMouseDown(event, 'https://dogeball.ondrejhonus.xyz/')"
-          style="cursor: pointer"
+          
         >
+        <a href="https://dogeball.ondrejhonus.xyz/" target="_blank">
           <img class="card-img-top" src="../img/DogeBall.png" alt="Title" />
           <div class="card-body">
             <h4 class="card-title">Doge Ball</h4>
           </div>
+        </a>
         </div>
       </div>
-      <script>
-        function handleMouseDown(event, url) {
-          if (event.button === 1) {
-            // Middle mouse button clicked
-            event.preventDefault(); // Prevent default action (e.g., opening link in the same tab)
-            window.open(url, "_blank"); // Open in a new window/tab
-          }
-        }
-        document.body.onmousedown = function(e) { if (e.button === 1) return false; }
-      </script>
     </main>
     <footer>
       <p class="footer">&copy; 2024 - Ondřej Honus</p>

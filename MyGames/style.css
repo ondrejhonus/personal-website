@@ -35,6 +35,8 @@ img.card-img-top {
   transition: transform 0.15s ease-in !important;
   border: 3px rgb(80, 80, 80) solid;
   margin-top: 2%;
+  color: white !important;
+  word-wrap: normal;
 }
 .card:hover {
   transform: scale(1.01) !important;
@@ -59,4 +61,11 @@ footer {
   .cards {
     margin-top: 6%;
   }
+}
+
+.card h4{
+  color: white;
+}
+a:hover{
+  text-decoration: none;
 }

@@ -212,3 +212,9 @@ footer {
 .footer {
   margin: 0;
 }
+.cards p{
+  color: white !important;
+}
+.card:hover{
+  text-decoration: none;
+}
