@@ -1,9 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
 body {
   text-align: center;
-}
-h1 {
-  margin-top: 20%;
+  font-family: "Source Code Pro", monospace;
+  min-height: 100vh;
 }
 button {
   padding: 0.7%;
+}
+header a{
+  color: white;
+  position: fixed;
+  left: 0;
+  margin: 0.5em 1em;
+}
+input[type="number"] {
+  padding: 0.5em;
 }

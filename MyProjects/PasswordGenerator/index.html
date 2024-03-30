@@ -6,72 +6,41 @@
   <meta charset="utf-8">
   <meta property="og:title" content="Metronome">
   <meta property="og:description" content="Metronome with bpm customization">
-  <meta property="og:image" content="https://github.com/QWERTYONDRA/xyzV3/blob/main/images/socials.png?raw=true">
+  <meta property="og:image" content="https://github.com/ondrejhonus/xyzV3/blob/main/images/socials.png?raw=true">
   <meta name="twitter:title" content="Metronome counter">
   <meta name="twitter:description" content="Metronome for musicians">
-  <meta name="twitter:image" content="https://github.com/QWERTYONDRA/xyzV3/blob/main/images/socials.png?raw=true">
+  <meta name="twitter:image" content="https://github.com/ondrejhonus/xyzV3/blob/main/images/socials.png?raw=true">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" href="../img/logo.png" />
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-  />
+  <link rel="icon" href="../../img/logo.png" />
 
   <link rel="stylesheet" href="../MyGames/style.css" />
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link
-    href="https://fonts.googleapis.com/css?family=Roboto"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
   <link rel="stylesheet" href="../../style.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="animate__fadeIn animate__animated">
   <header>
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb bg-black">
-        <li class="breadcrumb-item"><a href="../../">Home</a></li>
-        <li class="breadcrumb-item"><a href="../">Go Back</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Projects_PswdGen</li>
-        <li class="breadcrumb-item"><a href="../../MyGames/">Games</a></li>
-      </ol>
-    </nav>
-  </header>
+    <a href="../../">Home</a>
+      </header>
   <main>
     <form class="passwordLength">
-        <h5>Choose password lenght</h3>
-                <input type="range" name="amountRange" min="0" max="100" value="20" oninput="this.form.amountInput.value=this.value" class="InputRange"/>
-                <br>
-                <input type="number" name="amountInput" min="0" max="100" value="20" oninput="this.form.amountRange.value=this.value" class="InputNumber"/>
+      <h5>Choose password lenght</h3>
+        <input type="range" name="amountRange" min="0" max="100" value="20"
+          oninput="this.form.amountInput.value=this.value" class="InputRange" />
+        <br>
+        <input type="number" name="amountInput" min="0" max="100" value="20"
+          oninput="this.form.amountRange.value=this.value" class="InputNumber" />
     </form>
     <label>
-        ASCII
-        <input type="checkbox" id="advanced" name="advanced" checked>
-        <span></span>
+      ASCII
+      <input type="checkbox" id="advanced" name="advanced" checked>
+      <span></span>
     </label>
     <br>
     <button class="generate">Generate</button>
-    <img
-    src="../../img/copy.svg"
-    alt="clipboard"
-    class="copy"
-    data-toggle="popover"
-    data-placement="top"
-    data-trigger="hover"
-    data-class="custom-popover"
-    title="Copied to clipboard!"
-    onclick="passwordCopy()"
-  />
+    <img src="../../img/copy.svg" alt="clipboard" class="copy" data-toggle="popover" data-placement="top"
+      data-trigger="hover" data-class="custom-popover" title="Copied to clipboard!" onclick="passwordCopy()" />
     <h6>Generated Password</h6>
     <h6 id="resultDisplay" class="resultDisplay"></h6>
 

@@ -11,6 +11,7 @@ body {
   vertical-align: middle;
   text-align: center;
 }
+
 body {
   font-family: "Source Code Pro", monospace;
   font-size: 1.5em;
@@ -23,6 +24,7 @@ body {
   flex-direction: column;
   animation: fadeIn 1s forwards;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -32,20 +34,24 @@ body {
     opacity: 1;
   }
 }
+
 main {
   width: 70%;
   margin: auto;
 }
-form {
+
+.buttons-main {
   text-align: center;
   margin-top: 12vh;
 }
-div.buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: middle;
+
+div.buttons-main a{
+  text-decoration: none;
+  color: white;
+  width: 12em !important;
+  visibility: hidden;
 }
+
 button.button {
   color: white;
   margin: auto;
@@ -63,6 +69,7 @@ button.button {
   font-size: 1.5rem;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
+  visibility: visible;
 }
 
 button.button:hover {
@@ -70,40 +77,42 @@ button.button:hover {
   border: none !important;
   border: solid 2px rgb(134, 134, 134) !important;
 }
+
 span.button-icon img {
   width: 15%;
   vertical-align: middle;
   text-align: end;
 }
+
 button.github {
   background-color: rgba(20, 22, 129, 1);
-  background: repeating-linear-gradient(
-    45deg,
-    #000000,
-    #000000 8.5px,
-    rgba(20, 22, 129, 1) 8.5px,
-    rgba(20, 22, 129, 1) 42.5px
-  );
+  background: repeating-linear-gradient(45deg,
+      #000000,
+      #000000 8.5px,
+      rgba(20, 22, 129, 1) 8.5px,
+      rgba(20, 22, 129, 1) 42.5px);
   animation-delay: 0;
 }
+
 button.instagram {
   background-image: linear-gradient(to right, rgb(4, 0, 252), rgb(255, 0, 0));
   animation-delay: 0.2s;
 }
+
 button.spotify {
-  background-image: repeating-radial-gradient(
-      circle at 0 0,
+  background-image: repeating-radial-gradient(circle at 0 0,
       transparent 0,
-      #000000 10px
-    ),
+      #000000 10px),
     repeating-linear-gradient(#087a04, #054905);
   animation-delay: 0.3s;
 }
+
 button.twitter {
   background-color: #000000;
   animation-delay: 0.4s;
   border: solid 2px rgb(255, 255, 255, 0.2);
 }
+
 button.mail {
   color: #ffffff;
   background-image: url(img/google-gradient.png);
@@ -111,6 +120,7 @@ button.mail {
   background-repeat: no-repeat;
   animation-delay: 0.5s;
 }
+
 p#email {
   text-align: center;
   margin: 0.6em;
@@ -118,6 +128,7 @@ p#email {
   font-size: 16px;
   animation: fadeInBottom 1s forwards;
 }
+
 hr.email {
   width: 50%;
   text-align: center;
@@ -162,9 +173,11 @@ hr.email {
   justify-content: center;
   align-items: center;
 }
+
 p.footer {
-  font-size:medium;
+  font-size: medium;
 }
+
 footer {
   text-align: center;
   padding: 10px;
@@ -174,7 +187,7 @@ footer {
   margin: 0;
 }
 
-.bi-arrow-down{
+.bi-arrow-down {
   position: absolute;
   bottom: 10px;
   color: white !important;
@@ -186,6 +199,7 @@ div.about {
   text-align: center;
   margin-top: 50%;
 }
-div.section{
+
+div.section {
   margin-bottom: 5em;
 }

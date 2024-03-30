@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
 body {
+  font-family: "Source Code Pro", monospace;
   text-align: center;
+  min-height: 100vh;
 }
 h1 {
   margin-top: 10%;
@@ -9,7 +13,6 @@ button {
   margin: 0.5%;
 }
 .passwordLenght {
-  margin-top: 2em;
   text-align: center;
   display: block;
 }
@@ -23,6 +26,7 @@ input.InputNumber {
   border-radius: 5px;
   color: white;
   margin-bottom: 1em;
+  padding: .5em;
 }
 
 @media only screen and (max-width: 800px) {
@@ -62,4 +66,13 @@ label span {
   position: absolute;
   top: -5px;
   left: 0;
+}
+header a{
+  color: white;
+  position: fixed;
+  left: 0;
+  margin: 0.5em 1em;
+}
+img.copy{
+  vertical-align: middle;
 }

@@ -16,62 +16,59 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 </head>
+
 <body>
   <header>
-    <a href="https://www.buymeacoffee.com/honus" target="_blank"><i class="bi-cup-hot-fill"></i></a>
+    <h2>Ondřej Honus</h2>
   </header>
   <main>
-    <div class="buttons">
-    <form target="_blank">
-      <button class="button github" type="submit" formaction="https://github.com/ondrejhonus/"
-        onmouseup="handleMouseDown(event, 'https://github.com/ondrejhonus/')">
-        <span class="button-text">Github</span>
-        <span class="button-icon"><img src="img/github.png" alt="github" /></span>
-      </button>
-      <button class="button instagram" formaction="https://www.instagram.com/ondrej.honus/"
-        onmouseup="handleMouseDown(event, 'https://www.instagram.com/ondrej.honus/')">
-        <span class="button-text">Instagram</span>
-        <span class="button-icon"><img src="img/instagram.png" alt="instagram" /></span>
-      </button>
-      <button class="button spotify" formaction="https://open.spotify.com/user/ondrasihonda/"
-        onmouseup="handleMouseDown(event, 'https://open.spotify.com/user/ondrasihonda/')">
-        <span class="button-text">Spotify</span>
-        <span class="button-icon"><img src="img/spotify.png" alt="spotify" /></span>
-      </button>
-      <button class="button twitter" formaction="https://twitter.com/0ndra_honuz/"
-        onmouseup="handleMouseDown(event, 'https://twitter.com/0ndra_honuz/')">
-        <span class="button-text">Twitter</span>
-        <span class="button-icon"><img src="img/X.png" alt="twitter" /></span>
-      </button>
-      <button class="button mail" formaction="mailto:honusondrej@gmail.com"
-        onmouseup="handleMouseDown(event, 'mailto:honusondrej@gmail.com')">
-        <span class="button-text">Mail me</span>
-        <span class="button-icon"><img src="img/gmail.png" alt="mail" /></span>
-    </form>
-  </div>
-  <div class="scroll-down">
-    <a href="#about"><i class="bi bi-arrow-down"></i></a>
-  </div>
-  <div class="about section" id="about">
-    <h2>About me</h2>
-    <p>Hi, I'm Ondřej Honus, a student and a developer from the Czech Republic. I'm interested in programming, web design and music. 
-      I'm currently learning C and JS.</p>
-  </div>
-  <div class="projects section" id="projects">
-    <h2>Projects that I made</h2>
-  </div>
-    
-  </div>
-    <script>
-      function handleMouseDown(event, url) {
-        if (event.button === 1) {
-          event.preventDefault();
-          window.open(url, "_blank");
-        }
-      }
-    </script>
+    <div class="buttons-main">
+      <a href="https://github.com/ondrejhonus/" target="_blank">
+        <button class="button github">
+          <span class="button-text">Github</span>
+          <span class="button-icon"><img src="img/github.png" alt="github" /></span>
+        </button>
+      </a>
+      <a href="https://www.instagram.com/ondrej.honus/" target="_blank">
+        <button class="button instagram">
+          <span class="button-text">Instagram</span>
+          <span class="button-icon"><img src="img/instagram.png" alt="instagram" /></span>
+        </button>
+      </a>
+      <a href="https://open.spotify.com/user/ondrasihonda" target="_blank">
+        <button class="button spotify">
+          <span class="button-text">Spotify</span>
+          <span class="button-icon"><img src="img/spotify.png" alt="spotify" /></span>
+        </button>
+      </a>
+      <a href="https://twitter.com/0ndra_honuz/" target="_blank">
+        <button class="button twitter">
+          <span class="button-text">Twitter</span>
+          <span class="button-icon"><img src="img/X.png" alt="twitter" /></span>
+        </button>
+      </a>
+      <a href="mailto:honusondrej@gmail.com" target="_blank">
+        <button class="button mail">
+          <span class="button-text">Mail me</span>
+          <span class="button-icon"><img src="img/gmail.png" alt="mail" /></span>
+    </div>
+    </a>
+    <div class="scroll-down">
+      <a href="#about"><i class="bi bi-arrow-down"></i></a>
+    </div>
+    <div class="about section" id="about">
+      <h2>About me</h2>
+      <p>Hi, I'm Ondřej Honus, a student and a developer from the Czech Republic. I'm interested in programming, web
+        design and music.
+        I'm currently learning C and JS.</p>
+      <p>You can also buy me a coffee on <a href="https://www.buymeacoffee.com/honus">buymeacoffee.com</a></p>
+    </div>
+    <div class="projects section" id="projects">
+      <h2>Projects that I made</h2>
+    </div>
+
+    </div>
   </main>
   <footer>
     <p class="footer">&copy; 2024 - Ondřej Honus</p>
