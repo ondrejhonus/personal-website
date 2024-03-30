@@ -203,3 +203,8 @@ div.about {
 div.section {
   margin-bottom: 5em;
 }
+.buttons-section {
+  background-color: #000000;
+  color: white;
+  margin: 0;
+}
