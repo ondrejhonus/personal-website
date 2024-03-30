@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
 html,
 body {
   width: 100%;
@@ -6,9 +9,11 @@ body {
   margin: 0;
   align-content: center;
   vertical-align: middle;
+  text-align: center;
 }
 body {
-  font-family: "Press Start 2P";
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.5em;
   background-color: rgb(0, 0, 0);
   color: white;
   margin: auto;
@@ -16,7 +21,6 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   animation: fadeIn 1s forwards;
 }
 @keyframes fadeIn {
@@ -31,36 +35,34 @@ body {
 main {
   width: 70%;
   margin: auto;
-  margin-top: 0;
 }
 form {
   text-align: center;
-  margin-top: 5em;
+  margin-top: 12vh;
 }
-nav ul {
-  list-style: none;
-  text-align: left;
-  left: 0;
+div.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
 }
 button.button {
   color: white;
   margin: auto;
-  padding: 1em 0;
   font-weight: 600;
   letter-spacing: 2px;
-  width: 20em;
-  height: 5.5em;
-  max-width: fit-content;
-  text-align: center;
+  width: 12em;
+  height: 3.5em;
   border-radius: 10px;
-  align-items: end;
-  margin: 1em;
+  margin: 0.8em;
   transition: transform 0.3s ease-in !important;
   transition: all 0.25s ease !important;
   border: solid 2px rgb(22, 22, 22);
   opacity: 0;
   animation: fadeInTop 1s forwards;
-  position: relative;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
 }
 
 button.button:hover {
@@ -109,17 +111,6 @@ button.mail {
   background-repeat: no-repeat;
   animation-delay: 0.5s;
 }
-.copy {
-  position: relative;
-  opacity: 0;
-  animation: fadeInTop 1s forwards;
-  animation-delay: 0.6s;
-  color: white;
-  margin-right: -24px;
-}
-.copy:hover {
-  cursor: pointer;
-}
 p#email {
   text-align: center;
   margin: 0.6em;
@@ -157,52 +148,22 @@ hr.email {
   }
 }
 
-.bg-black {
-  background-color: #000000;
-}
-.breadcrumb {
-  font-size: 10px;
-  left: 0 !important;
-  text-align: left;
-}
-.breadcrumb a {
-  color: rgb(185, 3, 185);
-}
-@media only screen and (min-width: 905px) {
-  .breadcrumb {
-    font-size: 16px;
-  }
-}
-.popover-header {
-  background-color: #000 !important;
-  color: #fff !important;
-  border: 1px solid #fff;
-}
-
 .bi-cup-hot-fill {
-  text-align: center;
-  font-size: 20px;
+  margin: .3em;
+  font-size: xx-large;
   position: fixed;
   right: 0;
-  vertical-align: top;
-  margin: 5px;
-  border: 2px solid white;
-  width: 40px;
-  height: 40px;
+  border: 3px solid white;
+  width: 1.5em;
+  height: 1.5em;
   border-radius: 100%;
   color: white;
-}
-.centered {
-  margin: 0;
-  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-}
-h3.blog {
-  margin-top: 100px;
 }
 p.footer {
-  font-size: 10px;
+  font-size:medium;
 }
 footer {
   text-align: center;
@@ -212,9 +173,19 @@ footer {
 .footer {
   margin: 0;
 }
-.cards p{
+
+.bi-arrow-down{
+  position: absolute;
+  bottom: 10px;
   color: white !important;
+  font-size: xx-large;
 }
-.card:hover{
-  text-decoration: none;
+
+div.about {
+  margin: 1em;
+  text-align: center;
+  margin-top: 50%;
+}
+div.section{
+  margin-bottom: 5em;
 }
