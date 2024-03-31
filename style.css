@@ -26,6 +26,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center !important;
+
 }
 
 @keyframes fadeIn {
@@ -40,24 +42,37 @@ body {
 
 main {
   margin: auto;
+  margin-top: 10em;
+  width: 70%;
 }
-@media screen and (max-width: 600px) {
-  main {
-    min-width: 70%;
-    margin-top: -.9em;
-  }
-
+div.buttons-main{
+  margin: auto;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 963px) {
   main {
-    max-width: 70%;
+    max-width: none;
     margin-top: 7em;
   }
+  div.about {
+    margin-top: 12em !important;
+  }
 }
+
 @media screen and (max-height: 700px) {
-.bi-arrow-down {
+  @media screen and (max-width: 400px) {
+    main {
+      min-width: 70%;
+      margin: 0;
+    }
+    div.about {
+      margin-top: 5em !important;
+    }
+
+    /*.bi-arrow-down {
   display: none;
 }
+*/
+  }
 }
 
 .buttons-main {
@@ -65,7 +80,7 @@ main {
   margin-top: 12vh;
 }
 
-div.buttons-main a{
+div.buttons-main a {
   text-decoration: none;
   color: white;
   width: 12em !important;
@@ -167,6 +182,7 @@ hr.email {
     top: 0px;
   }
 }
+
 @keyframes fadeInTopFast {
   from {
     opacity: 0;
@@ -206,13 +222,38 @@ footer {
 
 .bi-arrow-down {
   animation: fadeInTopFast 1s forwards;
-  margin-top: 95vh;
   position: absolute;
-  bottom: 10px;
   color: white !important;
   font-size: xx-large;
+  margin: auto;
+  margin-top: 95vh;
+}
+@media screen and (max-height: 750px) {
+  .bi-arrow-down {
+    margin-top: 93vh;
+  }
 }
 
+@media screen and (max-height: 600px) {
+  .bi-arrow-down {
+    margin-top: 90vh;
+  }
+}
+@media screen and (max-height: 350px) {
+  .bi-arrow-down {
+    margin-top: 87vh;
+  }
+}
+@media screen and (max-height: 300px) {
+  .bi-arrow-down {
+    margin-top: 83vh;
+  }
+}
+@media screen and (max-height: 200px) {
+  .bi-arrow-down {
+    margin-top: 74vh;
+  }
+}
 div.about {
   margin: 1em;
   text-align: center;
@@ -222,11 +263,13 @@ div.about {
 div.section {
   margin-bottom: 5em;
 }
+
 .buttons-section {
   background-color: #000000;
   color: white;
   margin: 0;
 }
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
