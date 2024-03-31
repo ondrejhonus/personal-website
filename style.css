@@ -39,6 +39,7 @@ body {
 main {
   width: 70%;
   margin: auto;
+  margin-top: 7em;
 }
 
 .buttons-main {
@@ -208,4 +209,21 @@ div.section {
   background-color: #000000;
   color: white;
   margin: 0;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
