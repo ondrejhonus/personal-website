@@ -10,6 +10,7 @@ body {
   align-content: center;
   vertical-align: middle;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
 body {
