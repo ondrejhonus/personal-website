@@ -4,7 +4,6 @@
 
 html,
 body {
-  width: 100%;
   display: flex;
   margin: 0;
   align-content: center;
@@ -24,6 +23,9 @@ body {
   display: flex;
   flex-direction: column;
   animation: fadeIn 1s forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes fadeIn {
@@ -37,9 +39,25 @@ body {
 }
 
 main {
-  width: 70%;
   margin: auto;
-  margin-top: 7em;
+}
+@media screen and (max-width: 600px) {
+  main {
+    min-width: 70%;
+    margin-top: -.9em;
+  }
+
+}
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 70%;
+    margin-top: 7em;
+  }
+}
+@media screen and (max-height: 700px) {
+.bi-arrow-down {
+  display: none;
+}
 }
 
 .buttons-main {
@@ -72,6 +90,7 @@ button.button {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   visibility: visible;
+  cursor: pointer;
 }
 
 button.button:hover {
@@ -148,6 +167,17 @@ hr.email {
     top: 0px;
   }
 }
+@keyframes fadeInTopFast {
+  from {
+    opacity: 0;
+    top: -30px;
+  }
+
+  to {
+    opacity: 0.8;
+    top: 0px;
+  }
+}
 
 @keyframes fadeInBottom {
   from {
@@ -159,21 +189,6 @@ hr.email {
     opacity: 0.8;
     margin-top: 0;
   }
-}
-
-.bi-cup-hot-fill {
-  margin: .3em;
-  font-size: xx-large;
-  position: fixed;
-  right: 0;
-  border: 3px solid white;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 100%;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 p.footer {
@@ -190,6 +205,8 @@ footer {
 }
 
 .bi-arrow-down {
+  animation: fadeInTopFast 1s forwards;
+  margin-top: 95vh;
   position: absolute;
   bottom: 10px;
   color: white !important;
@@ -199,7 +216,7 @@ footer {
 div.about {
   margin: 1em;
   text-align: center;
-  margin-top: 50%;
+  margin-top: 30em;
 }
 
 div.section {
