@@ -23,7 +23,6 @@ function toggleLightMode() {
 
             buttons.forEach(button => {
                 button.style.backgroundColor = isLight ? darkBackground : darkButtonBackground;
-                button.style.color = isLight ? darkText : darkText;
             });
             if (!isLight){
                 imgElement.src = 'img/sun.png';
