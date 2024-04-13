@@ -16,7 +16,7 @@ body {
   font-family: "Source Code Pro", monospace;
   font-size: 1.5em;
   background-color: #0e1125;
-  color: white;
+  color: #a5c3f1;
   margin: auto;
   padding: 0;
   box-sizing: border-box;
@@ -178,7 +178,7 @@ hr.email {
   }
 
   to {
-    opacity: 0.8;
+    opacity: 1;
     top: 0px;
   }
 }
@@ -266,7 +266,7 @@ div.section {
 
 .buttons-section {
   background-color: #20204e;
-  color: white;
+  color: #a5c3f1;
   margin: 0;
 }
 
@@ -286,4 +286,27 @@ div.section {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
+}
+
+.lightMode {
+ width: 1em;
+ background-color: #87b2f1;
+ border-radius: 100%;
+ padding: 0.2em;
+ position: fixed;
+ right: 0 !important;
+ margin: .5em;
+ cursor: pointer;
+}
+
+.darkMode {
+ width: 1em;
+ background-color: #191e41;
+ color: #87b2f1;
+ border-radius: 100%;
+ padding: 0.2em;
+ position: fixed;
+ right: 0 !important;
+ margin: .5em;
+ cursor: pointer;
 }
