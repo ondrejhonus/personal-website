@@ -1,19 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
-
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
 body {
   text-align: center;
-  font-family: "Source Code Pro", monospace;
-  min-height: 100vh;
+  height: 100%;
+  scroll-behavior: smooth;
 }
-button {
-  padding: 0.7%;
+
+main {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-header a{
-  color: white;
+
+input{
+  width: 100% !important;
+}
+
+.goHome{
+  display: flex;
+  margin: .5em;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  padding: .5em;
+  border-radius: 20px;
+}
+
+footer{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.lightThing {
   position: fixed;
-  left: 0;
-  margin: 0.5em 1em;
-}
-input[type="number"] {
-  padding: 0.5em;
+  top: 0;
+  right: 0;
+  margin: .5em 1em;
+  font-size: xx-large;
+  cursor: pointer;
+  z-index: 1;
 }

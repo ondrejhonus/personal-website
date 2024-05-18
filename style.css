@@ -9,14 +9,16 @@ body {
 body {
   height: 100%;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 14em;
+}
+
+main{
+  margin-top: 25vh;
 }
 
 .scroll-down {
-  margin-top: 11.5em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   font-size: xx-large;
   cursor: pointer;
 }
@@ -51,8 +53,12 @@ body {
   padding: 1.2em !important;
 }
 
-.about {
-  margin-bottom: 200px;
+.about-title {
+  margin: 15em 0 0 0;
+}
+
+#projects{
+  margin-top: 5em;
 }
 
 .lightThing {
@@ -62,6 +68,7 @@ body {
   margin: .5em 1em;
   font-size: xx-large;
   cursor: pointer;
+  z-index: 1;
 }
 
 ::-webkit-scrollbar {

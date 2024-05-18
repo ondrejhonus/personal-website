@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="themeSwitch">
+
 
 <head>
   <title>Password Generator</title>
@@ -12,42 +13,50 @@
   <meta name="twitter:image" content="https://github.com/ondrejhonus/xyzV3/blob/main/images/socials.png?raw=true">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="../../img/logo.png" />
-
-  <link rel="stylesheet" href="../MyGames/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="animate__fadeIn animate__animated">
   <header>
-    <a href="../../">Home</a>
-      </header>
+    <div class="goHome" onclick="window.location.replace('../../')">
+      <p class="home"><i class="fas fa-home"></i> Home</p>
+    </div>
+    <div class="lightThing" id="lightThing">
+      <i id="switchIcon"></i>
+    </div>
+  </header>
   <main>
-    <form class="passwordLength">
-      <h5>Choose password lenght</h3>
+    <h1 class="is-size-2">Password generator</h1>
+    <h2 class="is-size-4">Choose password length</h3>
+      <form>
         <input type="range" name="amountRange" min="0" max="100" value="20"
           oninput="this.form.amountInput.value=this.value" class="InputRange" />
-        <br>
-        <input type="number" name="amountInput" min="0" max="100" value="20"
-          oninput="this.form.amountRange.value=this.value" class="InputNumber" />
-    </form>
-    <label>
-      ASCII
-      <input type="checkbox" id="advanced" name="advanced" checked>
-      <span></span>
-    </label>
-    <br>
-    <button class="generate">Generate</button>
-    <img src="../../img/copy.svg" alt="clipboard" class="copy" data-toggle="popover" data-placement="top"
-      data-trigger="hover" data-class="custom-popover" title="Copied to clipboard!" onclick="passwordCopy()" />
-    <h6>Generated Password</h6>
-    <h6 id="resultDisplay" class="resultDisplay"></h6>
+        <input class="input InputNumber" type="number" name="amountInput" min="0" max="100" value="20"
+          oninput="this.form.amountRange.value=this.value" />
+      </form>
+      <div class="chooseASCII mt-5">
+        <span>ASCII</span>
+        <input class="checkbox" type="checkbox" id="advanced" name="advanced" checked>
+      </div>
+      <br>
+      <div class="generatePlusCopy">
+        <button class="button generate mb-5 is-medium">Generate</button>
+        <i class="fas fa-copy" onclick="passwordCopy()"></i>
+      </div>
+
+      <div class="generated is-hidden" id="resultBox">
+        <h3>Generated password:</h3>
+        <div class="box">
+          <p id="resultDisplay"></p>
+        </div>
+      </div>
 
   </main>
   <script src="script.js"></script>
-  <footer>
-    <p class="footer">&copy; 2024 - Ondřej Honus</p>
+  <footer class="footer p-4">
+    <p>&copy; 2024 - Ondřej Honus</p>
   </footer>
   </script>
 </body>

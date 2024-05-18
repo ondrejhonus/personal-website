@@ -2,23 +2,36 @@ let audioContext;
 let buffer;
 let source;
 let intervalId;
+let isRunning = false;
 
-function startMetronome() {
-  let bpmInput = document.getElementById("bpmInput");
-  let bpm = parseInt(bpmInput.value);
-
-  if (!bpm || bpm <= 0) {
-    alert("Please enter a valid BPM value.");
-    return;
+function toggleMetronome() {
+  if (!isRunning) {
+    let bpmInput = document.getElementById("bpmInput");
+    let bpm = parseInt(bpmInput.value);
+    if (bpm <= 0 || !bpm){
+      return;
+    }
+    audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    loadTickSound();
+    playMetronome(bpm);
+    isRunning = true;
   }
-
-  audioContext = new (window.AudioContext || window.webkitAudioContext)();
-  loadTickSound();
-  playMetronome(bpm);
+  else{
+    if (intervalId) {
+      clearInterval(intervalId);
+    }
+    if (source) {
+      source.stop();
+      source.disconnect(audioContext.destination);
+    }
+    if (audioContext) {
+      audioContext.close();
+    }
+    isRunning = false;
+  }
 }
 
 function loadTickSound() {
-  // You may need to adjust the path to your tick sound file
   let tickSoundUrl = "media/metronome.wav";
 
   fetch(tickSoundUrl)
@@ -31,7 +44,7 @@ function loadTickSound() {
 }
 
 function playMetronome(bpm) {
-  let interval = 60000 / bpm; // Calculate interval in milliseconds
+  let interval = 60000 / bpm;
 
   intervalId = setInterval(() => {
     source = audioContext.createBufferSource();
@@ -39,23 +52,40 @@ function playMetronome(bpm) {
     source.connect(audioContext.destination);
     source.start();
 
-    // You may want to adjust the duration of the tick sound
-    let tickDuration = 0.1; // in seconds
+    let tickDuration = 0.1;
 
-    // Stop the source node after the tick duration
     source.stop(audioContext.currentTime + tickDuration);
   }, interval);
 }
 
-function stopMetronome() {
-  if (intervalId) {
-    clearInterval(intervalId);
-  }
-  if (source) {
-    source.stop();
-    source.disconnect(audioContext.destination);
-  }
-  if (audioContext) {
-    audioContext.close();
-  }
+const switchMode = document.getElementById('lightThing');
+const html = document.getElementById('themeSwitch');
+const switchIcon = document.getElementById('switchIcon');
+
+let isDark = JSON.parse(localStorage.getItem('isDark')) || false;
+
+function darkModeSwitch() {
+    if (isDark) {
+        html.removeAttribute('data-theme');
+        html.setAttribute('data-theme', 'light');
+        switchIcon.classList.add('fas', 'fa-sun');
+        switchIcon.classList.remove('fa-moon');
+        isDark = false;
+        localStorage.setItem("isDark", false);
+    }
+    else {
+        html.removeAttribute('data-theme');
+        html.setAttribute('data-theme', 'dark');
+        switchIcon.classList.add('fas', 'fa-moon');
+        switchIcon.classList.remove('fa-sun');
+        isDark = true;
+        localStorage.setItem("isDark", true);
+    }
 }
+darkModeSwitch();
+darkModeSwitch();
+
+switchIcon.addEventListener('click', () => {
+    darkModeSwitch();
+});
+

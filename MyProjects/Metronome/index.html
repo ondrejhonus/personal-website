@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="themeSwitch">
 
 <head>
   <title>Metronome</title>
@@ -12,30 +12,32 @@
   <meta name="twitter:image" content="https://github.com/ondrejhonus/xyzV3/blob/main/images/socials.png?raw=true">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" href="../../img/logo.png" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="animate__fadeIn animate__animated">
   <header>
-<a href="../../">Home</a>
+    <div class="goHome" onclick="window.location.replace('../../')">
+      <p class="home"><i class="fas fa-home"></i> Home</p>
+    </div>
+    <div class="lightThing" id="lightThing">
+      <i id="switchIcon"></i>
+    </div>
   </header>
   <main>
-    <h1>Metronome</h1>
-    <label for="bpmInput"></label>
-    <p></p>
-    <input type="number" id="bpmInput" placeholder="Enter BPM" min="1" step="1" required>
-    <p></p>
-    <button onclick="startMetronome()">Start Metronome</button>
-    <p></p>
-    <button onclick="stopMetronome()">Stop Metronome</button>
+    <h1 class="is-size-2">Metronome</h1>
+    <form class="mt-4" onsubmit="toggleMetronome(); return false;">
+    <input class="input mb-4 is-medium" type="number" id="bpmInput" placeholder="Enter BPM" min="40" max="500" step="5" required>
+    <br>
+    <button type="submit" class="button is-large">Toggle Metronome</button>
+  </form>
   </main>
-  <footer>
-    <p class="footer">&copy; 2024 - Ondřej Honus</p>
+  <footer class="footer p-4">
+    <p>&copy; 2024 - Ondřej Honus</p>
   </footer>
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>

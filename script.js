@@ -1,27 +1,31 @@
 const switchMode = document.getElementById('lightThing');
 const html = document.getElementById('themeSwitch');
 const switchIcon = document.getElementById('switchIcon');
-let isDark = false;
 
-function darkModeSwitch(){
-    if(isDark){
+let isDark = JSON.parse(localStorage.getItem('isDark')) || false;
+
+function darkModeSwitch() {
+    if (isDark) {
         html.removeAttribute('data-theme');
         html.setAttribute('data-theme', 'light');
         switchIcon.classList.add('fas', 'fa-sun');
         switchIcon.classList.remove('fa-moon');
         isDark = false;
+        localStorage.setItem("isDark", false);
     }
-    else{
+    else {
         html.removeAttribute('data-theme');
         html.setAttribute('data-theme', 'dark');
         switchIcon.classList.add('fas', 'fa-moon');
         switchIcon.classList.remove('fa-sun');
         isDark = true;
+        localStorage.setItem("isDark", true);
     }
 }
 darkModeSwitch();
+darkModeSwitch();
 
-switchIcon.addEventListener('click', ()=>{
+switchIcon.addEventListener('click', () => {
     darkModeSwitch();
 });
 
