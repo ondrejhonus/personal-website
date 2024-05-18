@@ -12,17 +12,17 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 12em;
+  margin-top: 14em;
 }
 
 .scroll-down {
-  margin-top: 15em;
+  margin-top: 11.5em;
   font-size: xx-large;
   cursor: pointer;
 }
 
 .button-icon {
-  font-size: large;
+  font-size: x-large;
   margin-left: .6em;
 }
 
@@ -47,10 +47,36 @@ body {
   padding: 1em;
 }
 
-.button-bottom{
+.button-bottom {
   padding: 1.2em !important;
 }
 
-.about{
+.about {
   margin-bottom: 200px;
+}
+
+.lightThing {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: .5em 1em;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #acacac;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7a7a7a;
 }
