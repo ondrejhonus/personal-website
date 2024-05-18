@@ -105,4 +105,7 @@ button{
   button{
     min-width: 10em;
   }
+  .button-bottom {
+    min-width: 14em;
+  }
 }
