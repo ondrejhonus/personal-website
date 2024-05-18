@@ -2,7 +2,7 @@ const switchMode = document.getElementById('lightThing');
 const html = document.getElementById('themeSwitch');
 const switchIcon = document.getElementById('switchIcon');
 
-let isDark = JSON.parse(localStorage.getItem('isDark')) || false;
+let isDark = JSON.parse(localStorage.getItem('isDark')) || true;
 
 function darkModeSwitch() {
     if (isDark) {
