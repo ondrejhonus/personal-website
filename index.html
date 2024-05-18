@@ -12,10 +12,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home</title>
   <link rel="icon" href="img/logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -23,92 +23,71 @@
     <div class="lightThing"></div>
   </header>
   <main>
-    <h1>Ondřej Honus</h1>
-    <div class="buttons-main">
-      <a href="https://github.com/ondrejhonus/" target="_blank">
-        <button class="button github">
-          <span class="button-text">Github</span>
-          <span class="button-icon"><img src="img/github.png" alt="github" /></span>
+    <h1 class="is-size-1">Ondřej Honus</h1>
+
+    <div class="width-div">
+      <div class="link-buttons mt-3">
+        <button class="button">
+          <p class="is-size-4">Github</p>
         </button>
-      </a>
-      <a href="https://www.instagram.com/ondrej.honus/" target="_blank">
-        <button class="button instagram">
-          <span class="button-text">Instagram</span>
-          <span class="button-icon"><img src="img/instagram.png" alt="instagram" /></span>
+        <button class="button">
+          <p class="is-size-4">Instagram</p>
         </button>
-      </a>
-      <a href="https://open.spotify.com/user/ondrasihonda" target="_blank">
-        <button class="button spotify">
-          <span class="button-text">Spotify</span>
-          <span class="button-icon"><img src="img/spotify.png" alt="spotify" /></span>
+        <button class="button">
+          <p class="is-size-4">Spotify</p>
         </button>
-      </a>
-      <a href="https://twitter.com/0ndra_honuz/" target="_blank">
-        <button class="button twitter">
-          <span class="button-text">Twitter</span>
-          <span class="button-icon"><img src="img/X.png" alt="twitter" /></span>
+        <button class="button">
+          <p class="is-size-4">Twitter</p>
         </button>
-      </a>
-      <a href="mailto:honusondrej@gmail.com" target="_blank">
-        <button class="button mail">
-          <span class="button-text">Mail me</span>
-          <span class="button-icon"><img src="img/gmail.png" alt="mail" /></span>
+        <button class="button">
+          <p class="is-size-4">Mail</p>
+        </button>
+      </div>
     </div>
-    </a>
     <div class="scroll-down">
-      <a href="#about"><i class="bi bi-arrow-down"></i></a>
+      <i class="fas fa-arrow-down" onclick="window.location.replace('#about');"></i>
     </div>
-    <div class="about section" id="about">
-      <h2>About me</h2>
-      <p>Hi, I'm Ondřej Honus, a student and a developer from the Czech Republic. I'm interested in programming, web
-        design and music.
-        I'm currently learning C and JS.</p>
+    <div class="about box" id="about">
+      <h2 class="is-size-2 has-text-weight-bold">About me</h2>
+      <div class="about-text is-size-4">
+        <p>Hi, I'm Ondřej Honus, a student and a developer from the Czech Republic.<br>
+           I'm interested in programming, webdesign and music.<br>
+          I'm currently learning C and JS.</p>
         <p>Reach me on my email: <a href="mailto:ondrasihonda@gmail.com">ondrasihonda@gmail.com</a></p>
-      <p>You can also support me on <a href="https://www.buymeacoffee.com/honus" target="_blank">buymeacoffee.com</a></p>
+        <p>You can also support me on <a href="https://www.buymeacoffee.com/honus" target="_blank">buymeacoffee.com</a>
+        </p>
+      </div>
     </div>
-    <div class="projects section" id="projects">
-      <div class="button-section buttons-main">
-        <h2>Projects that I made</h2>
-        <!-- PaintJS -->
-        <a href="https://paint.ondrejhonus.com/">
-          <button class="button buttons-section">
-            <span class="button-text">PaintJS</span>
-            <span class="button-icon"><img src="img/paint.png" alt="paint" /></span>
-          </button>
-        </a>
-        <!-- Dogeball -->
-        <a href="https://dogeball.ondrejhonus.com">
-          <button class="button buttons-section">
-            <span class="button-text">Dogeball</span>
-            <span class="button-icon"><img src="img/doge.png" alt="dogeball" /></span>
-          </button>
-        </a>
-        <!-- Metronome -->
-        <a href="MyProjects/Metronome/index.html">
-          <button class="button buttons-section">
-            <span class="button-text">Metronome</span>
-            <span class="button-icon"><img src="img/metronome.png" alt="metronome" /></span>
-          </button>
-        </a>
-        <!-- Password generator -->
-        <a href="MyProjects/PasswordGenerator/index.html">
-          <button class="button buttons-section">
-            <span class="button-text">Password generator</span>
-            <span class="button-icon"><img src="img/key.png" alt="password" /></span>
-          </button>
-        </a>
-        <!-- Flappy plane -->
-        <a href="https://games.ondrejhonus.com/FlappyPlane/">
-          <button class="button buttons-section">
-            <span class="button-text">Flappy plane</span>
-            <span class="button-icon"><img src="img/plane.png" alt="flappy" /></span>
-          </button>
-        </a>
+    <div class="width-div">
+      <div class="link-buttons-2" id="projects">
+        <h2 class="is-size-2 has-text-weight-bold">Projects that I made</h2>
+        <button class="button button-bottom" onclick="window.open('https://paint.ondrejhonus.com/', '_blank')">
+          <p class="is-size-4">PaintJS</p>
+          <i class="fa-solid fa-paintbrush button-icon"></i>
+        </button>
+        <button class="button button-bottom" onclick="window.open('https://dogeball.ondrejhonus.com', '_blank')">
+          <p class="is-size-4">Dogeball</p>
+          <i class="fa-solid fa-volleyball button-icon"></i>
+        </button>
+        <button class="button button-bottom" onclick="window.open('MyProjects/Metronome/', '_blank')">
+          <p class="is-size-4">Metronome</p>
+          <i class="fa-regular fa-hourglass-half button-icon"></i>
+        </button>
+        <button class="button button-bottom" onclick="window.open('MyProjects/PasswordGenerator/', '_blank')">
+          <p class="is-size-4">Password generator</p>
+          <i class="fa-solid fa-shield-halved button-icon"></i>
+        </button>
+        <button class="button button-bottom" onclick="window.open('https://games.ondrejhonus.com/FlappyPlane/', '_blank')">
+          <p class="is-size-4">Flappy plane</p>
+          <i class="fa-solid fa-plane button-icon"></i>
+        </button>
       </div>
     </div>
   </main>
-  <footer>
-    <p class="footer">&copy; 2024 - Ondřej Honus</p>
+  <footer class="footer mt-6 p-4">
+    <div class="content">
+      <p>&copy; 2024 - Ondřej Honus</p>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>

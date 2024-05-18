@@ -1,315 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
-
 html,
 body {
-  display: flex;
   margin: 0;
-  align-content: center;
-  vertical-align: middle;
-  text-align: center;
+  padding: 0;
   scroll-behavior: smooth;
+  overflow-y: auto;
 }
 
 body {
-  font-family: "Source Code Pro", monospace;
-  font-size: 1.5em;
-  background-color: #0e1125;
-  color: #a5c3f1;
-  margin: auto;
-  padding: 0;
-  box-sizing: border-box;
+  height: 100%;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  animation: fadeIn 1s forwards;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center !important;
-
+  margin-top: 12em;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-main {
-  margin: auto;
-  margin-top: 7em;
-  width: 70%;
-}
-div.buttons-main{
-  margin: auto;
-}
-@media screen and (max-width: 963px) {
-  main {
-    max-width: none;
-    margin-top: 7em;
-  }
-  div.about {
-    margin-top: 12em !important;
-  }
-}
-
-@media screen and (max-height: 700px) {
-  @media screen and (max-width: 400px) {
-    main {
-      min-width: 70%;
-      margin: 0;
-    }
-    div.about {
-      margin-top: 5em !important;
-    }
-
-    /*.bi-arrow-down {
-  display: none;
-}
-*/
-  }
-}
-
-.buttons-main {
-  text-align: center;
-  margin-top: 12vh;
-}
-
-div.buttons-main a {
-  text-decoration: none;
-  color: white;
-  width: 12em !important;
-  visibility: hidden;
-}
-
-button.button {
-  color: white;
-  margin: auto;
-  font-weight: 600;
-  letter-spacing: 2px;
-  width: 12em;
-  height: 3.5em;
-  border-radius: 10px;
-  margin: 0.8em;
-  transition: transform 0.3s ease-in !important;
-  transition: all 0.25s ease !important;
-  border: solid 2px rgb(22, 22, 22);
-  opacity: 0;
-  animation: fadeInTop 1s forwards;
-  font-size: 1.5rem;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  visibility: visible;
+.scroll-down {
+  margin-top: 15em;
+  font-size: xx-large;
   cursor: pointer;
 }
 
-button.button:hover {
-  opacity: 60% !important;
-  border: none !important;
-  border: solid 2px rgb(134, 134, 134) !important;
+.button-icon {
+  font-size: large;
+  margin-left: .6em;
 }
 
-span.button-icon img {
-  width: 15%;
-  vertical-align: middle;
-  text-align: end;
+.width-div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button.github {
-  background-color: rgba(20, 22, 129, 1);
-  background: repeating-linear-gradient(45deg,
-      #000000,
-      #000000 8.5px,
-      rgba(20, 22, 129, 1) 8.5px,
-      rgba(20, 22, 129, 1) 42.5px);
-  animation-delay: 0;
-}
-
-button.instagram {
-  background-image: linear-gradient(to right, rgb(4, 0, 252), rgb(255, 0, 0));
-  animation-delay: 0.2s;
-}
-
-button.spotify {
-  background-image: repeating-radial-gradient(circle at 0 0,
-      transparent 0,
-      #000000 10px),
-    repeating-linear-gradient(#087a04, #054905);
-  animation-delay: 0.3s;
-}
-
-button.twitter {
-  background-color: #000000;
-  animation-delay: 0.4s;
-  border: solid 2px rgb(255, 255, 255, 0.2);
-}
-
-button.mail {
-  color: #ffffff;
-  background-image: url(img/google-gradient.png);
-  background-position: 0 -128px;
-  background-repeat: no-repeat;
-  animation-delay: 0.5s;
-}
-
-p#email {
-  text-align: center;
-  margin: 0.6em;
-  font-weight: 600;
-  font-size: 16px;
-  animation: fadeInBottom 1s forwards;
-}
-
-hr.email {
+.link-buttons {
   width: 50%;
-  text-align: center;
-  margin: 32px auto 20px auto;
 }
 
-@keyframes fadeInTop {
-  from {
-    opacity: 0;
-    top: -10px;
-  }
-
-  to {
-    opacity: 1;
-    top: 0px;
-  }
+.link-buttons-2 {
+  width: 60%;
 }
 
-@keyframes fadeInTopFast {
-  from {
-    opacity: 0;
-    top: -30px;
-  }
-
-  to {
-    opacity: 0.8;
-    top: 0px;
-  }
+.width-div button {
+  width: 25%;
+  margin: .3em;
+  padding: 1em;
 }
 
-@keyframes fadeInBottom {
-  from {
-    opacity: 0;
-    margin-top: 60px;
-  }
-
-  to {
-    opacity: 0.8;
-    margin-top: 0;
-  }
+.button-bottom{
+  padding: 1.2em !important;
 }
 
-p.footer {
-  font-size: medium;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-}
-
-.footer {
-  margin: 0;
-}
-
-.bi-arrow-down {
-  animation: fadeInTopFast 1s forwards;
-  position: absolute;
-  color: white !important;
-  font-size: xx-large;
-  margin: auto;
-  margin-top: 95vh;
-}
-@media screen and (max-height: 750px) {
-  .bi-arrow-down {
-    margin-top: 93vh;
-  }
-}
-
-@media screen and (max-height: 600px) {
-  .bi-arrow-down {
-    margin-top: 90vh;
-  }
-}
-@media screen and (max-height: 350px) {
-  .bi-arrow-down {
-    margin-top: 87vh;
-  }
-}
-@media screen and (max-height: 300px) {
-  .bi-arrow-down {
-    margin-top: 83vh;
-  }
-}
-@media screen and (max-height: 200px) {
-  .bi-arrow-down {
-    margin-top: 74vh;
-  }
-}
-div.about {
-  margin: 1em;
-  text-align: center;
-  margin-top: 30em;
-}
-
-div.section {
-  margin-bottom: 5em;
-}
-
-.buttons-section {
-  background-color: #20204e;
-  color: #a5c3f1;
-  margin: 0;
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #000000;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #ffffff;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
-}
-
-.lightMode {
- width: 1em;
- background-color: #87b2f1;
- border-radius: 100%;
- padding: 0.2em;
- position: fixed;
- right: 0 !important;
- margin: .5em;
- cursor: pointer;
-}
-
-.darkMode {
- width: 1em;
- background-color: #191e41;
- color: #87b2f1;
- border-radius: 100%;
- padding: 0.2em;
- position: fixed;
- right: 0 !important;
- margin: .5em;
- cursor: pointer;
-}
-a{
-  color: #457bcc;
+.about{
+  margin-bottom: 200px;
 }
