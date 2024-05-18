@@ -15,8 +15,5 @@ The purpose of this project is to recreate and improve upon the existing main we
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
-- Bootstrap icons
-- Favicon icons
+- Bulma.io CSS Framework
+- Fontawesome icons
