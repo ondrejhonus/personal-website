@@ -13,6 +13,7 @@ body {
 
 main{
   margin-top: 25vh;
+  flex-direction: column;
 }
 
 .scroll-down {
@@ -86,4 +87,22 @@ main{
 
 ::-webkit-scrollbar-thumb:hover {
   background: #7a7a7a;
+}
+
+button{
+  min-width: 15em;
+}
+
+@media only screen and (max-width: 520px) {
+  .is-size-1{
+    font-size: 2em !important;
+    word-break: break-all;
+  }
+  main{
+    margin-top: 12vh;
+    flex-direction: column;
+  }
+  button{
+    min-width: 10em;
+  }
 }
