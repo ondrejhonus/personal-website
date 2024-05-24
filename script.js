@@ -29,3 +29,4 @@ switchIcon.addEventListener('click', () => {
     darkModeSwitch();
 });
 
+const emailP = document.getElementById('email').innerText = "ondrejhonus@proton.me";
