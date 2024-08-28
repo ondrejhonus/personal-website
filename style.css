@@ -113,31 +113,31 @@ button{
 [data-theme=dark],
 .theme-dark {
   body{
-    background-color: #0d122b;
-    color: #94a0d6;
+    background-color: #1a1b20;
+    color: #939bb6;
   }
   button{
-    background-color: #151d46;
-    border: 1px solid #243da1;
+    background-color: #121316;
+    border: 1px solid #3c3d3f;
     color: #cbcedf;
   }
   footer{
-    background-color: #0a0e20;
+    background-color: #121316;
   }
 }
 
 [data-theme=light],
 .theme-light {
   body{
-    background-color: #a7b3ec;
-    color: #0f1636;
+    background-color: #b0b4ca;
+    color: #222329;
   }
   button{
-    background-color: #8093f0;
+    background-color: #a1a1be;
     border: 1px solid #0a0e1f;
-    color: #10143f;
+    color: #222329;
   }
   footer{
-    background-color: #8695d6;
+    background-color: rgb(150, 158, 197);
   }
 }
