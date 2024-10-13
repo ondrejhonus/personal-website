@@ -30,16 +30,21 @@ main{
 }
 
 .width-div {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .link-buttons {
-  width: 50%;
+  width: 40%;
 }
 
+@media only screen and (max-width: 520px) {
+  .link-buttons {
+    width: 100%;
+  }
+}
 .link-buttons-2 {
   width: 60%;
 }
@@ -103,7 +108,7 @@ button{
     flex-direction: column;
   }
   button{
-    min-width: 10em;
+    min-width: 20em;
   }
   .button-bottom {
     min-width: 14em;
