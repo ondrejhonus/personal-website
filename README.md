@@ -1,19 +1,8 @@
 # Personal Website
-
-This is a personal website project that is a remake of the main xyzV4.
-
-## Description
-
-The purpose of this project is to recreate and improve upon the existing main website. It aims to provide a more modern and user-friendly experience for visitors.
+This is a personal website project, this branch is using Hugo for static site generation, and Vue.js for interactive widgets.
 
 ## Features
-
-- Responsive design for optimal viewing on different devices
-- Improved navigation and user interface
-- Enhanced performance and loading speed
-- Updated content and visuals
-
-## Technologies Used
-
-- Bulma.io CSS Framework
-- Fontawesome icons
+- Static site generation with Hugo
+- Interactive components built with Vue.js
+- Responsive design for mobile and desktop
+- Easy to customize and extend
