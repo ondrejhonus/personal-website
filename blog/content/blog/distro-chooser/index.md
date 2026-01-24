@@ -5,4 +5,5 @@ date: 2026-01-24T1:00:00+00:00
 topics: ["linux", "programming"]
 ---
 
+## Whats the plan?
 I am planning on creating a Linux Distro Chooser tool, similar to the [Distro Chooser](https://distrochooser.de/) website, but based on my personal experience and recommendations, because I think it reccomends useless, unstable and just not great distros.
