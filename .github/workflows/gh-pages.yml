@@ -5,7 +5,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - Hugo+Vue.js
+      - Hugo
 
 jobs:
   build-deploy:
@@ -29,7 +29,7 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/Hugo+Vue.js'
+        if: github.ref == 'refs/heads/Hugo'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
