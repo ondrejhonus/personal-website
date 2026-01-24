@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to Blowfish! on Ondřej Honus</title>
+    <title>Ondřej Honus&#39; Blog on Ondřej Honus</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Welcome to Blowfish! on Ondřej Honus</description>
+    <description>Recent content in Ondřej Honus&#39; Blog on Ondřej Honus</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>ondrejhonus@pm.me (Ondřej Honus)</managingEditor>
@@ -18,7 +18,7 @@
       <author>ondrejhonus@pm.me (Ondřej Honus)</author>
       <guid>http://localhost:1313/projects/metronome/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/metronome/feature.png" />
+      
     </item>
     
     <item>

@@ -1,5 +1,4 @@
 ---
-title: "Welcome to Blowfish!"
-description: "This is a demo of adding content to the homepage."
+title: "Ondřej Honus' Blog"
+description: "Personal blog of Ondřej Honus about programming, web development, open source, and other tech topics."
 ---
-Haiiiii :3
