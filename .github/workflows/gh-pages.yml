@@ -1,36 +1,39 @@
-# .github/workflows/gh-pages.yml
-
 name: GitHub Pages
 
 on:
   push:
     branches:
-      - Hugo+Vue.js
+      - "Hugo+Vue.js" # Matches your branch name
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive # Blowfish needs submodules
           fetch-depth: 0
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "latest"
+          extended: true # Blowfish requires the extended version for Tailwind
 
       - name: Build
+        # This tells Hugo to run inside the /blog/ folder
         run: hugo --minify
+        working-directory: ./blog 
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
+        # Updated to match your specific branch name
+        if: github.ref == 'refs/heads/Hugo+Vue.js'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./public
+          # Points to the public folder inside the blog subdirectory
+          publish_dir: ./blog/public
