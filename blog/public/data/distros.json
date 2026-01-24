@@ -1,0 +1,82 @@
+[    
+    {
+        "name": "Arch Linux",
+        "difficulty": 10,
+        "stability": 4,
+        "releases": "rolling",
+        "gaming": 4,
+        "points": 0,
+        "link": "https://archlinux.org/",
+        "description": "A very lightweight and flexible Linux distro, that lets you do almost anything you want with it, it is very easy to break by someone that doesn't have the experience. It has rolling releases, so you always have the latest software at your fingertips, but that also makes it very fragile."
+    },
+    {
+        "name": "OpenSUSE Tumbleweed",
+        "difficulty": 7,
+        "stability": 7,
+        "releases": "rolling",
+        "gaming": 7,
+        "points": 0,
+        "link": "https://get.opensuse.org/desktop/",
+        "description": "This is a beautifully built distro, that is very stable for a rolling release thanks to its [OBS](https://openbuildservice.org/) (Open Build Service), which tests all the software, before giving it to users to install. I personally use this one for all my devices, because I grew bored of dealing with Arch Linux because of its instability."
+    },
+    {
+        "name": "OpenSUSE Leap",
+        "difficulty": 5,
+        "stability": 8,
+        "releases": "fixed",
+        "gaming": 4,
+        "points": 0,
+        "link": "https://get.opensuse.org/desktop/",
+        "description": "This is the fixed release version of OpenSUSE, it is very stable, and it's a great choice for people who want a reliable system without doing too much effort, but also don't want to be percieved as total beginners."
+    },
+    {
+        "name": "Linux Mint",
+        "difficulty": 1,
+        "stability": 9,
+        "releases": "fixed",
+        "gaming": 5,
+        "points": 0,
+        "link": "https://linuxmint.com/",
+        "description": "This is one of the most popular Linux distros, and for a good reason, it is very easy to use (my grandma uses it). It also has a huge community on the internet, which makes it very easy to find help online. It is a great choice for beginners, but also for people who want a stable system without doing too much effort. You basically can not go wrong with this one."
+    },
+    {
+        "name": "Fedora",
+        "difficulty": 6,
+        "stability": 8,
+        "releases": "fixed",
+        "gaming": 5,
+        "points": 0,
+        "link": "https://getfedora.org/",
+        "description": "This is a great choice for a stable, not too difficult distro, that also has relatively up to date software. It is a great choice for people who want a balance between stability and having the latest features. PS: Linus Torvalds uses this one ;)"
+    },
+        {
+        "name": "Nobara",
+        "difficulty": 4,
+        "stability": 8,
+        "releases": "fixed",
+        "gaming": 10,
+        "points": 0,
+        "link": "https://nobaraproject.org/",
+        "description": "This is a gaming focused distro based on Fedora, it comes with all the necessary software and drivers (Nvidia drivers, Mesa drivers, Proton) pre-installed, so you can start gaming right after the installation. It is a great choice for people who want to game on Linux without dealing with the hassle of setting up everything manually."
+    },
+    {
+        "name": "CachyOS",
+        "difficulty": 3,
+        "stability": 8,
+        "releases": "rolling",
+        "gaming": 10,
+        "points": 0,
+        "link": "https://cachyos.org/",
+        "description": "This is a relatively new distro, but it gained so much popularity extremely fast, and I don't think it's going to stop anytime soon. It is based on Arch Linux, but it comes with a lot of pre-installed software and tweaks that make it a great choice for gaming on Linux. It also uses a a custom kernel developed by them specifically for this distro, which I heavily respect and cannot say I can't recommend this one."
+    },
+    {
+        "name": "Debian",
+        "difficulty": 7,
+        "stability": 10,
+        "releases": "fixed",
+        "gaming": 3,
+        "points": 0,
+        "link": "https://www.debian.org/",
+        "description": "This is one of the oldest and most stable Linux distros, it is very popular because of its stability and reliability, but it is not as user fiendly as some other distros like Linux Mint. In my opinion, this is the best choice, if you want Debian, that you can heavily customize, but don't want to deal with the instability of distros like Arch Linux. It also doesnt spy on you like Ubuntu does."
+    }
+]

@@ -1,27 +1,21 @@
-<div class="main" class="p-6 bg-white dark:bg-neutral-800 rounded-lg shadow-md w-full max-w-sm mx-auto border-2 border-neutral-300 dark:border-neutral-600">
-<form onsubmit="window.toggleMetronome(); return false;" class="flex flex-col items-center gap-4">
+<link rel="stylesheet" href="/css/minigame-styles.css">
+
+<div class="box-mg">
+  <form onsubmit="window.toggleMetronome(); return false;"
+    class="flex flex-col items-center gap-4">
     <div>
 
-    <input 
-      type="number" 
-      id="bpmInput" 
-      class="w-32 p-2 rounded border dark:bg-neutral-900 dark:border-neutral-600 dark:text-white text-center text-xl" 
-      placeholder="BPM" 
-      min="20" 
-      max="500" 
-      value="120"
-      required
-    >
-    <span class="ml-2 text-lg font-bold">BPM</span>
+      <input type="number" id="bpmInput"
+        class="input-mg"
+        placeholder="BPM" min="20" max="500" value="120" required>
+      <span class="ml-2 text-lg font-bold">BPM</span>
     </div>
-    
-    <button 
-      type="submit" 
-      class="px-4 py-2 bg-blue-600 rounded border border-blue-800 hover:bg-blue-700 transition-colors duration-300"
-    >
+
+    <button type="submit"
+      class="button-mg">
       Toggle
     </button>
   </form>
 </div>
 
-<script src="{{ "js/metronome.js" | relURL }}"></script>
+<script src="{{ " js/metronome.js" | relURL }}"></script>

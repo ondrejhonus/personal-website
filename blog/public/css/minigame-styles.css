@@ -1,0 +1,35 @@
+.box-mg {
+  border: solid rgba(0, 0, 0, 0.2) 5px;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: center;
+  width: 100%;
+}
+.button-mg {
+  border: solid rgba(0, 0, 0, 0.2) 4px;
+  border-radius: 10px;
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.button-mg-large {
+    width: 100%;
+    margin: .2em 0;
+    border: solid rgba(0, 0, 0, 0.2) 4px;
+    border-radius: 10px;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.input-mg {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.distro-result {
+  margin-bottom: 1em;
+  width: 100%;
+  text-align: center;
+  padding: 2em;
+  border: solid rgba(0, 0, 0, 0.2) 2px;
+  border-radius: 10px;
+}
