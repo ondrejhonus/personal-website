@@ -21,5 +21,15 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/recipes/feature.png" />
     </item>
     
+    <item>
+      <title>Making this website</title>
+      <link>http://localhost:1313/blog/this_website/</link>
+      <pubDate>Fri, 23 Jan 2026 21:00:00 +0000</pubDate>
+      <author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <guid>http://localhost:1313/blog/this_website/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/this_website/feature.png" />
+    </item>
+    
   </channel>
 </rss>
