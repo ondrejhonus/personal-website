@@ -18,7 +18,7 @@
       <author>ondrejhonus@pm.me (Ondřej Honus)</author>
       <guid>http://localhost:1313/projects/distro-chooser/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/distro-chooser/feature.png" />
     </item>
     
     <item>

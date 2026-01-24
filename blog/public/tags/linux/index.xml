@@ -9,16 +9,16 @@
     <managingEditor>ondrejhonus@pm.me (Ondřej Honus)</managingEditor>
     <webMaster>ondrejhonus@pm.me (Ondřej Honus)</webMaster>
     <copyright>© 2026 Ondřej Honus</copyright>
-    <lastBuildDate>Sat, 24 Jan 2026 01:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jan 2026 01:20:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Linux Distro Chooser</title>
-      <link>http://localhost:1313/blog/distro-chooser/</link>
-      <pubDate>Sat, 24 Jan 2026 01:00:00 +0000</pubDate>
+      <link>http://localhost:1313/projects/distro-chooser/</link>
+      <pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate>
       <author>ondrejhonus@pm.me (Ondřej Honus)</author>
-      <guid>http://localhost:1313/blog/distro-chooser/</guid>
+      <guid>http://localhost:1313/projects/distro-chooser/</guid>
       <description></description>
-      
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/distro-chooser/feature.png" />
     </item>
     
   </channel>

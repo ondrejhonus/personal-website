@@ -13,12 +13,12 @@
     
     <item>
       <title>Vege Dreams: My Vegetarian Recipe Collection</title>
-      <link>http://localhost:1313/blog/recipes/</link>
+      <link>http://localhost:1313/blog/vege-dreams/</link>
       <pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate>
       <author>ondrejhonus@pm.me (Ondřej Honus)</author>
-      <guid>http://localhost:1313/blog/recipes/</guid>
+      <guid>http://localhost:1313/blog/vege-dreams/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/recipes/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/vege-dreams/feature.png" />
     </item>
     
   </channel>
