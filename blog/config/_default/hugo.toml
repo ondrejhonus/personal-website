@@ -67,3 +67,6 @@ enableEmoji = true
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
+
+[params]
+  customCSS = ["css/custom.css"]

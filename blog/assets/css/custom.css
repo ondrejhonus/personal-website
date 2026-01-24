@@ -1,0 +1,12 @@
+
+/* if light mode is used */
+body {
+    background: linear-gradient(to right, #f0e6f6, #f7e9fb) !important;
+}
+
+
+/* Adding a gradient background */
+html.dark body {
+    background: linear-gradient(to right, #291e33, #2b152e) !important;
+}
+
