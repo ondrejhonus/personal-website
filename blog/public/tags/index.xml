@@ -9,7 +9,17 @@
     <managingEditor>ondrejhonus@pm.me (Ondřej Honus)</managingEditor>
     <webMaster>ondrejhonus@pm.me (Ondřej Honus)</webMaster>
     <copyright>© 2026 Ondřej Honus</copyright>
-    <lastBuildDate>Fri, 23 Jan 2026 22:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jan 2026 01:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Docs</title>
+      <link>http://localhost:1313/tags/docs/</link>
+      <pubDate>Sat, 24 Jan 2026 01:00:00 +0000</pubDate>
+      <author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <guid>http://localhost:1313/tags/docs/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Recipes</title>

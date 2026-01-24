@@ -2,6 +2,7 @@
 title: "Making this website"
 description: "A look into the process of making my personal website in Hugo with the Blowfish theme."
 date: 2026-01-23T21:00:00+00:00
+tags: ["webdev"]
 ---
 
 ## Making this website

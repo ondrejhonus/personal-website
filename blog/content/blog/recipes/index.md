@@ -3,7 +3,7 @@ title: "Vege Dreams: My Vegetarian Recipe Collection"
 description: "This is a collection of my favorite vegetarian recipes that I have tried and loved over the years."
 date: 2026-01-23T22:00:00+00:00
 topics: ["cooking", "webdev"]
-tags: ["recipes", "vegetarian", "webdev"]
+tags: ["recipes", "cooking", "webdev"]
 ---
 
 It would make me very happy, if you checked out my vegetarian recipe collection website called [Vege Dreams](https://veg.ondrejhonus.com/).

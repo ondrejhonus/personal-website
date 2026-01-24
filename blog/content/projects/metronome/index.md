@@ -2,6 +2,7 @@
 title: "In-Browser Metronome"
 date: 2026-01-23T23:00:00+00:00
 description: "A simple metronome that runs directly on this page."
+tags: ["music", "tools"]
 ---
 
 {{< metronome >}}
