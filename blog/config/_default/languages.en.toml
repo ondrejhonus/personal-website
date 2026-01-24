@@ -9,8 +9,8 @@ title = "Ondřej Honus"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  # logo = "img/author.png"
-  # secondaryLogo = "img/secondary-logo.png"
+  logo = "img/logo-light.png" 
+  secondaryLogo = "img/logo.png"
   description = "My awesome website"
   # copyright = "Copy, _right?_ 
 

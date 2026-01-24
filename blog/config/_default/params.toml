@@ -13,7 +13,7 @@ enableA11y = false
 enableSearch = true
 enableCodeCopy = false
 enableStructuredBreadcrumbs = false
-# enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
+enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
 
 replyByEmail = false
 
@@ -27,7 +27,7 @@ disableTextInHeader = false
 # backgroundImageWidth = 1200
 
 # defaultBackgroundImage = "img/author.jpg" # used as default for background images
-defaultFeaturedImage = "img/author.jpg" # used as default for featured images in all articles
+defaultFeaturedImage = "img/gradient.png" # used as default for featured images in all articles
 # defaultSocialImage = "/android-chrome-512x512.png" # used as default for social media sharing (Open Graph and Twitter)
 hotlinkFeatureImage = false
 # imagePosition = "50% 50%"
@@ -47,7 +47,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [footer]
   showMenu = true
   showCopyright = true
-  showThemeAttribution = true
+  showThemeAttribution = false
   showAppearanceSwitcher = true
   showScrollToTop = true
 
@@ -181,3 +181,6 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 
 [advertisement]
   # adsense = ""
+
+[appearance]
+  favicon = "favicon-32x32.png"

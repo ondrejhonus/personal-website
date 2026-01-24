@@ -3,6 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2026-01-24T01:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/blog/distro-chooser/</loc>
+    <lastmod>2026-01-24T01:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-24T01:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://localhost:1313/projects/metronome/</loc>
     <lastmod>2026-01-23T23:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -11,18 +29,6 @@
   <url>
     <loc>http://localhost:1313/projects/</loc>
     <lastmod>2026-01-23T23:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-23T23:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2026-01-23T22:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>

@@ -5,7 +5,7 @@ date: 2026-01-23T22:00:00+00:00
 topics: ["cooking", "webdev"]
 ---
 
-I would make me extremely happy, if you checked out my vegetarian recipe collection website called [Vege Dreams](https://vege.ondrejhonus.com/).
+I would make me very happy, if you checked out my vegetarian recipe collection website called [Vege Dreams](https://veg.ondrejhonus.com/).
 
 It's a personal project of mine, where I share my favorite vegetarian recipes that I have tried and loved over the years. From Irish soda bread to Italian Spaghetti Carboanara (without bacon, of course!), there's something for everyone.
 
