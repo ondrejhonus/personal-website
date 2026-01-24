@@ -1,41 +1,36 @@
+# .github/workflows/gh-pages.yml
+
 name: GitHub Pages
 
 on:
   push:
-    # This ensures it triggers on your specific branch
     branches:
-      - "Hugo+Vue.js" 
-  # This allows you to manually trigger it from the "Actions" tab to test
-  workflow_dispatch: 
+      - Hugo+Vue.js
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
         with:
-          submodules: recursive
+          submodules: true
           fetch-depth: 0
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+        uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: "latest"
-          extended: true 
 
       - name: Build
-        # We move into the blog directory to run the build command
-        run: |
-          cd blog
-          hugo --minify
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        # This condition ensures it only deploys when pushing to your branch
-        if: github.ref == 'refs/heads/Hugo+Vue.js'
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          # Points to the public folder inside your blog folder
           publish_dir: ./blog/public
