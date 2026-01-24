@@ -9,7 +9,17 @@
     <managingEditor>ondrejhonus@pm.me (Ondřej Honus)</managingEditor>
     <webMaster>ondrejhonus@pm.me (Ondřej Honus)</webMaster>
     <copyright>© 2026 Ondřej Honus</copyright>
-    <lastBuildDate>Sat, 24 Jan 2026 01:20:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My Story With ThinkPads</title>
+      <link>http://localhost:1313/blog/thinkpad-story/</link>
+      <pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate>
+      <author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <guid>http://localhost:1313/blog/thinkpad-story/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/thinkpad-story/feature.jpg" />
+    </item>
     
     <item>
       <title>Linux Distro Chooser</title>

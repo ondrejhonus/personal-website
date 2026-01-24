@@ -22,7 +22,7 @@ title = "Ondřej Honus"
   headline = "Computer Science Student"
   bio = """Hi, I'm Ondřej Honus, a student and a developer from the Czech Republic. 
   I'm interested in programming, web applications, making music and cooking. 
-  I'm currently learning C++, Vue.js and Golang."""
+  I'm currently learning C++, Python and Golang."""
   links = [
      { email = "mailto:ondrejhonus@pm.me" },
 #     { link = "https://ondrejhonus.com/" },
