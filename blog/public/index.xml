@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ondřej Honus&#39; Blog on Ondřej Honus</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Ondřej Honus&#39; Blog on Ondřej Honus</description>
+    <title>Ondřej Honus&#39; Blog on Nella Honusová</title>
+    <link>http://localhost:36525/</link>
+    <description>Recent content in Ondřej Honus&#39; Blog on Nella Honusová</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>ondrejhonus@pm.me (Ondřej Honus)</managingEditor>
-    <webMaster>ondrejhonus@pm.me (Ondřej Honus)</webMaster>
-    <copyright>© 2026 Ondřej Honus</copyright>
-    <lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>nellah@pm.me (Nella Honusová)</managingEditor>
+    <webMaster>nellah@pm.me (Nella Honusová)</webMaster>
+    <copyright>© 2026 Nella Honusová</copyright>
+    <lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate><atom:link href="http://localhost:36525/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My Story With ThinkPads</title>
-      <link>http://localhost:1313/blog/thinkpad-story/</link>
+      <link>http://localhost:36525/blog/thinkpad-story/</link>
       <pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate>
-      <author>ondrejhonus@pm.me (Ondřej Honus)</author>
-      <guid>http://localhost:1313/blog/thinkpad-story/</guid>
+      <author>nellah@pm.me (Nella Honusová)</author>
+      <guid>http://localhost:36525/blog/thinkpad-story/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/thinkpad-story/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:36525/blog/thinkpad-story/feature.jpg" />
     </item>
     
     <item>
       <title>Linux Distro Chooser</title>
-      <link>http://localhost:1313/projects/distro-chooser/</link>
+      <link>http://localhost:36525/projects/distro-chooser/</link>
       <pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate>
-      <author>ondrejhonus@pm.me (Ondřej Honus)</author>
-      <guid>http://localhost:1313/projects/distro-chooser/</guid>
+      <author>nellah@pm.me (Nella Honusová)</author>
+      <guid>http://localhost:36525/projects/distro-chooser/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/distro-chooser/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:36525/projects/distro-chooser/feature.png" />
     </item>
     
     <item>
       <title>In-Browser Metronome</title>
-      <link>http://localhost:1313/projects/metronome/</link>
+      <link>http://localhost:36525/projects/metronome/</link>
       <pubDate>Fri, 23 Jan 2026 23:00:00 +0000</pubDate>
-      <author>ondrejhonus@pm.me (Ondřej Honus)</author>
-      <guid>http://localhost:1313/projects/metronome/</guid>
+      <author>nellah@pm.me (Nella Honusová)</author>
+      <guid>http://localhost:36525/projects/metronome/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Vege Dreams: My Vegetarian Recipe Collection</title>
-      <link>http://localhost:1313/blog/vege-dreams/</link>
+      <link>http://localhost:36525/blog/vege-dreams/</link>
       <pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate>
-      <author>ondrejhonus@pm.me (Ondřej Honus)</author>
-      <guid>http://localhost:1313/blog/vege-dreams/</guid>
+      <author>nellah@pm.me (Nella Honusová)</author>
+      <guid>http://localhost:36525/blog/vege-dreams/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/vege-dreams/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:36525/blog/vege-dreams/feature.png" />
     </item>
     
     <item>
       <title>Making this website</title>
-      <link>http://localhost:1313/blog/this-website/</link>
+      <link>http://localhost:36525/blog/this-website/</link>
       <pubDate>Fri, 23 Jan 2026 21:00:00 +0000</pubDate>
-      <author>ondrejhonus@pm.me (Ondřej Honus)</author>
-      <guid>http://localhost:1313/blog/this-website/</guid>
+      <author>nellah@pm.me (Nella Honusová)</author>
+      <guid>http://localhost:36525/blog/this-website/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blog/this-website/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:36525/blog/this-website/feature.png" />
     </item>
     
   </channel>

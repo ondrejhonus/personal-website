@@ -1,0 +1,9 @@
+baseURL = "https://nellah.me"
+
+[[module.mounts]]
+  source = "content/id_a"
+  target = "content"
+
+[[module.mounts]]
+  source = "content/shared_blog"
+  target = "content/blog"

@@ -1,0 +1,9 @@
+baseURL = "https://ondrejhonus.com"
+
+[[module.mounts]]
+  source = "content/id_b"
+  target = "content"
+
+[[module.mounts]]
+  source = "content/shared_blog"
+  target = "content/blog"
