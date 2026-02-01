@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recipes on Nella Honusová</title>
-    <link>http://localhost:36525/tags/recipes/</link>
+    <link>http://localhost:36599/tags/recipes/</link>
     <description>Recent content in Recipes on Nella Honusová</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>nellah@pm.me (Nella Honusová)</managingEditor>
     <webMaster>nellah@pm.me (Nella Honusová)</webMaster>
     <copyright>© 2026 Nella Honusová</copyright>
-    <lastBuildDate>Fri, 23 Jan 2026 22:00:00 +0000</lastBuildDate><atom:link href="http://localhost:36525/tags/recipes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Jan 2026 22:00:00 +0000</lastBuildDate><atom:link href="http://localhost:36599/tags/recipes/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Vege Dreams: My Vegetarian Recipe Collection</title>
-      <link>http://localhost:36525/blog/vege-dreams/</link>
+      <link>http://localhost:36599/blog/vege-dreams/</link>
       <pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate>
       <author>nellah@pm.me (Nella Honusová)</author>
-      <guid>http://localhost:36525/blog/vege-dreams/</guid>
+      <guid>http://localhost:36599/blog/vege-dreams/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:36525/blog/vege-dreams/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:36599/blog/vege-dreams/feature.png" />
     </item>
     
   </channel>

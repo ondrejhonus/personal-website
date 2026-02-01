@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Nella Honusová</title>
-    <link>http://localhost:36525/authors/</link>
+    <link>http://localhost:36599/authors/</link>
     <description>Recent content in Authors on Nella Honusová</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>nellah@pm.me (Nella Honusová)</managingEditor>
     <webMaster>nellah@pm.me (Nella Honusová)</webMaster>
     <copyright>© 2026 Nella Honusová</copyright>
-    <atom:link href="http://localhost:36525/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:36599/authors/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>

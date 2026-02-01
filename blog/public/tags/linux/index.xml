@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Nella Honusová</title>
-    <link>http://localhost:36525/tags/linux/</link>
+    <link>http://localhost:36599/tags/linux/</link>
     <description>Recent content in Linux on Nella Honusová</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>nellah@pm.me (Nella Honusová)</managingEditor>
     <webMaster>nellah@pm.me (Nella Honusová)</webMaster>
     <copyright>© 2026 Nella Honusová</copyright>
-    <lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate><atom:link href="http://localhost:36525/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate><atom:link href="http://localhost:36599/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My Story With ThinkPads</title>
-      <link>http://localhost:36525/blog/thinkpad-story/</link>
+      <link>http://localhost:36599/blog/thinkpad-story/</link>
       <pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate>
       <author>nellah@pm.me (Nella Honusová)</author>
-      <guid>http://localhost:36525/blog/thinkpad-story/</guid>
+      <guid>http://localhost:36599/blog/thinkpad-story/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:36525/blog/thinkpad-story/feature.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:36599/blog/thinkpad-story/feature.jpg" />
     </item>
     
     <item>
       <title>Linux Distro Chooser</title>
-      <link>http://localhost:36525/projects/distro-chooser/</link>
+      <link>http://localhost:36599/projects/distro-chooser/</link>
       <pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate>
       <author>nellah@pm.me (Nella Honusová)</author>
-      <guid>http://localhost:36525/projects/distro-chooser/</guid>
+      <guid>http://localhost:36599/projects/distro-chooser/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:36525/projects/distro-chooser/feature.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:36599/projects/distro-chooser/feature.png" />
     </item>
     
   </channel>
