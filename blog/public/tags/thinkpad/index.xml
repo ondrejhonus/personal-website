@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Thinkpad on Nella Honusová</title>
-    <link>http://localhost:36599/tags/thinkpad/</link>
-    <description>Recent content in Thinkpad on Nella Honusová</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Thinkpad on Ondřej Honus</title>
+    <link>http://localhost:1313/tags/thinkpad/</link>
+    <description>Recent content in Thinkpad on Ondřej Honus</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>nellah@pm.me (Nella Honusová)</managingEditor>
-    <webMaster>nellah@pm.me (Nella Honusová)</webMaster>
-    <copyright>© 2026 Nella Honusová</copyright>
-    <lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate><atom:link href="http://localhost:36599/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
-    
+    <managingEditor>ondrejhonus@pm.me (Ondřej Honus)</managingEditor>
+    <webMaster>ondrejhonus@pm.me (Ondřej Honus)</webMaster>
+    <lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/thinkpad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My Story With ThinkPads</title>
-      <link>http://localhost:36599/blog/thinkpad-story/</link>
-      <pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate>
-      <author>nellah@pm.me (Nella Honusová)</author>
-      <guid>http://localhost:36599/blog/thinkpad-story/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:36599/blog/thinkpad-story/feature.jpg" />
+      <link>http://localhost:1313/blog/thinkpad-story/</link>
+      <pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <guid>http://localhost:1313/blog/thinkpad-story/</guid>
+      <description>&lt;h2 id=&#34;how-it-all-started&#34;&gt;How it all started&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been a Linux user for quite some time now, and it&amp;rsquo;s impossible to be a Linux die-hard without encountering ThinkPads. My journey with ThinkPads began several years ago when I got my first one, a ThinkPad T480.&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-thinkpad-t480&#34;&gt;My ThinkPad T480&lt;/h2&gt;&#xA;&lt;p&gt;This is where my ThinkPad adventure began. The T480 is an excellent laptop, in fact, I&amp;rsquo;m writing this part on it right now!&lt;/p&gt;&#xA;&lt;p&gt;It&amp;rsquo;s built like a tank, but not a big tank, a relatively slim, portable tank (compared to the T420).&#xA;And it has a fantastic keyboard, as all older ThinkPads do.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

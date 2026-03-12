@@ -1,3 +1,4 @@
 baseURL = 'https://ondrejhonus.com/'
 languageCode = 'en-us'
 title = 'Ondřej Honus'
+theme = "vintage-web-hugo-theme"

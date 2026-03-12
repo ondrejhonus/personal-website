@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Nella Honusová</title>
-    <link>http://localhost:36599/series/</link>
-    <description>Recent content in Series on Nella Honusová</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Series on Ondřej Honus</title>
+    <link>http://localhost:1313/series/</link>
+    <description>Recent content in Series on Ondřej Honus</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <managingEditor>nellah@pm.me (Nella Honusová)</managingEditor>
-    <webMaster>nellah@pm.me (Nella Honusová)</webMaster>
-    <copyright>© 2026 Nella Honusová</copyright>
-    <atom:link href="http://localhost:36599/series/index.xml" rel="self" type="application/rss+xml" />
-    
+    <managingEditor>ondrejhonus@pm.me (Ondřej Honus)</managingEditor>
+    <webMaster>ondrejhonus@pm.me (Ondřej Honus)</webMaster>
+    <atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
