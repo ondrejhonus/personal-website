@@ -32,10 +32,16 @@
     <loc>http://localhost:1313/tags/tools/</loc>
     <lastmod>2026-01-24T01:20:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/featured/</loc>
+    <loc>http://localhost:1313/snippets/html-current-year/</loc>
+    <lastmod>2026-01-23T23:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/html/</loc>
     <lastmod>2026-01-23T23:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/music/</loc>
+    <lastmod>2026-01-23T23:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/snippets/</loc>
     <lastmod>2026-01-23T23:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/apps/metronome/</loc>

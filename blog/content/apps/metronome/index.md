@@ -1,8 +1,8 @@
 ---
 title: "Web Metronome"
-date: 2026-01-23T23:00:00+00:00
+date: 2026-01-23T15:49:59Z
 description: "A simple metronome that runs directly on this page."
-tags: ["music", "tools", "featured"]
+tags: ["music", "tools"]
 ---
 
 ## Metronome Web App

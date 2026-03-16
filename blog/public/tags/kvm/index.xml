@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kvm on Ondřej Honus&#39; website</title>
+    <link>http://localhost:1313/tags/kvm/</link>
+    <description>Recent content in Kvm on Ondřej Honus&#39; website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Mar 2026 20:30:59 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/kvm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Current year in HTML</title>
+      <link>http://localhost:1313/snippets/load-tun/</link>
+      <pubDate>Mon, 16 Mar 2026 20:30:59 +0000</pubDate>
+      <guid>http://localhost:1313/snippets/load-tun/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir -p /dev/net&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo mknod /dev/net/tun c &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo chmod &lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt; /dev/net/tun&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

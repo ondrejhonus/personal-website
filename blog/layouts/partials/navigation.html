@@ -22,11 +22,19 @@
             </li>
             {{ end }}
 
-                        {{ $apps := .Site.GetPage "/apps" }}
+            {{ $apps := .Site.GetPage "/apps" }}
             {{ if $apps }}
             <li class="nav-item">
                 <a href="{{ $apps.Permalink | absLangURL }}" class="nav-link" style="color: black;">📁 Apps</a>
             </li>
+            {{ end }}
+
+            {{ $snippets := .Site.GetPage "/snippets" }}
+            {{ if $snippets }}
+            <li class="nav-item">
+                <a href="{{ $snippets.Permalink | absLangURL }}" class="nav-link" style="color: black;">📝 Snippets</a>
+            </li>
+            {{ end }}
 
             <!-- Add categories and tags to main menu
             {{ $categories := .Site.GetPage "/categories" }}
@@ -43,7 +51,6 @@
             </li>
             {{ end }}
 
-            {{ end }}
 
 
 
