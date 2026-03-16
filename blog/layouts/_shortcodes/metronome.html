@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/css/minigame-styles.css">
+
+<div class="box-mg">
+  <form onsubmit="window.toggleMetronome(); return false;"
+    class="flex flex-col items-center gap-4">
+    <div>
+
+      <input type="number" id="bpmInput"
+        class="input-mg"
+        placeholder="BPM" min="20" max="500" value="120" required>
+      <span class="ml-2 text-lg font-bold">BPM</span>
+    </div>
+
+    <button type="submit"
+      class="button-mg">
+      Toggle
+    </button>
+  </form>
+</div>
+
+<script src="{{ " js/metronome.js" | relURL }}"></script>
