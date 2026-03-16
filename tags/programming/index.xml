@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programming on Ondřej Honus</title><link>https://yoursite.com/tags/programming/</link><description>Recent content in Programming on Ondřej Honus</description><generator>Hugo</generator><language>en</language><managingEditor>ondrejhonus@pm.me (Ondřej Honus)</managingEditor><webMaster>ondrejhonus@pm.me (Ondřej Honus)</webMaster><lastBuildDate>Sat, 24 Jan 2026 01:20:00 +0000</lastBuildDate><atom:link href="https://yoursite.com/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux Distro Chooser</title><link>https://yoursite.com/projects/distro-chooser/</link><pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author><guid>https://yoursite.com/projects/distro-chooser/</guid><description>&lt;h2 id="what-is-this"&gt;What is this?&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programming on Ondřej Honus' website</title><link>https://ondrejhonus.com/tags/programming/</link><description>Recent content in Programming on Ondřej Honus' website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 24 Jan 2026 01:20:00 +0000</lastBuildDate><atom:link href="https://ondrejhonus.com/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux Distro Chooser</title><link>https://ondrejhonus.com/projects/distro-chooser/</link><pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate><guid>https://ondrejhonus.com/projects/distro-chooser/</guid><description>&lt;h2 id="what-is-this"&gt;What is this?&lt;/h2&gt;
 &lt;p&gt;This is a simple Linux Distro Chooser tool that I created to help people find the perfect Linux distribution for
 their needs. It is based on my personal experience and recommendations.&lt;/p&gt;
 &lt;h2 id="try-it-out"&gt;Try it out!&lt;/h2&gt;
@@ -6,8 +6,8 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  defer
  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
 &gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="https://yoursite.com/css/minigame-styles.css?v=1773664876" /&gt;
-&lt;script src="https://yoursite.com/js/distro-chooser.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1773665705" /&gt;
+&lt;script src="https://ondrejhonus.com/js/distro-chooser.js"&gt;&lt;/script&gt;
 
 &lt;div class="box-mg"&gt;
  &lt;div x-data="distroChooser()" class="distro-widget"&gt;
@@ -17,9 +17,7 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  Answer a few simple questions and get an answer, that's based on my
  experience and reccomendation.
  &lt;/p&gt;
- &lt;button @click="step = 1" class="button-mg"&gt;
- Start quiz
- &lt;/button&gt;
+ &lt;button @click="step = 1" class="button-mg"&gt;Start quiz&lt;/button&gt;
  &lt;/div&gt;
 
  &lt;div x-show="step === 1"&gt;

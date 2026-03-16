@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Ondřej Honus</title><link>https://yoursite.com/tags/linux/</link><description>Recent content in Linux on Ondřej Honus</description><generator>Hugo</generator><language>en</language><managingEditor>ondrejhonus@pm.me (Ondřej Honus)</managingEditor><webMaster>ondrejhonus@pm.me (Ondřej Honus)</webMaster><lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate><atom:link href="https://yoursite.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>My Story With ThinkPads</title><link>https://yoursite.com/blog/thinkpad-story/</link><pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author><guid>https://yoursite.com/blog/thinkpad-story/</guid><description>&lt;h2 id="how-it-all-started"&gt;How it all started&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Ondřej Honus' website</title><link>https://ondrejhonus.com/tags/linux/</link><description>Recent content in Linux on Ondřej Honus' website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate><atom:link href="https://ondrejhonus.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>My Story With ThinkPads</title><link>https://ondrejhonus.com/posts/thinkpad-story/</link><pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate><guid>https://ondrejhonus.com/posts/thinkpad-story/</guid><description>&lt;h2 id="how-it-all-started"&gt;How it all started&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve been a Linux user for quite some time now, and it&amp;rsquo;s impossible to be a Linux die-hard without encountering ThinkPads. My journey with ThinkPads began several years ago when I got my first one, a ThinkPad T480.&lt;/p&gt;
 &lt;h2 id="my-thinkpad-t480"&gt;My ThinkPad T480&lt;/h2&gt;
 &lt;p&gt;This is where my ThinkPad adventure began. The T480 is an excellent laptop, in fact, I&amp;rsquo;m writing this part on it right now!&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s built like a tank, but not a big tank, a relatively slim, portable tank (compared to the T420).
-And it has a fantastic keyboard, as all older ThinkPads do.&lt;/p&gt;</description></item><item><title>Linux Distro Chooser</title><link>https://yoursite.com/projects/distro-chooser/</link><pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author><guid>https://yoursite.com/projects/distro-chooser/</guid><description>&lt;h2 id="what-is-this"&gt;What is this?&lt;/h2&gt;
+And it has a fantastic keyboard, as all older ThinkPads do.&lt;/p&gt;</description></item><item><title>Linux Distro Chooser</title><link>https://ondrejhonus.com/projects/distro-chooser/</link><pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate><guid>https://ondrejhonus.com/projects/distro-chooser/</guid><description>&lt;h2 id="what-is-this"&gt;What is this?&lt;/h2&gt;
 &lt;p&gt;This is a simple Linux Distro Chooser tool that I created to help people find the perfect Linux distribution for
 their needs. It is based on my personal experience and recommendations.&lt;/p&gt;
 &lt;h2 id="try-it-out"&gt;Try it out!&lt;/h2&gt;
@@ -11,8 +11,8 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  defer
  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
 &gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="https://yoursite.com/css/minigame-styles.css?v=1773664876" /&gt;
-&lt;script src="https://yoursite.com/js/distro-chooser.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1773665705" /&gt;
+&lt;script src="https://ondrejhonus.com/js/distro-chooser.js"&gt;&lt;/script&gt;
 
 &lt;div class="box-mg"&gt;
  &lt;div x-data="distroChooser()" class="distro-widget"&gt;
@@ -22,9 +22,7 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  Answer a few simple questions and get an answer, that's based on my
  experience and reccomendation.
  &lt;/p&gt;
- &lt;button @click="step = 1" class="button-mg"&gt;
- Start quiz
- &lt;/button&gt;
+ &lt;button @click="step = 1" class="button-mg"&gt;Start quiz&lt;/button&gt;
  &lt;/div&gt;
 
  &lt;div x-show="step === 1"&gt;
