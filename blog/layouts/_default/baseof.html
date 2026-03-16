@@ -53,10 +53,10 @@
     {{ if .Site.Params.show_browser_chrome }}
     <div class="browser-chrome">
         <div class="toolbar">
-            <span class="toolbar-button">Back</span>
-            <span class="toolbar-button">Forward</span>
-            <span class="toolbar-button">Refresh</span>
-            <span class="toolbar-button">Home</span>
+            <span class="toolbar-button"><a href="../" style="color: inherit; text-decoration: inherit;">Back</a></span>
+            <span class="toolbar-button"><a href="#" style="color: inherit; text-decoration: inherit;">Forward</a></span>
+            <span class="toolbar-button"><a onclick="location.reload();" style="color: inherit; text-decoration: inherit;">Refresh</a></span>
+            <span class="toolbar-button"><a href="/" style="color: inherit; text-decoration: inherit;">Home</a></span>
         </div>
         <div class="address-bar">
             {{ if .IsHome }}
@@ -73,7 +73,7 @@
         {{ partial "navigation.html" . }}
         
         <!-- Site Header -->
-        <header class="site-header">
+        <!-- <header class="site-header">
             <div class="window">
                 <div class="window-header">
                     <span class="window-title">{{ .Site.Title }}</span>
@@ -90,7 +90,7 @@
                     {{ end }}
                 </div>
             </div>
-        </header>
+        </header> -->
         
         <!-- Main Content -->
         <main class="main-content">

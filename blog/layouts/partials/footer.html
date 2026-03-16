@@ -28,7 +28,7 @@
                     <div><a href="{{ .Site.BaseURL }}">🏠 Home</a></div>
                     {{ $posts := where .Site.RegularPages "Type" "posts" }}
                     {{ if $posts }}
-                    <div><a href="{{ "/posts/" | relLangURL }}">📝 All Posts</a></div>
+                    <div><a href="{{ "/posts/" | relLangURL }}">📝 Blog</a></div>
                     {{ end }}
                     <!-- <div><a href="{{ "/categories/" | relLangURL }}">📂 Categories</a></div> -->
                     <div><a href="{{ "/tags/" | relLangURL }}">🏷️ Tags</a></div>
@@ -78,9 +78,9 @@
                     • Screen resolution: 1024x768 or higher
                 </div>
                 <div style="font-size: 8px; margin-top: 4px;">
-                    Visitor counter: 
+                    Current Unix timestamp: 
                     <span style="background: #000; color: #00ff00; padding: 1px 3px; font-family: 'Courier New', monospace;">
-                        {{ printf "%06d" (now.Unix | mod 999999) }}
+                        {{ printf "%06d" (now.Unix) }}
                     </span>
                 </div>
             </div>

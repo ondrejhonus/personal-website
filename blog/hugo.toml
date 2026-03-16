@@ -2,6 +2,7 @@ baseURL = "https://ondrejhonus.com"
 languageCode = "en-us"
 title = "Ondřej Honus' website"
 theme = "vintage-web-hugo-them"
+licence = "GPL"
 
 # Pagination
 [pagination]

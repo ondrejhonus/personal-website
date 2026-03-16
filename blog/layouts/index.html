@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="window">
     <div class="window-header">
-        <span class="window-title">Welcome to {{ .Site.Title }}</span>
+        <span class="window-title">Welcome to {{ .Site.Title }}!</span>
         <div class="window-controls">
             <span class="window-button">_</span>
             <span class="window-button">□</span>
@@ -9,6 +9,21 @@
         </div>
     </div>
     <div class="window-content">
+        <marquee><b>★ Welcome to my website! Enjoy your stay and check out my <a href="./posts">blog</a> ★</b></marquee>
+    </div>
+</div>
+
+<div class="window">
+    <div class="window-header">
+        <span class="window-title">About Me</span>
+        <div class="window-controls">
+            <span class="window-button">_</span>
+            <span class="window-button">□</span>
+            <span class="window-button">×</span>
+        </div>
+    </div>
+    <div class="window-content">
+        <!-- <marquee><b>★ Welcome to my website! Enjoy your stay and check out my <a href="./posts">blog</a> ★</b></marquee> -->
         {{ with .Content }}
         <div class="content">
             {{ . }}
@@ -24,6 +39,7 @@
         {{ end }}
     </div>
 </div>
+
 
 <!-- Featured Posts -->
 {{ $posts := where .Site.RegularPages "Type" "posts" }}
@@ -218,7 +234,7 @@
         <div style="text-align: center; padding: 8px;">
             <div style="font-size: 12px; font-weight: bold; margin-bottom: 8px;">
                 <span class="blink">🌟</span> 
-                You are visitor number: 
+                The current Unix timestamp is: 
                 <span style="background: #000; color: #00ff00; padding: 2px 4px; font-family: 'Courier New', monospace;">{{ now.Unix | string }}</span>
                 <span class="blink">🌟</span>
             </div>
