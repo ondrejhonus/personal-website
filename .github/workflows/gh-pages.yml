@@ -5,7 +5,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - Hugo
+      - vintage
 
 jobs:
   build-deploy:
