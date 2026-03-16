@@ -1,5 +1,5 @@
 ---
-title: "💻 Ondřej Honus' blog"
+title: "Ondřej Honus' blog"
 date: 2026-03-15T15:49:59Z
 draft: false
 ---

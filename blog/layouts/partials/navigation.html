@@ -12,20 +12,20 @@
             {{ end }} -->
 
              <li class="nav-item">
-                <a href="{{ "/" | absLangURL }}" class="nav-link">🏠 Home</a>
+                <a href="{{ "/" | absLangURL }}" class="nav-link" style="color: black;">🏠 Home</a>
             </li>
 
             {{ $posts := .Site.GetPage "/posts" }}
             {{ if $posts }}
             <li class="nav-item">
-                <a href="{{ $posts.Permalink | absLangURL }}" class="nav-link">📝 Blog</a>
+                <a href="{{ $posts.Permalink | absLangURL }}" class="nav-link" style="color: black;">📝 Blog</a>
             </li>
             {{ end }}
 
                         {{ $apps := .Site.GetPage "/apps" }}
             {{ if $apps }}
             <li class="nav-item">
-                <a href="{{ $apps.Permalink | absLangURL }}" class="nav-link">📁 Apps</a>
+                <a href="{{ $apps.Permalink | absLangURL }}" class="nav-link" style="color: black;">📁 Apps</a>
             </li>
 
             <!-- Add categories and tags to main menu
@@ -39,7 +39,7 @@
             {{ $tags := .Site.GetPage "/tags" }}
             {{ if $tags }}
             <li class="nav-item">
-                <a href="{{ $tags.Permalink | absLangURL }}" class="nav-link">🏷️ Tags</a>
+                <a href="{{ $tags.Permalink | absLangURL }}" class="nav-link" style="color: black;">🏷️ Tags</a>
             </li>
             {{ end }}
 
@@ -87,7 +87,7 @@
         <!-- RSS Feed -->
         {{ with .Site.LanguageCode }}
         <li class="nav-item">
-            <a href="{{ ($.Site.Home.OutputFormats.Get "RSS").RelPermalink | absURL }}" class="nav-link">📡 RSS</a>
+            <a href="{{ ($.Site.Home.OutputFormats.Get "RSS").RelPermalink | absURL }}" class="nav-link" style="color: black;">📡 RSS</a>
         </li>
         {{ end }}
     </ul>

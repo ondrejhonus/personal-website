@@ -46,14 +46,14 @@ licence = "GPL"
   # Retro Features
   show_browser_chrome = true
   show_status_bar = true
-  show_sidebar = false
+  show_sidebar = true
   show_welcome_message = true
   welcome_message = "Go check out my git command manager!"
 
   # Content Display
   show_featured_sections = true
   show_stats = true
-  show_retro_elements = true
+  show_retro_elements = false
   show_sharing = true
 
   # Footer Options

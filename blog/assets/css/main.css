@@ -1,5 +1,7 @@
 /* Vintage Web Theme - 90s/Early 2000s Inspired */
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
 /* CSS Reset and Base Styles */
 * {
     margin: 0;
@@ -83,10 +85,14 @@
 
 /* Typography */
 @import url('https://fonts.googleapis.com/css2?family=MS+Sans+Serif:wght@400;700&family=Courier+New:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 body {
-    font-family: 'MS Sans Serif', 'Tahoma', 'Arial', sans-serif;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 11px;
+    font-weight: 400;
     line-height: 1.4;
     background: var(--bg-primary);
     color: var(--text-primary);
@@ -106,7 +112,7 @@ a:visited {
     background: var(--bg-window);
     border-radius: 0;
     box-shadow: 2px 2px 4px var(--shadow);
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
 }
 
 .window-header {
@@ -119,10 +125,10 @@ a:visited {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--border-dark);
-    border-top: 1px solid rgba(255,255,255,0.5);
-    border-left: 1px solid rgba(255,255,255,0.3);
-    border-right: 1px solid rgba(0,0,0,0.3);
-    text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
 }
 
 .window-title {
@@ -132,6 +138,7 @@ a:visited {
 
 .window-controls {
     display: flex;
+    text-align: center;
     gap: 2px;
 }
 
@@ -140,9 +147,8 @@ a:visited {
     height: 14px;
     background: var(--button-face);
     border: 1px outset var(--button-face);
-    font-size: 8px;
-    text-align: center;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 10px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -220,7 +226,7 @@ a:visited {
 
 /* Content Areas */
 .main-content {
-    margin: 8px 0;
+    /* margin: 8px 0; */
     min-height: 400px;
 }
 
@@ -253,17 +259,39 @@ a:visited {
 }
 
 /* Typography in Content */
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
     margin: 16px 0 8px 0;
     font-weight: bold;
 }
 
-.content h1 { font-size: 18px; }
-.content h2 { font-size: 16px; }
-.content h3 { font-size: 14px; }
-.content h4 { font-size: 12px; }
-.content h5 { font-size: 11px; }
-.content h6 { font-size: 10px; }
+.content h1 {
+    font-size: 18px;
+}
+
+.content h2 {
+    font-size: 16px;
+}
+
+.content h3 {
+    font-size: 14px;
+}
+
+.content h4 {
+    font-size: 12px;
+}
+
+.content h5 {
+    font-size: 11px;
+}
+
+.content h6 {
+    font-size: 10px;
+}
 
 .content p {
     margin: 8px 0;
@@ -295,22 +323,23 @@ a:visited {
 }
 
 /* Lists */
-.content ul, .content ol {
+.content ul,
+.content ol {
     margin: 8px 0 8px 20px;
 }
 
-.content ol > li {
+.content ol>li {
     counter-increment: list-counter;
     position: relative;
     margin: 4px 0;
 }
 
-.content ul > li {
+.content ul>li {
     margin: 2px 0;
     position: relative;
 }
 
-.content ul > li::marker {
+.content ul>li::marker {
     color: var(--text-link);
     font-weight: bold;
 }
@@ -323,7 +352,7 @@ a:visited {
     margin: 4px 0 4px 16px;
 }
 
-.content ol ol > li::before {
+.content ol ol>li::before {
     background: var(--bg-secondary);
     border: 1px inset var(--border-dark);
     font-size: 8px;
@@ -529,7 +558,7 @@ a:visited {
     background: var(--bg-window);
     border: 2px inset var(--border-dark);
     padding: 8px;
-    margin: 8px 0;
+    margin: 16px 0;
 }
 
 .sidebar-section {
@@ -568,7 +597,7 @@ a:visited {
     text-align: center;
     font-size: 10px;
     color: var(--text-secondary);
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 
 /* Responsive Design */
@@ -576,20 +605,20 @@ a:visited {
     .container {
         padding: 4px;
     }
-    
+
     .nav-menu {
         flex-direction: column;
     }
-    
+
     .nav-item {
         width: 100%;
     }
-    
+
     .nav-link {
         width: 100%;
         box-sizing: border-box;
     }
-    
+
     .image-gallery {
         grid-template-columns: 1fr;
     }
@@ -599,11 +628,11 @@ a:visited {
     body {
         font-size: 10px;
     }
-    
+
     .site-title {
         font-size: 14px;
     }
-    
+
     .page-title,
     .post-title {
         font-size: 14px;
@@ -692,8 +721,16 @@ body {
 }
 
 @keyframes blink {
-    0%, 50% { opacity: 1; }
-    51%, 100% { opacity: 0; }
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
 }
 
 .marquee {
@@ -710,8 +747,13 @@ body {
 }
 
 @keyframes marquee {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* Tag Cloud */
@@ -783,23 +825,55 @@ body {
 
 /* Print Styles */
 @media print {
+
     .window,
     .browser-chrome,
     .status-bar,
     .site-nav {
         display: none;
     }
-    
+
     body {
         background: white;
         color: black;
         font-size: 12pt;
         padding: 0;
     }
-    
+
     .main-content {
         border: none;
         background: white;
         padding: 0;
     }
+}
+
+@media (min-width: 768px) {
+
+    .container {
+        max-width: 1280px;
+    }
+
+    .main-content {
+        min-height: 400px;
+        float: right;
+        width: 70%;
+    }
+
+    .sidebar {
+        background: var(--bg-window);
+        border: 2px inset var(--border-dark);
+        padding: 8px;
+        margin: 8px 0;
+        float: left;
+        width: 28%;
+    }
+
+    .site-footer {
+        /* margin: -2em 0 2em 0; */
+        width: 70%;
+        clear: both;
+        float: right;
+        margin: 0;
+    }
+
 }
