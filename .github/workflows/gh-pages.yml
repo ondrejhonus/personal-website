@@ -5,7 +5,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-      - vintage # Triggers when you push to the 'vintage' branch
+      - vintage
 
 jobs:
   build-deploy:
@@ -25,11 +25,15 @@ jobs:
           hugo-version: "latest"
 
       - name: Build
+        # This tells Hugo to run inside the /blog folder
+        working-directory: ./blog
         run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/vintage'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
+          # Point to the public folder inside /blog
           publish_dir: ./blog/public
