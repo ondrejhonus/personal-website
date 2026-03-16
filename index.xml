@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ondřej Honus' blog on Ondřej Honus' website</title><link>https://ondrejhonus.com/</link><description>Recent content in Ondřej Honus' blog on Ondřej Honus' website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate><atom:link href="https://ondrejhonus.com/index.xml" rel="self" type="application/rss+xml"/><item><title>My Story With ThinkPads</title><link>https://ondrejhonus.com/posts/thinkpad-story/</link><pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate><guid>https://ondrejhonus.com/posts/thinkpad-story/</guid><description>&lt;h2 id="how-it-all-started"&gt;How it all started&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ondřej Honus' blog on Ondřej Honus' website</title><link>https://ondrejhonus.com/</link><description>Recent content in Ondřej Honus' blog on Ondřej Honus' website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate><atom:link href="https://ondrejhonus.com/index.xml" rel="self" type="application/rss+xml"/><item><title>My Story With ThinkPads</title><link>https://ondrejhonus.com/posts/thinkpad-story/</link><pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate><guid>https://ondrejhonus.com/posts/thinkpad-story/</guid><description>&lt;h2 id="how-i-got-into-thinkpads"&gt;How I Got Into Thinkpads&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve been a Linux user for quite some time now, and it&amp;rsquo;s impossible to be a Linux die-hard without encountering ThinkPads. My journey with ThinkPads began several years ago when I got my first one, a ThinkPad T480.&lt;/p&gt;
 &lt;h2 id="my-thinkpad-t480"&gt;My ThinkPad T480&lt;/h2&gt;
 &lt;p&gt;This is where my ThinkPad adventure began. The T480 is an excellent laptop, in fact, I&amp;rsquo;m writing this part on it right now!&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s built like a tank, but not a big tank, a relatively slim, portable tank (compared to the T420).
-And it has a fantastic keyboard, as all older ThinkPads do.&lt;/p&gt;</description></item><item><title>Linux Distro Chooser</title><link>https://ondrejhonus.com/projects/distro-chooser/</link><pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate><guid>https://ondrejhonus.com/projects/distro-chooser/</guid><description>&lt;h2 id="what-is-this"&gt;What is this?&lt;/h2&gt;
+And it has a fantastic keyboard, as all older ThinkPads do.&lt;/p&gt;</description></item><item><title>Linux Distro Chooser</title><link>https://ondrejhonus.com/apps/distro-chooser/</link><pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate><guid>https://ondrejhonus.com/apps/distro-chooser/</guid><description>&lt;h2 id="decide-on-the-perfect-linux-distro-for-you"&gt;Decide on the perfect Linux distro for you!&lt;/h2&gt;
 &lt;p&gt;This is a simple Linux Distro Chooser tool that I created to help people find the perfect Linux distribution for
 their needs. It is based on my personal experience and recommendations.&lt;/p&gt;
 &lt;h2 id="try-it-out"&gt;Try it out!&lt;/h2&gt;
@@ -11,7 +11,7 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  defer
  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
 &gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1773665705" /&gt;
+&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1773666971" /&gt;
 &lt;script src="https://ondrejhonus.com/js/distro-chooser.js"&gt;&lt;/script&gt;
 
 &lt;div class="box-mg"&gt;
@@ -21,12 +21,9 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  &lt;p&gt;
  Answer a few simple questions and get an answer, that's based on my
  experience and reccomendation.
- &lt;/p&gt;
- &lt;button @click="step = 1" class="button-mg"&gt;Start quiz&lt;/button&gt;
- &lt;/div&gt;
-
- &lt;div x-show="step === 1"&gt;
- &lt;p&gt;Have you ever used Linux?&lt;/p&gt;</description></item><item><title>In-Browser Metronome</title><link>https://ondrejhonus.com/projects/metronome/</link><pubDate>Fri, 23 Jan 2026 23:00:00 +0000</pubDate><guid>https://ondrejhonus.com/projects/metronome/</guid><description>&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css"&gt;
+ &lt;/p&gt;</description></item><item><title>Web Metronome</title><link>https://ondrejhonus.com/apps/metronome/</link><pubDate>Fri, 23 Jan 2026 23:00:00 +0000</pubDate><guid>https://ondrejhonus.com/apps/metronome/</guid><description>&lt;h2 id="metronome-web-app"&gt;Metronome Web App&lt;/h2&gt;
+&lt;p&gt;This is a simple metronome that runs directly on this page. You can set the tempo in beats per minute (BPM) using the input field above, and start or stop the metronome using the button.&lt;/p&gt;
+&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css"&gt;
 
 &lt;div class="box-mg"&gt;
  &lt;form onsubmit="window.toggleMetronome(); return false;"
@@ -46,9 +43,8 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  &lt;/form&gt;
 &lt;/div&gt;
 
-&lt;script src="https://ondrejhonus.com/%20js/metronome.js"&gt;&lt;/script&gt;
-&lt;p&gt;This is a simple metronome that runs directly on this page. You can set the tempo in beats per minute (BPM) using the input field above, and start or stop the metronome using the button.&lt;/p&gt;</description></item><item><title>Vege Dreams: My Vegetarian Recipe Collection</title><link>https://ondrejhonus.com/posts/vege-dreams/</link><pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate><guid>https://ondrejhonus.com/posts/vege-dreams/</guid><description>&lt;p&gt;It would make me very happy, if you checked out my vegetarian recipe collection website called &lt;a href="https://veg.ondrejhonus.com/"&gt;Vege Dreams&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id="what-is-vege-dreams"&gt;What is Vege Dreams?&lt;/h2&gt;
+&lt;script src="https://ondrejhonus.com/%20js/metronome.js"&gt;&lt;/script&gt;</description></item><item><title>Vege Dreams: My Vegetarian Recipe Collection</title><link>https://ondrejhonus.com/posts/vege-dreams/</link><pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate><guid>https://ondrejhonus.com/posts/vege-dreams/</guid><description>&lt;h2 id="vegetarian-recipes"&gt;Vegetarian Recipes!&lt;/h2&gt;
+&lt;p&gt;It would make me very happy, if you checked out my vegetarian recipe collection website called &lt;a href="https://veg.ondrejhonus.com/"&gt;Vege Dreams&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s a personal project of mine, where I share my favorite vegetarian recipes that I have tried and loved over the years. From Irish soda bread to Italian Spaghetti Carboanara (without bacon, of course!), there&amp;rsquo;s something for everyone.&lt;/p&gt;
 &lt;h2 id="what-can-you-find-there"&gt;What can you find there?&lt;/h2&gt;
 &lt;p&gt;You can also find some vegan recipes there, and some recipes are very easy to adapt to be vegan-friendly, usually just remove cheese, or replace dairy with plant-based alternatives.&lt;/p&gt;</description></item><item><title>Making this website</title><link>https://ondrejhonus.com/posts/this-website/</link><pubDate>Fri, 23 Jan 2026 21:00:00 +0000</pubDate><guid>https://ondrejhonus.com/posts/this-website/</guid><description>&lt;h2 id="making-this-website"&gt;Making this website&lt;/h2&gt;
