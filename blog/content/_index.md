@@ -4,7 +4,7 @@ date: 2026-03-15T15:49:59Z
 draft: false
 ---
 
-## 🎉 Who am I? 🎉
+## 👩‍💻 Who am I? 👩‍💻
 
 Hey, im Ondřej Honus, a student software engineer! I mostly use C++ and Golang, but I also sometimes end up working with Python. My favourite project I've made is [bubblegit](https://github.com/ondrejhonus/bubblegit), a TUI appliaction that makes using `git` easier and allows you to work with it without much knowledge of git.
 
