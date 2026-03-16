@@ -5,6 +5,3 @@
 [submodule "blog/themes/vintage-web-hugo-theme"]
 	path = blog/themes/vintage-web-hugo-theme
 	url = https://github.com/meimakes/vintage-web-hugo-theme.git
-[submodule "themes/vintage-web-hugo-theme"]
-	path = themes/vintage-web-hugo-theme
-	url = https://github.com/meimakes/vintage-web-hugo-theme.git

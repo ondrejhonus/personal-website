@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tools on Ondřej Honus</title>
+    <title>Tools on Ondřej Honus&#39; website</title>
     <link>http://localhost:1313/tags/tools/</link>
-    <description>Recent content in Tools on Ondřej Honus</description>
+    <description>Recent content in Tools on Ondřej Honus&#39; website</description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <managingEditor>ondrejhonus@pm.me (Ondřej Honus)</managingEditor>
-    <webMaster>ondrejhonus@pm.me (Ondřej Honus)</webMaster>
+    <language>en-us</language>
     <lastBuildDate>Sat, 24 Jan 2026 01:20:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux Distro Chooser</title>
       <link>http://localhost:1313/projects/distro-chooser/</link>
-      <pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/distro-chooser/</guid>
-      <description>&lt;h2 id=&#34;what-is-this&#34;&gt;What is this?&lt;/h2&gt;&#xA;&lt;p&gt;This is a simple Linux Distro Chooser tool that I created to help people find the perfect Linux distribution for&#xA;their needs. It is based on my personal experience and recommendations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;try-it-out&#34;&gt;Try it out!&lt;/h2&gt;&#xA;&lt;script&#xA;  defer&#xA;  src=&#34;https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js&#34;&#xA;&gt;&lt;/script&gt;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/minigame-styles.css?v=1773304588&#34; /&gt;&#xA;&lt;script src=&#34;http://localhost:1313/js/distro-chooser.js&#34;&gt;&lt;/script&gt;&#xA;&#xA;&lt;div class=&#34;box-mg&#34;&gt;&#xA;  &lt;div x-data=&#34;distroChooser()&#34; class=&#34;distro-widget&#34;&gt;&#xA;    &lt;div x-show=&#34;step === 0&#34;&gt;&#xA;      &lt;h3&gt;Find the perfect Linux distribution for you!&lt;/h3&gt;&#xA;      &lt;p&gt;&#xA;        Answer a few simple questions and get an answer, that&#39;s based on my&#xA;        experience and reccomendation.&#xA;      &lt;/p&gt;&#xA;      &lt;button @click=&#34;step = 1&#34; class=&#34;button-mg&#34;&gt;&#xA;        Start quiz&#xA;      &lt;/button&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;div x-show=&#34;step === 1&#34;&gt;&#xA;      &lt;p&gt;Have you ever used Linux?&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;what-is-this&#34;&gt;What is this?&lt;/h2&gt;&#xA;&lt;p&gt;This is a simple Linux Distro Chooser tool that I created to help people find the perfect Linux distribution for&#xA;their needs. It is based on my personal experience and recommendations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;try-it-out&#34;&gt;Try it out!&lt;/h2&gt;&#xA;&lt;script&#xA;  defer&#xA;  src=&#34;https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js&#34;&#xA;&gt;&lt;/script&gt;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/minigame-styles.css?v=1773663158&#34; /&gt;&#xA;&lt;script src=&#34;http://localhost:1313/js/distro-chooser.js&#34;&gt;&lt;/script&gt;&#xA;&#xA;&lt;div class=&#34;box-mg&#34;&gt;&#xA;  &lt;div x-data=&#34;distroChooser()&#34; class=&#34;distro-widget&#34;&gt;&#xA;    &lt;div x-show=&#34;step === 0&#34;&gt;&#xA;      &lt;h3&gt;Find the perfect Linux distribution for you!&lt;/h3&gt;&#xA;      &lt;p&gt;&#xA;        Answer a few simple questions and get an answer, that&#39;s based on my&#xA;        experience and reccomendation.&#xA;      &lt;/p&gt;&#xA;      &lt;button @click=&#34;step = 1&#34; class=&#34;button-mg&#34;&gt;Start quiz&lt;/button&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;div x-show=&#34;step === 1&#34;&gt;&#xA;      &lt;p&gt;Have you ever used Linux?&lt;/p&gt;</description>
     </item>
     <item>
       <title>In-Browser Metronome</title>
       <link>http://localhost:1313/projects/metronome/</link>
-      <pubDate>Fri, 23 Jan 2026 23:00:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <pubDate>Fri, 23 Jan 2026 23:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/metronome/</guid>
       <description>&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/minigame-styles.css&#34;&gt;&#xA;&#xA;&lt;div class=&#34;box-mg&#34;&gt;&#xA;  &lt;form onsubmit=&#34;window.toggleMetronome(); return false;&#34;&#xA;    class=&#34;flex flex-col items-center gap-4&#34;&gt;&#xA;    &lt;div&gt;&#xA;&#xA;      &lt;input type=&#34;number&#34; id=&#34;bpmInput&#34;&#xA;        class=&#34;input-mg&#34;&#xA;        placeholder=&#34;BPM&#34; min=&#34;20&#34; max=&#34;500&#34; value=&#34;120&#34; required&gt;&#xA;      &lt;span class=&#34;ml-2 text-lg font-bold&#34;&gt;BPM&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;button type=&#34;submit&#34;&#xA;      class=&#34;button-mg&#34;&gt;&#xA;      Toggle&#xA;    &lt;/button&gt;&#xA;  &lt;/form&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;script src=&#34;http://localhost:1313/%20js/metronome.js&#34;&gt;&lt;/script&gt;&#xA;&lt;p&gt;This is a simple metronome that runs directly on this page. You can set the tempo in beats per minute (BPM) using the input field above, and start or stop the metronome using the button.&lt;/p&gt;</description>
     </item>

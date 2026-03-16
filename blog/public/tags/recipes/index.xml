@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recipes on Ondřej Honus</title>
+    <title>Recipes on Ondřej Honus&#39; website</title>
     <link>http://localhost:1313/tags/recipes/</link>
-    <description>Recent content in Recipes on Ondřej Honus</description>
+    <description>Recent content in Recipes on Ondřej Honus&#39; website</description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <managingEditor>ondrejhonus@pm.me (Ondřej Honus)</managingEditor>
-    <webMaster>ondrejhonus@pm.me (Ondřej Honus)</webMaster>
+    <language>en-us</language>
     <lastBuildDate>Fri, 23 Jan 2026 22:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/recipes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vege Dreams: My Vegetarian Recipe Collection</title>
-      <link>http://localhost:1313/blog/vege-dreams/</link>
-      <pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author>
-      <guid>http://localhost:1313/blog/vege-dreams/</guid>
+      <link>http://localhost:1313/posts/vege-dreams/</link>
+      <pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/vege-dreams/</guid>
       <description>&lt;p&gt;It would make me very happy, if you checked out my vegetarian recipe collection website called &lt;a href=&#34;https://veg.ondrejhonus.com/&#34;&gt;Vege Dreams&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-vege-dreams&#34;&gt;What is Vege Dreams?&lt;/h2&gt;&#xA;&lt;p&gt;It&amp;rsquo;s a personal project of mine, where I share my favorite vegetarian recipes that I have tried and loved over the years. From Irish soda bread to Italian Spaghetti Carboanara (without bacon, of course!), there&amp;rsquo;s something for everyone.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-can-you-find-there&#34;&gt;What can you find there?&lt;/h2&gt;&#xA;&lt;p&gt;You can also find some vegan recipes there, and some recipes are very easy to adapt to be vegan-friendly, usually just remove cheese, or replace dairy with plant-based alternatives.&lt;/p&gt;</description>
     </item>
   </channel>

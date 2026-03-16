@@ -1,68 +1,66 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Ondřej Honus</title>
+    <title>Tags on Ondřej Honus&#39; website</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Ondřej Honus</description>
+    <description>Recent content in Tags on Ondřej Honus&#39; website</description>
     <generator>Hugo</generator>
-    <language>en</language>
-    <managingEditor>ondrejhonus@pm.me (Ondřej Honus)</managingEditor>
-    <webMaster>ondrejhonus@pm.me (Ondřej Honus)</webMaster>
+    <language>en-us</language>
     <lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
       <link>http://localhost:1313/tags/linux/</link>
-      <pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Thinkpad</title>
       <link>http://localhost:1313/tags/thinkpad/</link>
-      <pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/thinkpad/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
       <link>http://localhost:1313/tags/programming/</link>
-      <pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Tools</title>
       <link>http://localhost:1313/tags/tools/</link>
-      <pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/tools/</guid>
       <description></description>
     </item>
     <item>
       <title>Music</title>
       <link>http://localhost:1313/tags/music/</link>
-      <pubDate>Fri, 23 Jan 2026 23:00:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <pubDate>Fri, 23 Jan 2026 23:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/music/</guid>
       <description></description>
     </item>
     <item>
       <title>Cooking</title>
       <link>http://localhost:1313/tags/cooking/</link>
-      <pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/cooking/</guid>
       <description></description>
     </item>
     <item>
       <title>Recipes</title>
       <link>http://localhost:1313/tags/recipes/</link>
-      <pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/recipes/</guid>
       <description></description>
     </item>
     <item>
       <title>Webdev</title>
       <link>http://localhost:1313/tags/webdev/</link>
-      <pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate><author>ondrejhonus@pm.me (Ondřej Honus)</author>
+      <pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/webdev/</guid>
       <description></description>
     </item>
