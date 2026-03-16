@@ -37,6 +37,13 @@
       <description></description>
     </item>
     <item>
+      <title>Featured</title>
+      <link>http://localhost:1313/tags/featured/</link>
+      <pubDate>Fri, 23 Jan 2026 23:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/featured/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Music</title>
       <link>http://localhost:1313/tags/music/</link>
       <pubDate>Fri, 23 Jan 2026 23:00:00 +0000</pubDate>

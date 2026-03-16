@@ -2,6 +2,6 @@
 	path = blog/themes/blowfish
 	url = https://github.com/nunocoracao/blowfish.git
 	branch = main
-[submodule "blog/themes/vintage-web-hugo-theme"]
-	path = blog/themes/vintage-web-hugo-theme
+[submodule "blog/themes/vintage-web-hugo-them"]
+	path = blog/themes/vintage-web-hugo-them
 	url = https://github.com/meimakes/vintage-web-hugo-theme.git

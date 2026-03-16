@@ -1,7 +1,7 @@
 baseURL = "https://ondrejhonus.com"
 languageCode = "en-us"
 title = "Ondřej Honus' website"
-theme = "vintage-web-hugo-theme"
+theme = "vintage-web-hugo-them"
 
 # Pagination
 [pagination]
