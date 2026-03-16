@@ -4,11 +4,15 @@ date: 2026-03-15T15:49:59Z
 draft: false
 ---
 
+
 ## 👩‍💻 Who am I? 👩‍💻
 
 Hey, im Ondřej Honus, a student software engineer! I mostly use C++ and Golang, but I also sometimes end up working with Python. My favourite project I've made is [bubblegit](https://github.com/ondrejhonus/bubblegit), a TUI appliaction that makes using `git` easier and allows you to work with it without much knowledge of git.
 
-Apart from thatm I LOVE to cook and bake ([recipes here](https://veg.ondrejhonus.com)) and I also play guitar in my spare time.
+Apart from that, I LOVE to cook and bake ([recipes here](https://veg.ondrejhonus.com)) and I also play guitar in my spare time.
+
+I'm also a self host hobbyist. I host my own streaming service, where I stream my favorite music, movies and shows (Jellyfin). I also build a \*smart\* home with Homeassistant and I control my whole room with it.    
+Another thing I prefer to host for my own is a password manager (Bitwarden).
 
 ### 📂 My proudest projects 📂
 
@@ -22,6 +26,7 @@ Apart from thatm I LOVE to cook and bake ([recipes here](https://veg.ondrejhonus
 
 - **Golang** -- I made [bubblegit](https://github.com/ondrejhonus/bubblegit) in this one!
 - **C++** -- [CPM](https://github.com/ondrejhonus/bubblegit) and other smaller projects were made in C++. I also use it for _Arduinos_.
+- **GNU/Linux** -- I use OpenSUSE Tumbleweed as my main OS. I've been using Linux for years and I have experience with Linux servers.
 - **Python** -- I make some scripts or simple tools for Linux / window managers in this.
 - **Hugo** - For websites like this one, or my [recipes](https://veg.ondrejhonus.com).
 
