@@ -3,28 +3,27 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Featured | Ondřej Honus&#39; website</title>
+    <title>KVM Loadtun | Ondřej Honus&#39; website</title>
     
     
     
-    <meta name="description" content="Ondřej Honus&#39; website">
+    <meta name="description" content="Current year in HTML.">
     
     
     
-    <meta property="og:title" content="Featured | Ondřej Honus&#39; website">
-    <meta property="og:description" content="Ondřej Honus&#39; website">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/tags/featured/">
+    <meta property="og:title" content="KVM Loadtun | Ondřej Honus&#39; website">
+    <meta property="og:description" content="Current year in HTML.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/snippets/load-tun/">
     
     
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Featured | Ondřej Honus&#39; website">
-    <meta name="twitter:description" content="Ondřej Honus&#39; website">
+    <meta name="twitter:title" content="KVM Loadtun | Ondřej Honus&#39; website">
+    <meta name="twitter:description" content="Current year in HTML.">
     
     
     
-    <link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/tags/featured/index.xml" title="Ondřej Honus&#39; website">
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
@@ -49,7 +48,7 @@
         </div>
         <div class="address-bar">
             
-            http://localhost:1313/tags/featured/
+            http://localhost:1313/snippets/load-tun/
             
         </div>
     </div>
@@ -75,11 +74,19 @@
             </li>
             
 
-                        
+            
             
             <li class="nav-item">
                 <a href="http://localhost:1313/apps/" class="nav-link" style="color: black;">📁 Apps</a>
             </li>
+            
+
+            
+            
+            <li class="nav-item">
+                <a href="http://localhost:1313/snippets/" class="nav-link" style="color: black;">📝 Snippets</a>
+            </li>
+            
 
             
 
@@ -90,7 +97,6 @@
             </li>
             
 
-            
 
 
 
@@ -112,9 +118,9 @@
         
         <main class="main-content">
             
-<div class="window">
+<article class="window">
     <div class="window-header">
-        <span class="window-title">🏷️ Tag: Featured</span>
+        <span class="window-title">KVM Loadtun</span>
         <div class="window-controls">
             <span class="window-button">_</span>
             <span class="window-button">□</span>
@@ -122,135 +128,137 @@
         </div>
     </div>
     <div class="window-content">
-        <div class="tag-info" style="background: var(--bg-secondary); border: 1px inset var(--border-dark); padding: 8px; margin-bottom: 12px;">
-            <div style="font-weight: bold; margin-bottom: 4px;">
-                🏷️ Tag: Featured
+        <header class="content-header">
+            <h1 class="post-title">KVM Loadtun</h1>
+            
+            
+            <div class="post-meta">
+                <span class="post-meta-item">
+                    📅 Published: Monday, March 16, 2026
+                </span>
+                
+                <span class="post-meta-item">
+                    📖 1 min read
+                </span>
+                <span class="post-meta-item">
+                    📊 14 words
+                </span>
+                
+                
+                
+                
+                
+                
+                <span class="post-meta-item">
+                    🏷️ Tags: 
+                    
+                        
+                        <a href="/tags/kvm">kvm</a>
+                    
+                </span>
+                
+                
+                
             </div>
-            <div style="font-size: 10px;">
-                1 post tagged with "featured"
+            
+            
+            
+            <div class="post-description" style="font-style: italic; margin: 8px 0; padding: 4px 8px; background: var(--bg-secondary); border: 1px inset var(--border-dark);">
+                Current year in HTML.
             </div>
             
+            
+            
+        </header>
+        
+        
+        
+        
+        
+        <div class="content">
+            <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>mkdir -p /dev/net
+</span></span><span style="display:flex;"><span>sudo mknod /dev/net/tun c <span style="color:#ae81ff">10</span> <span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span>sudo chmod <span style="color:#ae81ff">600</span> /dev/net/tun
+</span></span></code></pre></div>
         </div>
         
         
-        
-        <ul class="post-list">
+        <footer class="post-footer" style="margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--border-dark);">
             
-            <li class="post-list-item">
-                
-                
-                <div class="post-list-title">
-                    <a href="http://localhost:1313/apps/metronome/">Web Metronome</a>
-                </div>
-                
-                <div class="post-list-meta">
-                    <span class="post-meta-item">📅 Jan 23, 2026</span>
-                    
-                    
-                    <span class="post-meta-item">📖 1 min read</span>
-                </div>
-                
-                
-                <div class="post-list-summary"><h2 id="metronome-web-app">Metronome Web App</h2>
-<p>This is a simple metronome that runs directly on this page. You can set the tempo in beats per minute (BPM) using the input field above, and start or stop the metronome using the …</p></div>
-                
-                
-                
-                <div class="post-tags" style="margin-top: 4px;">
-                    
-                    <a href="/tags/music" 
-                       style="display: inline-block; background: var(--button-face); border: 1px outset var(--button-face); padding: 1px 3px; margin: 1px; font-size: 8px; text-decoration: none; color: var(--text-primary); ">
-                       🏷️ music
-                    </a>
-                    
-                    <a href="/tags/tools" 
-                       style="display: inline-block; background: var(--button-face); border: 1px outset var(--button-face); padding: 1px 3px; margin: 1px; font-size: 8px; text-decoration: none; color: var(--text-primary); ">
-                       🏷️ tools
-                    </a>
-                    
-                    <a href="/tags/featured" 
-                       style="display: inline-block; background: var(--button-face); border: 1px outset var(--button-face); padding: 1px 3px; margin: 1px; font-size: 8px; text-decoration: none; color: var(--text-primary); background: var(--highlight); color: white;">
-                       🏷️ featured
-                    </a>
-                    
-                </div>
-                
-                
-                <div style="clear: both;"></div>
-            </li>
             
-        </ul>
-        
+            
+            <div class="sharing" style="margin-bottom: 12px;">
+                <div style="font-weight: bold; margin-bottom: 6px;">📤 Share this post:</div>
+                <div style="display: flex; gap: 4px; flex-wrap: wrap;">
+                    <a href="https://twitter.com/intent/tweet?text=KVM%20Loadtun&url=http%3a%2f%2flocalhost%3a1313%2fsnippets%2fload-tun%2f" 
+                       target="_blank" class="btn" style="font-size: 10px;">Twitter</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fsnippets%2fload-tun%2f" 
+                       target="_blank" class="btn" style="font-size: 10px;">Facebook</a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fsnippets%2fload-tun%2f" 
+                       target="_blank" class="btn" style="font-size: 10px;">LinkedIn</a>
+                    <a href="mailto:?subject=KVM%20Loadtun&body=http%3a%2f%2flocalhost%3a1313%2fsnippets%2fload-tun%2f" 
+                       class="btn" style="font-size: 10px;">Email</a>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        </footer>
     </div>
-</div>
+</article>
 
 
-
-<div class="window">
-    <div class="window-header">
-        <span class="window-title">🏷️ Related Tags</span>
-        <div class="window-controls">
-            <span class="window-button">_</span>
-            <span class="window-button">□</span>
-            <span class="window-button">×</span>
+<nav class="post-nav" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0;">
+    
+    <div class="window">
+        <div class="window-header">
+            <span class="window-title">← Previous Post</span>
+            <div class="window-controls">
+                <span class="window-button">_</span>
+                <span class="window-button">□</span>
+                <span class="window-button">×</span>
+            </div>
+        </div>
+        <div class="window-content">
+            <a href="http://localhost:1313/snippets/distrobox-xdg-open/" style="text-decoration: none; color: inherit;">
+                <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">Fix Distrobox xdg-open</div>
+                <div style="font-size: 9px; color: var(--text-secondary);">Mar 16, 2026</div>
+            </a>
         </div>
     </div>
-    <div class="window-content">
-        <div class="tag-cloud">
-            
-            
-            <a href="/tags/cooking">
-                🏷️ Cooking (1)
+    
+    
+    
+    <div class="window">
+        <div class="window-header">
+            <span class="window-title">Next Post →</span>
+            <div class="window-controls">
+                <span class="window-button">_</span>
+                <span class="window-button">□</span>
+                <span class="window-button">×</span>
+            </div>
+        </div>
+        <div class="window-content">
+            <a href="http://localhost:1313/snippets/html-current-year/" style="text-decoration: none; color: inherit;">
+                <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">Current year in HTML</div>
+                <div style="font-size: 9px; color: var(--text-secondary);">Mar 16, 2026</div>
             </a>
-            
-            
-            
-            
-            
-            <a href="/tags/linux">
-                🏷️ Linux (2)
-            </a>
-            
-            
-            
-            <a href="/tags/music">
-                🏷️ Music (1)
-            </a>
-            
-            
-            
-            <a href="/tags/programming">
-                🏷️ Programming (1)
-            </a>
-            
-            
-            
-            <a href="/tags/recipes">
-                🏷️ Recipes (1)
-            </a>
-            
-            
-            
-            <a href="/tags/thinkpad">
-                🏷️ Thinkpad (1)
-            </a>
-            
-            
-            
-            <a href="/tags/tools">
-                🏷️ Tools (2)
-            </a>
-            
-            
-            
-            <a href="/tags/webdev">
-                🏷️ Webdev (2)
-            </a>
-            
-            
         </div>
     </div>
-</div>
+    
+</nav>
+
+
 
 
         </main>
@@ -294,7 +302,7 @@
     <div class="tag-cloud">
         
         <a href="/tags/linux">
-            linux (2)
+            linux (3)
         </a>
         
         <a href="/tags/tools">
@@ -309,8 +317,12 @@
             cooking (1)
         </a>
         
-        <a href="/tags/featured">
-            featured (1)
+        <a href="/tags/html">
+            html (1)
+        </a>
+        
+        <a href="/tags/kvm">
+            kvm (1)
         </a>
         
         <a href="/tags/music">
@@ -387,13 +399,13 @@
         </div>
         <div>
             The current Unix timestamp is:
-            <span style="background: #000; color: #00ff00; padding: 2px 4px; font-family: 'Courier New', monospace;">1773677565</span>
+            <span style="background: #000; color: #00ff00; padding: 2px 4px; font-family: 'Courier New', monospace;">1773693967</span>
         </div>
         <div>
             Best viewed on a Thinkpad X230 and older
         </div>
         <div>
-            Powered by Hugo 0.157.0
+            Powered by Hugo 0.152.1
         </div>
     </div>
 </div>
@@ -463,8 +475,8 @@
                 <div>
                     <div style="font-weight: bold; margin-bottom: 4px;">📊 Statistics</div>
                     <div>Posts: 3</div>
-                    <div>Tags: 9</div>
-                    <div>Last Update: Mar 15, 2026</div>
+                    <div>Tags: 10</div>
+                    <div>Last Update: Mar 16, 2026</div>
                 </div>
             </div>
             
@@ -483,7 +495,7 @@
                 <div style="font-size: 8px; margin-top: 4px;">
                     Current Unix timestamp: 
                     <span style="background: #000; color: #00ff00; padding: 1px 3px; font-family: 'Courier New', monospace;">
-                        1773677565
+                        1773693967
                     </span>
                 </div>
             </div>
@@ -505,10 +517,12 @@
     <div class="status-bar">
         <div class="status-left">
             <span class="status-item">Mon 16 Mar 2026</span>
-            <span class="status-item">17:12</span>
+            <span class="status-item">21:46</span>
         </div>
         <div class="status-right">
             <span class="status-item">Ondřej Honus&#39; website</span>
+            
+            <span class="status-item">14 words</span>
             
         </div>
     </div>

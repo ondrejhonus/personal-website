@@ -1,4 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ondřej Honus' blog on Ondřej Honus' website</title><link>https://ondrejhonus.com/</link><description>Recent content in Ondřej Honus' blog on Ondřej Honus' website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate><atom:link href="https://ondrejhonus.com/index.xml" rel="self" type="application/rss+xml"/><item><title>My Story With ThinkPads</title><link>https://ondrejhonus.com/posts/thinkpad-story/</link><pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate><guid>https://ondrejhonus.com/posts/thinkpad-story/</guid><description>&lt;h2 id="how-i-got-into-thinkpads"&gt;How I Got Into Thinkpads&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ondřej Honus' blog on Ondřej Honus' website</title><link>https://ondrejhonus.com/</link><description>Recent content in Ondřej Honus' blog on Ondřej Honus' website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 20:30:59 +0000</lastBuildDate><atom:link href="https://ondrejhonus.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Current year in HTML</title><link>https://ondrejhonus.com/snippets/html-current-year/</link><pubDate>Mon, 16 Mar 2026 20:30:59 +0000</pubDate><guid>https://ondrejhonus.com/snippets/html-current-year/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#f92672"&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; document.&lt;span style="color:#a6e22e"&gt;write&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;/\d{4}/&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;exec&lt;/span&gt;(Date())[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;/&lt;span style="color:#f92672"&gt;script&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KVM Loadtun</title><link>https://ondrejhonus.com/snippets/kvm-load-tun/</link><pubDate>Mon, 16 Mar 2026 19:30:59 +0000</pubDate><guid>https://ondrejhonus.com/snippets/kvm-load-tun/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir -p /dev/net
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo mknod /dev/net/tun c &lt;span style="color:#ae81ff"&gt;10&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;200&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo chmod &lt;span style="color:#ae81ff"&gt;600&lt;/span&gt; /dev/net/tun
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>KVM start default network</title><link>https://ondrejhonus.com/snippets/kvm-default-network/</link><pubDate>Mon, 16 Mar 2026 19:25:59 +0000</pubDate><guid>https://ondrejhonus.com/snippets/kvm-default-network/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;virsh net-start default
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Fix Distrobox xdg-open</title><link>https://ondrejhonus.com/snippets/distrobox-xdg-open/</link><pubDate>Mon, 16 Mar 2026 15:30:59 +0000</pubDate><guid>https://ondrejhonus.com/snippets/distrobox-xdg-open/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 1. Clean broken paths to prevent &amp;#34;command not found&amp;#34; errors&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo rm -f /usr/local/bin/xdg-open
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo rm -f /usr/local/bin/distrobox-host-exec
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 2. Create the bridge in /usr/local/bin (High Priority Location)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo tee /usr/local/bin/xdg-open &lt;span style="color:#e6db74"&gt;&amp;lt;&amp;lt; &amp;#39;EOF&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;#!/usr/bin/python3
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;import sys, dbus, os
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;# Ensure the Host D-Bus is found
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;os.environ[&amp;#34;DBUS_SESSION_BUS_ADDRESS&amp;#34;] = f&amp;#34;unix:path=/run/user/{os.getuid()}/bus&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;try:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; url = sys.argv[1]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; bus = dbus.SessionBus()
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; obj = bus.get_object(&amp;#34;org.freedesktop.portal.Desktop&amp;#34;, &amp;#34;/org/freedesktop/portal/desktop&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; iface = dbus.Interface(obj, &amp;#34;org.freedesktop.portal.OpenURI&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; iface.OpenURI(&amp;#34;&amp;#34;, url, {})
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;except Exception:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; pass
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt;EOF&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 3. Set execution permissions&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo chmod &lt;span style="color:#ae81ff"&gt;755&lt;/span&gt; /usr/local/bin/xdg-open
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 4. Create Distrobox integration links&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo ln -sf /usr/local/bin/xdg-open /usr/local/bin/distrobox-host-exec
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 5. FIX FOR ICONS: Global Variable in /etc/environment&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# This ensures that GUI apps (like Antigravity) see the bridge even when opened via the menu&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo sh -c &lt;span style="color:#e6db74"&gt;&amp;#34;echo &amp;#39;BROWSER=\&amp;#34;/usr/local/bin/xdg-open\&amp;#34;&amp;#39; &amp;gt;&amp;gt; /etc/environment&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# 6. Update PATH for the current terminal session (Bash/Fish/Zsh)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;export PATH&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;/usr/local/bin:&lt;/span&gt;$PATH&lt;span style="color:#e6db74"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;export BROWSER&lt;span style="color:#f92672"&gt;=&lt;/span&gt;&lt;span style="color:#e6db74"&gt;&amp;#34;/usr/local/bin/xdg-open&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hash -r 2&amp;gt;/dev/null &lt;span style="color:#f92672"&gt;||&lt;/span&gt; true
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#e6db74"&gt;&amp;#34;✅ Setup Finished! Testing...&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;xdg-open https://www.google.com
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# CREDIT: https://github.com/89luca89/distrobox/issues/1984&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>My Story With ThinkPads</title><link>https://ondrejhonus.com/posts/thinkpad-story/</link><pubDate>Sat, 24 Jan 2026 21:00:00 +0000</pubDate><guid>https://ondrejhonus.com/posts/thinkpad-story/</guid><description>&lt;h2 id="how-i-got-into-thinkpads"&gt;How I Got Into Thinkpads&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve been a Linux user for quite some time now, and it&amp;rsquo;s impossible to be a Linux die-hard without encountering ThinkPads. My journey with ThinkPads began several years ago when I got my first one, a ThinkPad T480.&lt;/p&gt;
 &lt;h2 id="my-thinkpad-t480"&gt;My ThinkPad T480&lt;/h2&gt;
 &lt;p&gt;This is where my ThinkPad adventure began. The T480 is an excellent laptop, in fact, I&amp;rsquo;m writing this part on it right now!&lt;/p&gt;
@@ -11,7 +59,7 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  defer
  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
 &gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1773678290" /&gt;
+&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1773694065" /&gt;
 &lt;script src="https://ondrejhonus.com/js/distro-chooser.js"&gt;&lt;/script&gt;
 
 &lt;div class="box-mg"&gt;
@@ -21,7 +69,16 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  &lt;p&gt;
  Answer a few simple questions and get an answer, that's based on my
  experience and reccomendation.
- &lt;/p&gt;</description></item><item><title>Web Metronome</title><link>https://ondrejhonus.com/apps/metronome/</link><pubDate>Fri, 23 Jan 2026 23:00:00 +0000</pubDate><guid>https://ondrejhonus.com/apps/metronome/</guid><description>&lt;h2 id="metronome-web-app"&gt;Metronome Web App&lt;/h2&gt;
+ &lt;/p&gt;</description></item><item><title>Vege Dreams: My Vegetarian Recipe Collection</title><link>https://ondrejhonus.com/posts/vege-dreams/</link><pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate><guid>https://ondrejhonus.com/posts/vege-dreams/</guid><description>&lt;h2 id="vegetarian-recipes"&gt;Vegetarian Recipes!&lt;/h2&gt;
+&lt;p&gt;It would make me very happy, if you checked out my vegetarian recipe collection website called &lt;a href="https://veg.ondrejhonus.com/"&gt;Vege Dreams&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a personal project of mine, where I share my favorite vegetarian recipes that I have tried and loved over the years. From Irish soda bread to Italian Spaghetti Carboanara (without bacon, of course!), there&amp;rsquo;s something for everyone.&lt;/p&gt;
+&lt;h2 id="what-can-you-find-there"&gt;What can you find there?&lt;/h2&gt;
+&lt;p&gt;You can also find some vegan recipes there, and some recipes are very easy to adapt to be vegan-friendly, usually just remove cheese, or replace dairy with plant-based alternatives.&lt;/p&gt;</description></item><item><title>Making this website</title><link>https://ondrejhonus.com/posts/this-website/</link><pubDate>Fri, 23 Jan 2026 21:00:00 +0000</pubDate><guid>https://ondrejhonus.com/posts/this-website/</guid><description>&lt;h2 id="making-this-website"&gt;Making this website&lt;/h2&gt;
+&lt;p&gt;I have made my first ever website when I was in 6th grade in primary school (I was 11).
+It was a very simple website made with, very coincidentally&amp;hellip; Hugo!&lt;/p&gt;
+&lt;h2 id="how-did-i-start"&gt;How did I start?&lt;/h2&gt;
+&lt;p&gt;Hugo was introduced to me by my brother, who already had some experience with it, so he set me up with a very basic template and I got to work.
+You can still find the website on GitHub. It&amp;rsquo;s actually my first ever GitHub repository!&lt;/p&gt;</description></item><item><title>Web Metronome</title><link>https://ondrejhonus.com/apps/metronome/</link><pubDate>Fri, 23 Jan 2026 15:49:59 +0000</pubDate><guid>https://ondrejhonus.com/apps/metronome/</guid><description>&lt;h2 id="metronome-web-app"&gt;Metronome Web App&lt;/h2&gt;
 &lt;p&gt;This is a simple metronome that runs directly on this page. You can set the tempo in beats per minute (BPM) using the input field above, and start or stop the metronome using the button.&lt;/p&gt;
 &lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css"&gt;
 
@@ -43,13 +100,4 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  &lt;/form&gt;
 &lt;/div&gt;
 
-&lt;script src="https://ondrejhonus.com/%20js/metronome.js"&gt;&lt;/script&gt;</description></item><item><title>Vege Dreams: My Vegetarian Recipe Collection</title><link>https://ondrejhonus.com/posts/vege-dreams/</link><pubDate>Fri, 23 Jan 2026 22:00:00 +0000</pubDate><guid>https://ondrejhonus.com/posts/vege-dreams/</guid><description>&lt;h2 id="vegetarian-recipes"&gt;Vegetarian Recipes!&lt;/h2&gt;
-&lt;p&gt;It would make me very happy, if you checked out my vegetarian recipe collection website called &lt;a href="https://veg.ondrejhonus.com/"&gt;Vege Dreams&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s a personal project of mine, where I share my favorite vegetarian recipes that I have tried and loved over the years. From Irish soda bread to Italian Spaghetti Carboanara (without bacon, of course!), there&amp;rsquo;s something for everyone.&lt;/p&gt;
-&lt;h2 id="what-can-you-find-there"&gt;What can you find there?&lt;/h2&gt;
-&lt;p&gt;You can also find some vegan recipes there, and some recipes are very easy to adapt to be vegan-friendly, usually just remove cheese, or replace dairy with plant-based alternatives.&lt;/p&gt;</description></item><item><title>Making this website</title><link>https://ondrejhonus.com/posts/this-website/</link><pubDate>Fri, 23 Jan 2026 21:00:00 +0000</pubDate><guid>https://ondrejhonus.com/posts/this-website/</guid><description>&lt;h2 id="making-this-website"&gt;Making this website&lt;/h2&gt;
-&lt;p&gt;I have made my first ever website when I was in 6th grade in primary school (I was 11).
-It was a very simple website made with, very coincidentally&amp;hellip; Hugo!&lt;/p&gt;
-&lt;h2 id="how-did-i-start"&gt;How did I start?&lt;/h2&gt;
-&lt;p&gt;Hugo was introduced to me by my brother, who already had some experience with it, so he set me up with a very basic template and I got to work.
-You can still find the website on GitHub. It&amp;rsquo;s actually my first ever GitHub repository!&lt;/p&gt;</description></item></channel></rss>
+&lt;script src="https://ondrejhonus.com/%20js/metronome.js"&gt;&lt;/script&gt;</description></item></channel></rss>

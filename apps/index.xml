@@ -6,7 +6,7 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  defer
  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
 &gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1773678290" /&gt;
+&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1773694065" /&gt;
 &lt;script src="https://ondrejhonus.com/js/distro-chooser.js"&gt;&lt;/script&gt;
 
 &lt;div class="box-mg"&gt;
@@ -16,7 +16,7 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  &lt;p&gt;
  Answer a few simple questions and get an answer, that's based on my
  experience and reccomendation.
- &lt;/p&gt;</description></item><item><title>Web Metronome</title><link>https://ondrejhonus.com/apps/metronome/</link><pubDate>Fri, 23 Jan 2026 23:00:00 +0000</pubDate><guid>https://ondrejhonus.com/apps/metronome/</guid><description>&lt;h2 id="metronome-web-app"&gt;Metronome Web App&lt;/h2&gt;
+ &lt;/p&gt;</description></item><item><title>Web Metronome</title><link>https://ondrejhonus.com/apps/metronome/</link><pubDate>Fri, 23 Jan 2026 15:49:59 +0000</pubDate><guid>https://ondrejhonus.com/apps/metronome/</guid><description>&lt;h2 id="metronome-web-app"&gt;Metronome Web App&lt;/h2&gt;
 &lt;p&gt;This is a simple metronome that runs directly on this page. You can set the tempo in beats per minute (BPM) using the input field above, and start or stop the metronome using the button.&lt;/p&gt;
 &lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css"&gt;
 
