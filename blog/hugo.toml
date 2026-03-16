@@ -26,8 +26,8 @@ theme = "vintage-web-hugo-theme"
   weight = 20
 
 [[menu.main]]
-  name = "Projects"
-  url = "/projects/"
+  name = "Apps"
+  url = "/apps/"
   weight = 30
 
 #[[menu.main]]

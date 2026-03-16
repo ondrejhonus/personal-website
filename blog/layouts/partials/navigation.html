@@ -22,10 +22,10 @@
             </li>
             {{ end }}
 
-                        {{ $projects := .Site.GetPage "/projects" }}
-            {{ if $projects }}
+                        {{ $apps := .Site.GetPage "/apps" }}
+            {{ if $apps }}
             <li class="nav-item">
-                <a href="{{ $projects.Permalink | absLangURL }}" class="nav-link">📁 Projects</a>
+                <a href="{{ $apps.Permalink | absLangURL }}" class="nav-link">📁 Apps</a>
             </li>
 
             <!-- Add categories and tags to main menu

@@ -6,7 +6,7 @@ tags: ["linux", "programming", "tools"]
 draft: false
 ---
 
-## What is this?
+## Decide on the perfect Linux distro for you!
 
 This is a simple Linux Distro Chooser tool that I created to help people find the perfect Linux distribution for
 their needs. It is based on my personal experience and recommendations.

@@ -30,7 +30,7 @@
                     {{ if $posts }}
                     <div><a href="{{ "/posts/" | relLangURL }}">📝 All Posts</a></div>
                     {{ end }}
-                    <div><a href="{{ "/categories/" | relLangURL }}">📂 Categories</a></div>
+                    <!-- <div><a href="{{ "/categories/" | relLangURL }}">📂 Categories</a></div> -->
                     <div><a href="{{ "/tags/" | relLangURL }}">🏷️ Tags</a></div>
                     {{ with .Site.LanguageCode }}
                     <div><a href="{{ "/index.xml" | relLangURL }}">📡 RSS Feed</a></div>
@@ -60,7 +60,6 @@
                 <div>
                     <div style="font-weight: bold; margin-bottom: 4px;">📊 Statistics</div>
                     <div>Posts: {{ len (where .Site.RegularPages "Type" "posts") }}</div>
-                    <div>Categories: {{ len .Site.Taxonomies.categories }}</div>
                     <div>Tags: {{ len .Site.Taxonomies.tags }}</div>
                     <div>Last Update: {{ .Site.Lastmod.Format "Jan 2, 2006" }}</div>
                 </div>

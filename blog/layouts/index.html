@@ -70,8 +70,54 @@
 </div>
 {{ end }}
 
+<!-- Featured apps -->
+{{ $apps := where .Site.RegularPages "Type" "apps" }}
+{{ if $apps }}
+<div class="window">
+    <div class="window-header">
+        <span class="window-title">Recent Apps</span>
+        <div class="window-controls">
+            <span class="window-button">_</span>
+            <span class="window-button">□</span>
+            <span class="window-button">×</span>
+        </div>
+    </div>
+    <div class="window-content">
+        <ul class="post-list">
+            {{ range first 5 $apps }}
+            <li class="post-list-item">
+                <div class="post-list-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </div>
+                <div class="post-list-meta">
+                    <span class="post-meta-item">{{ .Date.Format "Jan 2, 2006" }}</span>
+                    {{ with .Params.categories }}
+                    <span class="post-meta-item">
+                        {{ range . }}
+                        <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                        {{ end }}
+                    </span>
+                    {{ end }}
+                </div>
+                {{ with .Summary }}
+                <div class="post-list-summary">{{ . | truncate 150 }}</div>
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+        
+        {{ if gt (len $apps) 5 }}
+        <div style="text-align: center; margin-top: 12px;">
+            <a href="{{ "/apps/" | relLangURL }}" class="btn">View All Apps</a>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+
+
 <!-- Featured Content Sections -->
-{{ if .Site.Params.show_featured_sections }}
+<!-- {{ if .Site.Params.show_featured_sections }}
 <div class="window">
     <div class="window-header">
         <span class="window-title">Featured Content</span>
@@ -83,7 +129,6 @@
     </div>
     <div class="window-content">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px;">
-            <!-- Typography Showcase -->
             {{ $typography := .Site.GetPage "/posts/typography-showcase" }}
             {{ if $typography }}
             <div style="background: var(--bg-secondary); border: 1px outset var(--border-dark); padding: 8px; text-align: center;">
@@ -93,7 +138,6 @@
             </div>
             {{ end }}
             
-            <!-- Media Content -->
             {{ $media := .Site.GetPage "/posts/media-content" }}
             {{ if $media }}
             <div style="background: var(--bg-secondary); border: 1px outset var(--border-dark); padding: 8px; text-align: center;">
@@ -103,7 +147,6 @@
             </div>
             {{ end }}
             
-            <!-- Code Examples -->
             {{ $code := .Site.GetPage "/posts/code-examples" }}
             {{ if $code }}
             <div style="background: var(--bg-secondary); border: 1px outset var(--border-dark); padding: 8px; text-align: center;">
@@ -113,7 +156,6 @@
             </div>
             {{ end }}
             
-            <!-- Tables and Lists -->
             {{ $tables := .Site.GetPage "/posts/tables-and-lists" }}
             {{ if $tables }}
             <div style="background: var(--bg-secondary); border: 1px outset var(--border-dark); padding: 8px; text-align: center;">
@@ -125,7 +167,7 @@
         </div>
     </div>
 </div>
-{{ end }}
+{{ end }} -->
 
 <!-- Statistics -->
 {{ if .Site.Params.show_stats }}
@@ -148,10 +190,10 @@
                 <div style="font-weight: bold;">{{ len (where .Site.RegularPages "Type" "posts") }}</div>
                 <div style="font-size: 9px;">Blog Posts</div>
             </div>
-            <div class="status-item">
+            <!-- <div class="status-item">
                 <div style="font-weight: bold;">{{ len .Site.Taxonomies.categories }}</div>
                 <div style="font-size: 9px;">Categories</div>
-            </div>
+            </div> -->
             <div class="status-item">
                 <div style="font-weight: bold;">{{ len .Site.Taxonomies.tags }}</div>
                 <div style="font-size: 9px;">Tags</div>

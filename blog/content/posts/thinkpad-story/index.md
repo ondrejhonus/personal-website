@@ -5,7 +5,7 @@ date: 2026-01-24T21:00:00+00:00
 tags: ["thinkpad", "linux"]
 ---
 
-## How it all started
+## How I Got Into Thinkpads
 
 I've been a Linux user for quite some time now, and it's impossible to be a Linux die-hard without encountering ThinkPads. My journey with ThinkPads began several years ago when I got my first one, a ThinkPad T480.
 

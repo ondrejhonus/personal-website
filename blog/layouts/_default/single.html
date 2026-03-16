@@ -35,7 +35,7 @@
                 </span>
                 {{ end }}
                 
-                {{ with .Params.categories }}
+                <!-- {{ with .Params.categories }}
                 <span class="post-meta-item">
                     📂 Categories: 
                     {{ range $i, $cat := . }}
@@ -43,7 +43,7 @@
                         <a href="{{ "/categories/" | relLangURL }}{{ $cat | urlize }}">{{ $cat }}</a>
                     {{ end }}
                 </span>
-                {{ end }}
+                {{ end }} -->
                 
                 {{ with .Params.tags }}
                 <span class="post-meta-item">
