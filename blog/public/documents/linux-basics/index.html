@@ -145,10 +145,10 @@
                 </span>
                 
                 <span class="post-meta-item">
-                    📖 6 min read
+                    📖 7 min read
                 </span>
                 <span class="post-meta-item">
-                    📊 1170 words
+                    📊 1396 words
                 </span>
                 
                 
@@ -186,7 +186,85 @@
         
         
         <div class="content">
-            <ol>
+            <h3 id="list-of-basic-commands">List of basic commands</h3>
+<ul>
+<li><code>ls</code> &ndash; list files in directory
+<ul>
+<li><code>-la</code> &ndash; long format, including hidden files</li>
+</ul>
+</li>
+<li><code>cat</code> &ndash; print file contents</li>
+<li><code>echo</code> &ndash; print text to console</li>
+<li><code>cd</code> &ndash; change directory</li>
+<li><code>pwd</code> &ndash; print working directory</li>
+<li><code>cp</code> &ndash; copy files</li>
+<li><code>mv</code> &ndash; move files</li>
+<li><code>rm</code> &ndash; remove files
+<ul>
+<li><code>-rf</code> &ndash; remove directory</li>
+</ul>
+</li>
+<li><code>mkdir</code> &ndash; create directory</li>
+<li><code>ps</code> &ndash; print running processes
+<ul>
+<li><code>aux</code> &ndash; print all processes with user and command</li>
+</ul>
+</li>
+<li><code>top</code> &ndash; print running processes in real time</li>
+<li><code>htop</code> &ndash; interactive process viewer</li>
+<li><code>grep</code> &ndash; search for text in files, rows</li>
+<li><code>awk</code> &ndash; text processing, columns</li>
+<li><code>head</code> &ndash; print first lines of file</li>
+<li><code>tail</code> &ndash; print last lines of file</li>
+<li><code>kill</code> &ndash; kill process by PID</li>
+<li><code>pkill</code> &ndash; kill process by name</li>
+<li><code>killall</code> &ndash; kill all processes with name</li>
+<li><code>systemctl</code> &ndash; manage services</li>
+<li><code>ip</code> &ndash; manage network interfaces</li>
+<li><code>netstat</code> &ndash; print network connections
+<ul>
+<li><code>-tulpn</code> &ndash; print connections, listening ports, numeric output</li>
+</ul>
+</li>
+<li><code>ss</code> &ndash; print network connections</li>
+<li><code>free</code> &ndash; print free memory</li>
+<li><code>du</code> &ndash; print disk usage</li>
+<li><code>df</code> &ndash; print disk free space</li>
+<li><code>tar</code> &ndash; create and extract tar archives</li>
+<li><code>lsblk</code> &ndash; list block devices</li>
+<li><code>fdisk</code> &ndash; manage disk partitions</li>
+<li><code>mount</code> &ndash; mount filesystems</li>
+<li><code>umount</code> &ndash; unmount filesystems</li>
+<li><code>useradd</code> &ndash; add user</li>
+<li><code>userdel</code> &ndash; delete user</li>
+<li><code>passwd</code> &ndash; change user password</li>
+<li><code>groupadd</code> &ndash; add group</li>
+<li><code>groupdel</code> &ndash; delete group</li>
+<li><code>usermod</code> &ndash; modify user</li>
+<li><code>chown</code> &ndash; change file ownership</li>
+<li><code>chmod</code> &ndash; change file permissions</li>
+<li><code>journalctl</code> &ndash; print system logs</li>
+<li><code>rsync</code> &ndash; synchronize files between directories or hosts</li>
+</ul>
+<hr>
+<h3 id="table-of-contents">Table of contents</h3>
+<ul>
+<li><a href="#bash-scripts">Bash Scripts</a></li>
+<li><a href="#service-installation">Service Installation</a></li>
+<li><a href="#service-administration">Service Administration</a></li>
+<li><a href="#command-knowledge">Command Knowledge</a></li>
+<li><a href="#firewalling">Firewalling</a></li>
+<li><a href="#list-of-basic-commands">List of basic commands</a></li>
+<li><a href="#exam-example">Exam example</a>
+<ul>
+<li><a href="#part-1-basic-knowledge">Part 1: Basic knowledge</a></li>
+<li><a href="#part-2-samba-configuration-and-installation">Part 2: SAMBA configuration and installation</a></li>
+<li><a href="#part-3-network-scanning-backups-scripts">Part 3: Network scanning, backups, scripts</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<ol>
 <li>
 <h3 id="bash-scripts"><strong>Bash Scripts</strong></h3>
 <p>– <a href="http://blog.iservery.com/2013/04/04/bash-skripty-priklady/">http://blog.iservery.com/2013/04/04/bash-skripty-priklady/</a> (awk, grep, iptables, tr, tar, ifconfig, dmesg, crontab)</p>
@@ -302,7 +380,7 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
 <ul>
 <li>add share configuration
 <blockquote>
-<p>/</p>
+<p>/etc/samba/smb.conf</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#f92672">[</span>share<span style="color:#f92672">]</span>
 </span></span><span style="display:flex;"><span>path <span style="color:#f92672">=</span> /home/share
 </span></span><span style="display:flex;"><span>read only <span style="color:#f92672">=</span> no
@@ -318,9 +396,21 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
 </li>
 <li>
 <p><strong>MySQL</strong></p>
+<ul>
+<li>Install mysql server &ndash; <code>apt install mysql-server</code></li>
+<li>enable and start mysql &ndash; <code>systemctl enable --now mysql</code></li>
+<li>check status &ndash; <code>systemctl status mysql</code></li>
+<li>mysql logs: <code>/var/log/mysql/</code></li>
+</ul>
 </li>
 <li>
 <p><strong>OpenSSH</strong></p>
+<ul>
+<li>Install openssh server &ndash; <code>apt install openssh-server</code></li>
+<li>enable and start ssh &ndash; <code>systemctl enable --now ssh</code></li>
+<li>check status &ndash; <code>systemctl status ssh</code> / <code>systemctl status sshd</code></li>
+<li>ssh logs: <code>/var/log/auth.log</code> (for login attempts, etc.)</li>
+</ul>
 </li>
 </ul>
 </li>
@@ -329,9 +419,12 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
 <ul>
 <li><strong>Database backup import/export</strong>
 <ul>
-<li><strong>MySQL</strong></li>
+<li><strong>MySQL</strong>
+<ul>
 <li>export &ndash; <code>mysqldump -u &lt;username&gt; -p &lt;database_name&gt; &gt; backup.sql</code></li>
 <li>import &ndash; <code>mysql -u &lt;username&gt; -p &lt;database_name&gt; &lt; backup.sql</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><strong>General backup</strong>
@@ -349,19 +442,19 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
 <li>
 <h3 id="command-knowledge"><strong>Command Knowledge</strong></h3>
 <ul>
-<li>Disk space usage
+<li><strong>Disk space usage</strong>
 <ul>
 <li>Drive usage of &ndash; <code>du   -sh &lt;dir&gt;</code></li>
 <li>Drive usage of separate files in directory &ndash; <code>du -sh &lt;dir&gt;/*</code></li>
 </ul>
 </li>
-<li>Logging system
+<li><strong>Logging system</strong>
 <ul>
 <li>logs are located in <code>/var/log/</code></li>
 <li>print live logs with <code>journalctl</code></li>
 </ul>
 </li>
-<li>Memory
+<li><strong>Memory</strong>
 <ul>
 <li>print free memory with <code>free -h</code>
 <ul>
@@ -370,14 +463,14 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
 </li>
 </ul>
 </li>
-<li>Removing programs from memory (kill, etc.)
+<li><strong>Removing programs from memory</strong> (kill, etc.)
 <ul>
 <li>kill ps by PID &ndash; <code>kill &lt;PID&gt;</code></li>
 <li>kill ps by name &ndash; <code>pkill &lt;p_name&gt;</code></li>
 <li>kill all processes with name &ndash; <code>killall &lt;p_name&gt;</code></li>
 </ul>
 </li>
-<li>Service management
+<li><strong>Service management</strong>
 <ul>
 <li>start &ndash; <code>systemctl start &lt;service&gt;</code></li>
 <li>stop &ndash; <code>systemctl stop &lt;service&gt;</code></li>
@@ -386,7 +479,7 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
 <li>disable on startup &ndash; <code>systemctl disable &lt;service&gt;</code></li>
 </ul>
 </li>
-<li>Network interface configuration
+<li><strong>Network interface configuration</strong>
 <ul>
 <li>print interfaces &ndash; <code>ip a</code></li>
 <li>print routing table &ndash; <code>ip r</code></li>
@@ -395,18 +488,21 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
 <li>print network connections &ndash; <code>netstat -tuln</code></li>
 </ul>
 </li>
-<li>User management
+<li><strong>User management</strong>
 <ul>
 <li>add user &ndash; <code>useradd &lt;username&gt;</code></li>
 <li>delete user &ndash; <code>userdel &lt;username&gt;</code></li>
 <li>change user password &ndash; <code>passwd &lt;username&gt;</code></li>
 </ul>
 </li>
-<li>Group management</li>
+<li><strong>Group management</strong>
+<ul>
 <li>add group &ndash; <code>groupadd &lt;groupname&gt;</code></li>
 <li>delete group &ndash; <code>groupdel &lt;groupname&gt;</code></li>
 <li>add user to group &ndash; <code>usermod -aG &lt;groupname&gt; &lt;username&gt;</code></li>
-<li>User permissions
+</ul>
+</li>
+<li><strong>User permissions</strong>
 <ul>
 <li>change file permissions &ndash; <code>chmod &lt;permissions&gt; &lt;file&gt;</code></li>
 <li>change file ownership &ndash; <code>chown &lt;owner&gt;:&lt;group&gt; &lt;file&gt;</code></li>
@@ -417,72 +513,60 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
 <li>
 <h3 id="firewalling"><strong>Firewalling</strong></h3>
 <ul>
-<li>Rate limiting</li>
-<li>Logging</li>
-<li>Tagging</li>
+<li>
+<p><strong>Essential commands</strong></p>
+<ul>
+<li>List rules &ndash; <code>iptables -L -v -n</code></li>
+<li>Delete (F = flush) all rules &ndash; <code>iptables -F</code></li>
+<li>Allow incoming SSH &ndash; <code>iptables -A INPUT -p tcp --dport 22 -j ACCEPT</code></li>
+<li>Drop a specific IP &ndash; <code>iptables -A INPUT -s 192.168.1.50 -j DROP</code></li>
+<li>Save rules &ndash; <code>iptables-save &gt; /etc/iptables/rules.v4</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Rate limiting</strong></p>
+<ul>
+<li>
+<p>Prevents DoS attacks</p>
+</li>
+<li>
+<p>Limit SSH to 3 connections per minute</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>iptables -A INPUT -p tcp --dport <span style="color:#ae81ff">22</span> -m limit --limit 3/min -j ACCEPT
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Logging</strong></p>
+<ul>
+<li>
+<p>Logs are at <code>/var/log/syslog</code> or <code>/var/log/messages</code></p>
+</li>
+<li>
+<p>The <code>LOG</code> rule must be placed before <code>DROP</code> or <code>ACCEPT</code></p>
+</li>
+<li>
+<p>Log dropped packets</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>iptables -A INPUT -j LOG --log-prefix <span style="color:#e6db74">&#34;IPTables-Dropped: &#34;</span>
+</span></span><span style="display:flex;"><span>iptables -A INPUT -j DROP
+</span></span></code></pre></div></li>
+</ul>
+</li>
+<li>
+<p><strong>Tagging</strong></p>
+<ul>
+<li>
+<p>Tags packets for identification (requires <code>mangle</code> table)</p>
+</li>
+<li>
+<p>Tag HTTP traffic on port 80 with the number 1</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>iptables -t mangle -A PREROUTING -p tcp --dport <span style="color:#ae81ff">80</span> -j MARK --set-mark <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div></li>
+</ul>
+</li>
 </ul>
 </li>
 </ol>
-<h2 id="list-of-basic-commands">List of basic commands</h2>
-<ul>
-<li><code>ls</code> &ndash; list files in directory
-<ul>
-<li><code>-la</code> &ndash; long format, including hidden files</li>
-</ul>
-</li>
-<li><code>cat</code> &ndash; print file contents</li>
-<li><code>echo</code> &ndash; print text to console</li>
-<li><code>cd</code> &ndash; change directory</li>
-<li><code>pwd</code> &ndash; print working directory</li>
-<li><code>cp</code> &ndash; copy files</li>
-<li><code>mv</code> &ndash; move files</li>
-<li><code>rm</code> &ndash; remove files
-<ul>
-<li><code>-rf</code> &ndash; remove directory</li>
-</ul>
-</li>
-<li><code>mkdir</code> &ndash; create directory</li>
-<li><code>ps</code> &ndash; print running processes
-<ul>
-<li><code>aux</code> &ndash; print all processes with user and command</li>
-</ul>
-</li>
-<li><code>top</code> &ndash; print running processes in real time</li>
-<li><code>htop</code> &ndash; interactive process viewer</li>
-<li><code>grep</code> &ndash; search for text in files, rows</li>
-<li><code>awk</code> &ndash; text processing, columns</li>
-<li><code>head</code> &ndash; print first lines of file</li>
-<li><code>tail</code> &ndash; print last lines of file</li>
-<li><code>kill</code> &ndash; kill process by PID</li>
-<li><code>pkill</code> &ndash; kill process by name</li>
-<li><code>killall</code> &ndash; kill all processes with name</li>
-<li><code>systemctl</code> &ndash; manage services</li>
-<li><code>ip</code> &ndash; manage network interfaces</li>
-<li><code>netstat</code> &ndash; print network connections
-<ul>
-<li><code>-tulpn</code> &ndash; print connections, listening ports, numeric output</li>
-</ul>
-</li>
-<li><code>ss</code> &ndash; print network connections</li>
-<li><code>free</code> &ndash; print free memory</li>
-<li><code>du</code> &ndash; print disk usage</li>
-<li><code>df</code> &ndash; print disk free space</li>
-<li><code>tar</code> &ndash; create and extract tar archives</li>
-<li><code>lsblk</code> &ndash; list block devices</li>
-<li><code>fdisk</code> &ndash; manage disk partitions</li>
-<li><code>mount</code> &ndash; mount filesystems</li>
-<li><code>umount</code> &ndash; unmount filesystems</li>
-<li><code>useradd</code> &ndash; add user</li>
-<li><code>userdel</code> &ndash; delete user</li>
-<li><code>passwd</code> &ndash; change user password</li>
-<li><code>groupadd</code> &ndash; add group</li>
-<li><code>groupdel</code> &ndash; delete group</li>
-<li><code>usermod</code> &ndash; modify user</li>
-<li><code>chown</code> &ndash; change file ownership</li>
-<li><code>chmod</code> &ndash; change file permissions</li>
-<li><code>journalctl</code> &ndash; print system logs</li>
-<li><code>rsync</code> &ndash; synchronize files between directories or hosts</li>
-</ul>
+<hr>
 <h2 id="exam-example">Exam example</h2>
 <h3 id="part-1-basic-knowledge">Part 1: Basic knowledge</h3>
 <h4 id="print-all-files-in-a-directory">Print all files in a directory</h4>
@@ -764,7 +848,7 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
         </div>
         <div>
             The current Unix timestamp is:
-            <span style="background: #000; color: #00ff00; padding: 2px 4px; font-family: 'Courier New', monospace;">1773760841</span>
+            <span style="background: #000; color: #00ff00; padding: 2px 4px; font-family: 'Courier New', monospace;">1773761987</span>
         </div>
         <div>
             Best viewed on a Thinkpad X230 and older
@@ -860,7 +944,7 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
                 <div style="font-size: 8px; margin-top: 4px;">
                     Current Unix timestamp: 
                     <span style="background: #000; color: #00ff00; padding: 1px 3px; font-family: 'Courier New', monospace;">
-                        1773760841
+                        1773761987
                     </span>
                 </div>
             </div>
@@ -882,12 +966,12 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
     <div class="status-bar">
         <div class="status-left">
             <span class="status-item">Tue 17 Mar 2026</span>
-            <span class="status-item">16:20</span>
+            <span class="status-item">16:39</span>
         </div>
         <div class="status-right">
             <span class="status-item">Ondřej Honus&#39; website</span>
             
-            <span class="status-item">1170 words</span>
+            <span class="status-item">1396 words</span>
             
         </div>
     </div>
