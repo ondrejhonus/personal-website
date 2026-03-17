@@ -6,14 +6,14 @@
     <description>Recent content in Html on Ondřej Honus&#39; website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Jan 2026 23:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Mar 2026 20:30:59 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Current year in HTML</title>
       <link>http://localhost:1313/snippets/html-current-year/</link>
-      <pubDate>Fri, 23 Jan 2026 23:00:00 +0000</pubDate>
+      <pubDate>Mon, 16 Mar 2026 20:30:59 +0000</pubDate>
       <guid>http://localhost:1313/snippets/html-current-year/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;script&amp;gt;document.write(/\d{4}/.exec(Date())[0])&amp;lt;/script&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  document.&lt;span style=&#34;color:#a6e22e&#34;&gt;write&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;/\d{4}/&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;exec&lt;/span&gt;(Date())[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
   </channel>
 </rss>

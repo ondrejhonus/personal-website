@@ -36,6 +36,11 @@ licence = "GPL"
   url = "/snippets/"
   weight = 40
 
+[[menu.main]]
+  name = "Documents"
+  url = "/documents/"
+  weight = 40
+
 #[[menu.main]]
 #  name = "About"
 #  url = "/about/"

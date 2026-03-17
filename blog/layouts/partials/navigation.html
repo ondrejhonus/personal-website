@@ -36,6 +36,13 @@
             </li>
             {{ end }}
 
+            {{ $documents := .Site.GetPage "/documents" }}
+            {{ if $documents }}
+            <li class="nav-item">
+                <a href="{{ $documents.Permalink | absLangURL }}" class="nav-link" style="color: black;">📄 Documents</a>
+            </li>
+            {{ end }}
+
             <!-- Add categories and tags to main menu
             {{ $categories := .Site.GetPage "/categories" }}
             {{ if $categories }}

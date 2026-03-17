@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documents on Ondřej Honus&#39; website</title>
+    <link>http://localhost:1313/documents/</link>
+    <description>Recent content in Documents on Ondřej Honus&#39; website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Mar 2026 20:30:59 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/documents/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Basics</title>
+      <link>http://localhost:1313/documents/linux-basics/</link>
+      <pubDate>Mon, 16 Mar 2026 20:30:59 +0000</pubDate>
+      <guid>http://localhost:1313/documents/linux-basics/</guid>
+      <description>&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;h3 id=&#34;bash-scripts&#34;&gt;&lt;strong&gt;Bash Scripts&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;– &lt;a href=&#34;http://blog.iservery.com/2013/04/04/bash-skripty-priklady/&#34;&gt;http://blog.iservery.com/2013/04/04/bash-skripty-priklady/&lt;/a&gt; (awk, grep, iptables, tr, tar, ifconfig, dmesg, crontab)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Number of packets sent on eth0 interface&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;with ip &lt;code&gt;ip -s link show wlan0 | awk &#39;{print $2}&#39; | tail -n 1&#39;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;with ifconfig &lt;code&gt;ifconfig eth0 | grep &amp;quot;RX packets&amp;quot; | awk &#39;{print $2}&#39; | tail -n 1&#39;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Number of packets sent on port 80&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;iptables &lt;code&gt;iptables -v -L | grep &amp;quot;dpt:80&amp;quot; | awk &#39;{print $1}&#39;&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;netstat &lt;code&gt;netstat -anp | grep &amp;quot;:80 &amp;quot; | wc -l&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Creating users from a text file&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;newusers users.txt&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Directory backup&lt;/strong&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;tar -cvpzf backup.tar.gz /path/to/directory&lt;/code&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;c &amp;ndash; create archive&lt;/li&gt;&#xA;&lt;li&gt;v &amp;ndash; verbose output&lt;/li&gt;&#xA;&lt;li&gt;p &amp;ndash; preserve permissions - z &amp;ndash; compress with gzip&lt;/li&gt;&#xA;&lt;li&gt;f &amp;ndash; specify filename&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Cron jobs (checking – /var/log/syslog, messages) &lt;a href=&#34;http://blog.iservery.com/2013/05/09/administrace-cronu/&#34;&gt;http://blog.iservery.com/2013/05/09/administrace-cronu/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;h3 id=&#34;service-installation&#34;&gt;&lt;strong&gt;Service Installation&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;NFS&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -3,27 +3,28 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vege Dreams: My Vegetarian Recipe Collection | Ondřej Honus&#39; website</title>
+    <title>Documents | Ondřej Honus&#39; website</title>
     
     
     
-    <meta name="description" content="This is a collection of my favorite vegetarian recipes that I have tried and loved over the years.">
+    <meta name="description" content="Ondřej Honus&#39; website">
     
     
     
-    <meta property="og:title" content="Vege Dreams: My Vegetarian Recipe Collection | Ondřej Honus&#39; website">
-    <meta property="og:description" content="This is a collection of my favorite vegetarian recipes that I have tried and loved over the years.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="http://localhost:1313/posts/vege-dreams/">
+    <meta property="og:title" content="Documents | Ondřej Honus&#39; website">
+    <meta property="og:description" content="Ondřej Honus&#39; website">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:1313/documents/">
     
     
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Vege Dreams: My Vegetarian Recipe Collection | Ondřej Honus&#39; website">
-    <meta name="twitter:description" content="This is a collection of my favorite vegetarian recipes that I have tried and loved over the years.">
+    <meta name="twitter:title" content="Documents | Ondřej Honus&#39; website">
+    <meta name="twitter:description" content="Ondřej Honus&#39; website">
     
     
     
+    <link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/documents/index.xml" title="Ondřej Honus&#39; website">
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
@@ -48,7 +49,7 @@
         </div>
         <div class="address-bar">
             
-            http://localhost:1313/posts/vege-dreams/
+            http://localhost:1313/documents/
             
         </div>
     </div>
@@ -125,9 +126,14 @@
         
         <main class="main-content">
             
-<article class="window">
+<div class="window">
     <div class="window-header">
-        <span class="window-title">Vege Dreams: My Vegetarian Recipe Collection</span>
+        <span class="window-title">
+            
+                Documents (1 project)
+            
+            
+        </span>
         <div class="window-controls">
             <span class="window-button">_</span>
             <span class="window-button">□</span>
@@ -135,112 +141,123 @@
         </div>
     </div>
     <div class="window-content">
-        <header class="content-header">
-            <h1 class="post-title">Vege Dreams: My Vegetarian Recipe Collection</h1>
-            
-            
-            <div class="post-meta">
-                <span class="post-meta-item">
-                    📅 Published: Friday, January 23, 2026
-                </span>
-                
-                <span class="post-meta-item">
-                    🔄 Updated: January 23, 2026
-                </span>
-                
-                <span class="post-meta-item">
-                    📖 1 min read
-                </span>
-                <span class="post-meta-item">
-                    📊 199 words
-                </span>
-                
-                
-                
-                
-                
-                
-                <span class="post-meta-item">
-                    🏷️ Tags: 
-                    
-                        
-                        <a href="/tags/recipes">recipes</a>
-                    
-                        , 
-                        <a href="/tags/cooking">cooking</a>
-                    
-                        , 
-                        <a href="/tags/webdev">webdev</a>
-                    
-                </span>
-                
-                
-                
-            </div>
-            
-            
-            
-            <div class="post-description" style="font-style: italic; margin: 8px 0; padding: 4px 8px; background: var(--bg-secondary); border: 1px inset var(--border-dark);">
-                This is a collection of my favorite vegetarian recipes that I have tried and loved over the years.
-            </div>
-            
-            
-            
-        </header>
         
         
         
         
         
-        <div class="content">
-            <h2 id="vegetarian-recipes">Vegetarian Recipes!</h2>
-<p>It would make me very happy, if you checked out my vegetarian recipe collection website called <a href="https://veg.ondrejhonus.com/">Vege Dreams</a>.</p>
-<p>It&rsquo;s a personal project of mine, where I share my favorite vegetarian recipes that I have tried and loved over the years. From Irish soda bread to Italian Spaghetti Carboanara (without bacon, of course!), there&rsquo;s something for everyone.</p>
-<h2 id="what-can-you-find-there">What can you find there?</h2>
-<p>You can also find some vegan recipes there, and some recipes are very easy to adapt to be vegan-friendly, usually just remove cheese, or replace dairy with plant-based alternatives.</p>
-<h2 id="where-did-the-idea-come-from">Where did the idea come from?</h2>
-<p>The website is actually a fork of my brothers website Tofu Dreams, which is focused on vegan recipes. I wanted to create something similar, but with a focus on vegetarian dishes, because I don&rsquo;t think I&rsquo;d be able to be a vegan, plus I had some of mine recipes in mind, so I really wanted to have something similar.</p>
-<!-- raw HTML omitted -->
-<h2 id="how-is-it-built">How is it built?</h2>
-<p>My version of the recipe collection is styled diffrently though, I am using <a href="https://bulma.io/">Bulma.io</a> CSS framework, which i really like.
-Feel free to check my code on Github, and maybe even fork it for your own recipe collection!</p>
-<!-- raw HTML omitted -->
-
+        
+        
+        
+        
+        
+        <div class="view-options" style="margin-bottom: 12px; padding: 4px; background: var(--button-face); border: 1px outset var(--button-face);">
+            <span style="font-size: 10px; margin-right: 8px;">📋 View:</span>
+            <button class="btn" onclick="toggleView('list')" id="listBtn" style="font-size: 9px; margin-right: 2px;">List</button>
+            <button class="btn" onclick="toggleView('grid')" id="gridBtn" style="font-size: 9px; margin-right: 2px;">Grid</button>
+            <button class="btn" onclick="toggleView('archive')" id="archiveBtn" style="font-size: 9px;">Archive</button>
         </div>
         
         
-        <footer class="post-footer" style="margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--border-dark);">
+        
+        <div id="listView" class="posts-view">
             
+            <ul class="post-list">
+                
+                <li class="post-list-item">
+                    
+                    
+                    <div class="post-list-title">
+                        <a href="http://localhost:1313/documents/linux-basics/">Linux Basics</a>
+                    </div>
+                    
+                    <div class="post-list-meta">
+                        <span class="post-meta-item">📅 Mar 16, 2026</span>
+                        
+                        
+                        
+                        
+                        
+                        <span class="post-meta-item">📖 3 min read</span>
+                        <span class="post-meta-item">📊 475 words</span>
+                    </div>
+                    
+                    
+                    <div class="post-list-summary"><ol>
+<li>
+<h3 id="bash-scripts"><strong>Bash Scripts</strong></h3>
+<p>– <a href="http://blog.iservery.com/2013/04/04/bash-skripty-priklady/">http://blog.iservery.com/2013/04/04/bash-skripty-priklady/</a> (awk, grep, iptables, tr, tar, ifconfig, dmesg, crontab)</p>
+<ul>
+<li><strong>Number of packets sent on eth0 interface</strong>
+<ul>
+<li>with ip <code>ip -s link show …</code></li></ul></li></ul></li></ol></div>
+                    
+                    
+                    
+                    <div class="post-tags" style="margin-top: 4px;">
+                        
+                        <a href="/tags/linux" 
+                           style="display: inline-block; background: var(--button-face); border: 1px outset var(--button-face); padding: 1px 3px; margin: 1px; font-size: 8px; text-decoration: none; color: var(--text-primary);">
+                           linux
+                        </a>
+                        
+                        <a href="/tags/bash" 
+                           style="display: inline-block; background: var(--button-face); border: 1px outset var(--button-face); padding: 1px 3px; margin: 1px; font-size: 8px; text-decoration: none; color: var(--text-primary);">
+                           bash
+                        </a>
+                        
+                    </div>
+                    
+                    
+                    <div style="clear: both;"></div>
+                </li>
+                
+            </ul>
             
+        </div>
+        
+        
+        <div id="gridView" class="posts-view" style="display: none;">
             
-            <div class="sharing" style="margin-bottom: 12px;">
-                <div style="font-weight: bold; margin-bottom: 6px;">📤 Share this post:</div>
-                <div style="display: flex; gap: 4px; flex-wrap: wrap;">
-                    <a href="https://twitter.com/intent/tweet?text=Vege%20Dreams%3a%20My%20Vegetarian%20Recipe%20Collection&url=http%3a%2f%2flocalhost%3a1313%2fposts%2fvege-dreams%2f" 
-                       target="_blank" class="btn" style="font-size: 10px;">Twitter</a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fposts%2fvege-dreams%2f" 
-                       target="_blank" class="btn" style="font-size: 10px;">Facebook</a>
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fposts%2fvege-dreams%2f" 
-                       target="_blank" class="btn" style="font-size: 10px;">LinkedIn</a>
-                    <a href="mailto:?subject=Vege%20Dreams%3a%20My%20Vegetarian%20Recipe%20Collection&body=http%3a%2f%2flocalhost%3a1313%2fposts%2fvege-dreams%2f" 
-                       class="btn" style="font-size: 10px;">Email</a>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 8px;">
+                
+                <div class="post-card" style="background: var(--bg-window); border: 1px outset var(--border-dark); padding: 8px;">
+                    
+                    
+                    <div class="card-title" style="font-weight: bold; margin-bottom: 4px; font-size: 11px;">
+                        <a href="http://localhost:1313/documents/linux-basics/" style="text-decoration: none; color: var(--text-primary);">Linux Basics</a>
+                    </div>
+                    
+                    <div class="card-meta" style="font-size: 9px; color: var(--text-secondary); margin-bottom: 4px;">
+                        Mar 16, 2026 • 3 min read
+                    </div>
+                    
+                    
+                    <div class="card-summary" style="font-size: 9px; line-height: 1.3;"><ol>
+<li>
+<h3 id="bash-scripts"><strong>Bash Scripts</strong></h3>
+<p>– <a href="http://blog.iservery.com/2013/04/04/bash-skripty-priklady/">http://blog.iservery.com/2013/04/04/bash-skripty-priklady/</a> (awk, grep, iptables, …</p></li></ol></div>
+                    
                 </div>
+                
             </div>
             
+        </div>
+        
+        
+        <div id="archiveView" class="posts-view" style="display: none;">
             
             
+            <div class="archive-year">2026</div>
             
-            
-            
-            
-            
-            <div class="related-posts" style="background: var(--bg-secondary); border: 1px inset var(--border-dark); padding: 8px; margin: 12px 0;">
-                <div style="font-weight: bold; margin-bottom: 6px;">🔗 Related Posts:</div>
-                <ul style="padding-left: 1rem; margin: 0; font-size: 10px;">
+            <div class="archive-month">
+                <strong>March</strong> (1 post)
+                <ul style="margin: 4px 0 8px 12px; font-size: 10px;">
                     
-                    <li style="margin: 2px 0;">
-                        <a href="http://localhost:1313/posts/this-website/">Making this website</a>
-                        <span style="color: var(--text-secondary);"> - Jan 23</span>
+                    <li style="margin: 1px 0;">
+                        <span style="color: var(--text-secondary);">16</span> - 
+                        <a href="http://localhost:1313/documents/linux-basics/">Linux Basics</a>
+                        
                     </li>
                     
                 </ul>
@@ -248,54 +265,114 @@ Feel free to check my code on Github, and maybe even fork it for your own recipe
             
             
             
-            
-        </footer>
+        </div>
     </div>
-</article>
+</div>
 
 
-<nav class="post-nav" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0;">
-    
-    <div class="window">
-        <div class="window-header">
-            <span class="window-title">← Previous Post</span>
-            <div class="window-controls">
-                <span class="window-button">_</span>
-                <span class="window-button">□</span>
-                <span class="window-button">×</span>
+
+
+
+
+
+
+<div class="window">
+    <div class="window-header">
+        <span class="window-title">🗂️ Browse by Category</span>
+        <div class="window-controls">
+            <span class="window-button">_</span>
+            <span class="window-button">□</span>
+            <span class="window-button">×</span>
+        </div>
+    </div>
+    <div class="window-content">
+        
+        
+        
+        <div style="margin-top: 12px;">
+            <div style="font-weight: bold; margin-bottom: 6px; font-size: 11px;">🏷️ Popular Tags:</div>
+            <div class="tag-cloud">
+                
+                <a href="/tags/linux">
+                    linux (4)
+                </a>
+                
+                <a href="/tags/kvm">
+                    kvm (2)
+                </a>
+                
+                <a href="/tags/tools">
+                    tools (2)
+                </a>
+                
+                <a href="/tags/webdev">
+                    webdev (2)
+                </a>
+                
+                <a href="/tags/bash">
+                    bash (1)
+                </a>
+                
+                <a href="/tags/cooking">
+                    cooking (1)
+                </a>
+                
+                <a href="/tags/html">
+                    html (1)
+                </a>
+                
+                <a href="/tags/music">
+                    music (1)
+                </a>
+                
+                <a href="/tags/programming">
+                    programming (1)
+                </a>
+                
+                <a href="/tags/recipes">
+                    recipes (1)
+                </a>
+                
+                <a href="/tags/thinkpad">
+                    thinkpad (1)
+                </a>
+                
             </div>
         </div>
-        <div class="window-content">
-            <a href="http://localhost:1313/posts/this-website/" style="text-decoration: none; color: inherit;">
-                <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">Making this website</div>
-                <div style="font-size: 9px; color: var(--text-secondary);">Jan 23, 2026</div>
-            </a>
-        </div>
+        
     </div>
-    
-    
-    
-    <div class="window">
-        <div class="window-header">
-            <span class="window-title">Next Post →</span>
-            <div class="window-controls">
-                <span class="window-button">_</span>
-                <span class="window-button">□</span>
-                <span class="window-button">×</span>
-            </div>
-        </div>
-        <div class="window-content">
-            <a href="http://localhost:1313/posts/thinkpad-story/" style="text-decoration: none; color: inherit;">
-                <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">My Story With ThinkPads</div>
-                <div style="font-size: 9px; color: var(--text-secondary);">Jan 24, 2026</div>
-            </a>
-        </div>
-    </div>
-    
-</nav>
+</div>
 
 
+<script>
+function toggleView(viewType) {
+    
+    document.getElementById('listView').style.display = 'none';
+    document.getElementById('gridView').style.display = 'none';
+    document.getElementById('archiveView').style.display = 'none';
+    
+    
+    document.querySelectorAll('.view-options .btn').forEach(btn => {
+        btn.style.background = 'var(--button-face)';
+        btn.style.border = '1px outset var(--button-face)';
+    });
+    
+    
+    document.getElementById(viewType + 'View').style.display = 'block';
+    document.getElementById(viewType + 'Btn').style.background = 'var(--highlight)';
+    document.getElementById(viewType + 'Btn').style.color = 'white';
+    document.getElementById(viewType + 'Btn').style.border = '1px inset var(--button-face)';
+    
+    
+    localStorage.setItem('preferredView', viewType);
+}
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const preferredView = localStorage.getItem('preferredView') || 'list';
+    toggleView(preferredView);
+});
+</script>
 
         </main>
         
@@ -561,8 +638,6 @@ Feel free to check my code on Github, and maybe even fork it for your own recipe
         </div>
         <div class="status-right">
             <span class="status-item">Ondřej Honus&#39; website</span>
-            
-            <span class="status-item">199 words</span>
             
         </div>
     </div>

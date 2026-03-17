@@ -2,19 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-03-15T15:49:59+00:00</lastmod>
+    <loc>http://localhost:1313/tags/bash/</loc>
+    <lastmod>2026-03-16T20:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/snippets/html-current-year/</loc>
+    <lastmod>2026-03-16T20:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/documents/</loc>
+    <lastmod>2026-03-16T20:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/html/</loc>
+    <lastmod>2026-03-16T20:30:59+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/linux/</loc>
-    <lastmod>2026-01-24T21:00:00+00:00</lastmod>
+    <lastmod>2026-03-16T20:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/documents/linux-basics/</loc>
+    <lastmod>2026-03-16T20:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/snippets/</loc>
+    <lastmod>2026-03-16T20:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-03-16T20:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/kvm/</loc>
+    <lastmod>2026-03-16T19:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/snippets/kvm-load-tun/</loc>
+    <lastmod>2026-03-16T19:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/snippets/kvm-default-network/</loc>
+    <lastmod>2026-03-16T19:25:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/snippets/distrobox-xdg-open/</loc>
+    <lastmod>2026-03-16T15:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-15T15:49:59+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/thinkpad-story/</loc>
     <lastmod>2026-01-24T21:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-01-24T21:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-01-24T21:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/thinkpad/</loc>
@@ -32,21 +62,6 @@
     <loc>http://localhost:1313/tags/tools/</loc>
     <lastmod>2026-01-24T01:20:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/snippets/html-current-year/</loc>
-    <lastmod>2026-01-23T23:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/html/</loc>
-    <lastmod>2026-01-23T23:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/music/</loc>
-    <lastmod>2026-01-23T23:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/snippets/</loc>
-    <lastmod>2026-01-23T23:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/apps/metronome/</loc>
-    <lastmod>2026-01-23T23:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/cooking/</loc>
     <lastmod>2026-01-23T22:00:00+00:00</lastmod>
   </url><url>
@@ -61,6 +76,12 @@
   </url><url>
     <loc>http://localhost:1313/posts/this-website/</loc>
     <lastmod>2026-01-23T21:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/music/</loc>
+    <lastmod>2026-01-23T15:49:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/apps/metronome/</loc>
+    <lastmod>2026-01-23T15:49:59+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
