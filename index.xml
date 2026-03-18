@@ -1,88 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ondřej Honus' blog on Ondřej Honus' website</title><link>https://ondrejhonus.com/</link><description>Recent content in Ondřej Honus' blog on Ondřej Honus' website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 20:30:59 +0000</lastBuildDate><atom:link href="https://ondrejhonus.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Current year in HTML</title><link>https://ondrejhonus.com/snippets/html-current-year/</link><pubDate>Mon, 16 Mar 2026 20:30:59 +0000</pubDate><guid>https://ondrejhonus.com/snippets/html-current-year/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#f92672"&gt;script&lt;/span&gt;&amp;gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ondřej Honus' blog on Ondřej Honus' website</title><link>https://ondrejhonus.com/</link><description>Recent content in Ondřej Honus' blog on Ondřej Honus' website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 18 Mar 2026 15:30:59 +0000</lastBuildDate><atom:link href="https://ondrejhonus.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Cool Linux tools</title><link>https://ondrejhonus.com/documents/cool-commands/</link><pubDate>Wed, 18 Mar 2026 15:30:59 +0000</pubDate><guid>https://ondrejhonus.com/documents/cool-commands/</guid><description>&lt;h3 id="-a-terminal-based-file-manager"&gt;&amp;gt; A terminal based file manager&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;yazi
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Package name: &lt;code&gt;yazi&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="-a-set-of-eyes-on-your-screen-that-follow-your-cursor-if-the-window-is-running-through-xwayland-good-way-to-check-wayland-compatibility"&gt;&amp;gt; A set of eyes on your screen that follow your cursor if the window is running through XWayland. Good way to check Wayland compatibility.&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;xeyes
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Package name: &lt;code&gt;xeyes&lt;/code&gt;, &lt;code&gt;xorg-xeyes&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="-terminal-that-has-built-in-image-compatibility-and-doesnt-require-weird-commands-for-using-ssh-and-stuff-like-kitty-does"&gt;&amp;gt; Terminal that has built in image compatibility, and doesnt require weird commands for using ssh and stuff like kitty does.&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;foot
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Package name: &lt;code&gt;foot&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id="-tool-for-displaying-images-in-a-terminal-goes-well-with-foot"&gt;&amp;gt; Tool for displaying images in a terminal (goes well with &lt;code&gt;foot&lt;/code&gt;)&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;chafa &amp;lt;image_file&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Package name: &lt;code&gt;chafa&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Current year in HTML</title><link>https://ondrejhonus.com/snippets/html-current-year/</link><pubDate>Mon, 16 Mar 2026 20:30:59 +0000</pubDate><guid>https://ondrejhonus.com/snippets/html-current-year/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;&lt;span style="color:#f92672"&gt;script&lt;/span&gt;&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; document.&lt;span style="color:#a6e22e"&gt;write&lt;/span&gt;(&lt;span style="color:#e6db74"&gt;/\d{4}/&lt;/span&gt;.&lt;span style="color:#a6e22e"&gt;exec&lt;/span&gt;(Date())[&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;]);
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&amp;lt;/&lt;span style="color:#f92672"&gt;script&lt;/span&gt;&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Linux Basics</title><link>https://ondrejhonus.com/documents/linux-basics/</link><pubDate>Mon, 16 Mar 2026 20:30:59 +0000</pubDate><guid>https://ondrejhonus.com/documents/linux-basics/</guid><description>&lt;h3 id="list-of-basic-commands"&gt;List of basic commands&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ls&lt;/code&gt; &amp;ndash; list files in directory
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;-la&lt;/code&gt; &amp;ndash; long format, including hidden files&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cat&lt;/code&gt; &amp;ndash; print file contents&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;echo&lt;/code&gt; &amp;ndash; print text to console&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cd&lt;/code&gt; &amp;ndash; change directory&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;pwd&lt;/code&gt; &amp;ndash; print working directory&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cp&lt;/code&gt; &amp;ndash; copy files&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mv&lt;/code&gt; &amp;ndash; move files&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rm&lt;/code&gt; &amp;ndash; remove files
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;-rf&lt;/code&gt; &amp;ndash; remove directory&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mkdir&lt;/code&gt; &amp;ndash; create directory&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ps&lt;/code&gt; &amp;ndash; print running processes
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;aux&lt;/code&gt; &amp;ndash; print all processes with user and command&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;top&lt;/code&gt; &amp;ndash; print running processes in real time&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;htop&lt;/code&gt; &amp;ndash; interactive process viewer&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;grep&lt;/code&gt; &amp;ndash; search for text in files, rows&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;awk&lt;/code&gt; &amp;ndash; text processing, columns&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;head&lt;/code&gt; &amp;ndash; print first lines of file&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;tail&lt;/code&gt; &amp;ndash; print last lines of file&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;kill&lt;/code&gt; &amp;ndash; kill process by PID&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;pkill&lt;/code&gt; &amp;ndash; kill process by name&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;killall&lt;/code&gt; &amp;ndash; kill all processes with name&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;systemctl&lt;/code&gt; &amp;ndash; manage services&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ip&lt;/code&gt; &amp;ndash; manage network interfaces&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;netstat&lt;/code&gt; &amp;ndash; print network connections
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;-tulpn&lt;/code&gt; &amp;ndash; print connections, listening ports, numeric output&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ss&lt;/code&gt; &amp;ndash; print network connections&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;free&lt;/code&gt; &amp;ndash; print free memory&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;du&lt;/code&gt; &amp;ndash; print disk usage&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;df&lt;/code&gt; &amp;ndash; print disk free space&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;tar&lt;/code&gt; &amp;ndash; create and extract tar archives&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lsblk&lt;/code&gt; &amp;ndash; list block devices&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;fdisk&lt;/code&gt; &amp;ndash; manage disk partitions&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;mount&lt;/code&gt; &amp;ndash; mount filesystems&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;umount&lt;/code&gt; &amp;ndash; unmount filesystems&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;useradd&lt;/code&gt; &amp;ndash; add user&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;userdel&lt;/code&gt; &amp;ndash; delete user&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;passwd&lt;/code&gt; &amp;ndash; change user password&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;groupadd&lt;/code&gt; &amp;ndash; add group&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;groupdel&lt;/code&gt; &amp;ndash; delete group&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;usermod&lt;/code&gt; &amp;ndash; modify user&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;chown&lt;/code&gt; &amp;ndash; change file ownership&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;chmod&lt;/code&gt; &amp;ndash; change file permissions&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;journalctl&lt;/code&gt; &amp;ndash; print system logs&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rsync&lt;/code&gt; &amp;ndash; synchronize files between directories or hosts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h3 id="table-of-contents"&gt;Table of contents&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#bash-scripts"&gt;Bash Scripts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#service-installation"&gt;Service Installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#service-administration"&gt;Service Administration&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#command-knowledge"&gt;Command Knowledge&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#firewalling"&gt;Firewalling&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#list-of-basic-commands"&gt;List of basic commands&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#exam-example"&gt;Exam example&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#part-1-basic-knowledge"&gt;Part 1: Basic knowledge&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#part-2-samba-configuration-and-installation"&gt;Part 2: SAMBA configuration and installation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#part-3-network-scanning-backups-scripts"&gt;Part 3: Network scanning, backups, scripts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;h3 id="bash-scripts"&gt;&lt;strong&gt;Bash Scripts&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;– &lt;a href="http://blog.iservery.com/2013/04/04/bash-skripty-priklady/"&gt;http://blog.iservery.com/2013/04/04/bash-skripty-priklady/&lt;/a&gt; (awk, grep, iptables, tr, tar, ifconfig, dmesg, crontab)&lt;/p&gt;</description></item><item><title>KVM Loadtun</title><link>https://ondrejhonus.com/snippets/kvm-load-tun/</link><pubDate>Mon, 16 Mar 2026 19:30:59 +0000</pubDate><guid>https://ondrejhonus.com/snippets/kvm-load-tun/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Linux Basics</title><link>https://ondrejhonus.com/documents/linux-basics/</link><pubDate>Mon, 16 Mar 2026 20:30:59 +0000</pubDate><guid>https://ondrejhonus.com/documents/linux-basics/</guid><description>&lt;h2 id="exam-example"&gt;Exam example&lt;/h2&gt;
+&lt;h3 id="part-1-basic-knowledge"&gt;Part 1: Basic knowledge&lt;/h3&gt;
+&lt;h4 id="print-all-files-in-a-directory-including-hidden-files-permissions-group-and-user-owners"&gt;Print all files in a directory, including hidden files, permissions, group and user owners&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ls -la /path/to/directory
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="print-first-15-lines-of-a-file"&gt;Print first 15 lines of a file&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;head -n &lt;span style="color:#ae81ff"&gt;15&lt;/span&gt; /path/to/file
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="get-free-memory"&gt;Get free memory&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;free -h
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="show-disk-block-devices"&gt;Show disk block devices&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;lsblk
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="show-all-processes-running-under-root"&gt;Show all processes running under root&lt;/h4&gt;
+&lt;p&gt;simple way (not 100% correct):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ps aux | grep root
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;more correct way:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ps -U root -u root
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id="what-is-grub-and-what-is-it-for"&gt;What is GRUB and what is it for?&lt;/h4&gt;
+&lt;p&gt;GRUB is a Linux bootloader. It&amp;rsquo;s responsible for loading the kernel, initializing the system and it provides a menu to select an operating system to boot.&lt;/p&gt;</description></item><item><title>KVM Loadtun</title><link>https://ondrejhonus.com/snippets/kvm-load-tun/</link><pubDate>Mon, 16 Mar 2026 19:30:59 +0000</pubDate><guid>https://ondrejhonus.com/snippets/kvm-load-tun/</guid><description>&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;#!/bin/bash
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir -p /dev/net
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo mknod /dev/net/tun c &lt;span style="color:#ae81ff"&gt;10&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;200&lt;/span&gt;
@@ -140,7 +96,7 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  defer
  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
 &gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1773762029" /&gt;
+&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1773862054" /&gt;
 &lt;script src="https://ondrejhonus.com/js/distro-chooser.js"&gt;&lt;/script&gt;
 
 &lt;div class="box-mg"&gt;
