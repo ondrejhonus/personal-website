@@ -5,6 +5,164 @@ description: "bash scripts, services, linux administration, commands, firewallin
 tags: ["linux", "bash"]
 ---
 
+## Exam example
+
+### Part 1: Basic knowledge
+
+#### Print all files in a directory, including hidden files, permissions, group and user owners
+
+```sh
+ls -la /path/to/directory
+```
+
+#### Print first 15 lines of a file
+
+```sh
+head -n 15 /path/to/file
+```
+
+#### Get free memory
+
+```sh
+free -h
+```
+
+#### Show disk block devices
+
+```sh
+lsblk
+```
+
+#### Show all processes running under root
+
+simple way (not 100% correct):
+
+```sh
+ps aux | grep root
+```
+
+more correct way:
+
+```sh
+ps -U root -u root
+```
+
+#### What is GRUB and what is it for?
+
+GRUB is a Linux bootloader. It's responsible for loading the kernel, initializing the system and it provides a menu to select an operating system to boot.
+
+Config file is located at `/etc/default/grub`
+
+### Part 2: SAMBA configuration and installation
+
+#### Install samba package
+
+```sh
+apt install samba samba-common-bin
+```
+
+#### Create two users and them to samba
+
+```sh
+useradd student1
+useradd student2
+```
+
+```sh
+smbpasswd -a student1
+smbpasswd -a student2
+```
+
+#### Create directory /data and set permissions:
+
+- Owner: student
+- Group: users
+- Permissions: read, write, browsable
+- Others: no permissions
+
+```sh
+mkdir -p /data
+chown student:users /data
+chmod 770 /data
+```
+
+#### Where are SAMBA logs (info about logins, errors)
+
+```sh
+/var/log/samba/
+```
+
+#### What port is SAMBA listening on?
+
+```sh
+netstat -tulpn | grep smbd
+```
+
+### Part 3: Network scanning, backups, scripts
+
+#### Make a bash script that:
+
+- Backups /data to file `data_DDMMYYYY.tar.gz`
+- Check if file exists, if it does, rename it to `*.old`
+- Print if backup was successful or not
+
+```sh
+#!/bin/bash
+BACKUP_FILE="data_$(date +%d%m%Y).tar.gz"
+if [ -f "$BACKUP_FILE" ]; then
+  mv "$BACKUP_FILE" "${BACKUP_FILE}.old"
+fi
+tar -cvpzf "$BACKUP_FILE" /data
+if [ $? -eq 0 ]; then
+  echo "Backup successful: $BACKUP_FILE"
+else
+  echo "Backup failed"
+fi
+```
+
+#### Make an rsync command that copies `home/student` to SAMBA server at `192.168.1.100`, shared folder `backup`
+
+```sh
+# Mount the SAMBA share
+mount -t cifs //192.168.1.100/backup /mnt/backup -o username=student
+# Use rsync to copy files
+rsync -avz /home/student/ /mnt/backup/
+```
+
+#### Print all computers on network `192.168.10.0/24` and show their MAC addresses
+
+```sh
+nmap -sn 192.168.10.0/24
+```
+
+#### Make a CRON job that will run `backup.sh` every day at 21:00
+
+```sh
+0 21 * * * /path/to/backup.sh
+```
+
+#### Command for backing up a directory including file attributes and permissions
+
+```sh
+tar -cvpzf backup.tar.gz /path/to/directory
+```
+
+
+### Table of contents
+
+- [Bash Scripts](#bash-scripts)
+- [Service Installation](#service-installation)
+- [Service Administration](#service-administration)
+- [Command Knowledge](#command-knowledge)
+- [Firewalling](#firewalling)
+- [List of basic commands](#list-of-basic-commands)
+- [Exam example](#exam-example)
+  - [Part 1: Basic knowledge](#part-1-basic-knowledge)
+  - [Part 2: SAMBA configuration and installation](#part-2-samba-configuration-and-installation)
+  - [Part 3: Network scanning, backups, scripts](#part-3-network-scanning-backups-scripts)
+
+---
+
 ### List of basic commands
 
 - `ls` -- list files in directory
@@ -52,23 +210,6 @@ tags: ["linux", "bash"]
 - `chmod` -- change file permissions
 - `journalctl` -- print system logs
 - `rsync` -- synchronize files between directories or hosts
-
----
-
-### Table of contents
-
-- [Bash Scripts](#bash-scripts)
-- [Service Installation](#service-installation)
-- [Service Administration](#service-administration)
-- [Command Knowledge](#command-knowledge)
-- [Firewalling](#firewalling)
-- [List of basic commands](#list-of-basic-commands)
-- [Exam example](#exam-example)
-  - [Part 1: Basic knowledge](#part-1-basic-knowledge)
-  - [Part 2: SAMBA configuration and installation](#part-2-samba-configuration-and-installation)
-  - [Part 3: Network scanning, backups, scripts](#part-3-network-scanning-backups-scripts)
-
----
 
 1.  ### **Bash Scripts**
 
@@ -254,144 +395,3 @@ tags: ["linux", "bash"]
 
 ---
 
-## Exam example
-
-### Part 1: Basic knowledge
-
-#### Print all files in a directory
-
-```sh
-ls -la /path/to/directory
-```
-
-#### Print first 15 lines of a file
-
-```sh
-head -n 15 /path/to/file
-```
-
-#### Get free memory
-
-```sh
-free -h
-```
-
-#### Show disk block devices
-
-```sh
-lsblk
-```
-
-#### Show all processes running under root
-
-simple way (not 100% correct):
-
-```sh
-ps aux | grep root
-```
-
-more correct way:
-
-```sh
-ps -U root -u root
-```
-
-#### What is GRUB and what is it for?
-
-GRUB is a Linux bootloader. It's responsible for loading the kernel, initializing the system and it provides a menu to select an operating system to boot.
-
-Config file is located at `/etc/default/grub`
-
-### Part 2: SAMBA configuration and installation
-
-#### Install samba package
-
-```sh
-apt install samba samba-common-bin
-```
-
-#### Create two users and them to samba
-
-```sh
-useradd student1
-useradd student2
-```
-
-```sh
-smbpasswd -a student1
-smbpasswd -a student2
-```
-
-#### Create directory /data and set permissions:
-
-- Owner: student
-- Group: users
-- Permissions: read, write, browsable
-- Others: no permissions
-
-```sh
-mkdir -p /data
-chown student:users /data
-chmod 770 /data
-```
-
-#### Where are SAMBA logs (info about logins, errors)
-
-```sh
-/var/log/samba/
-```
-
-#### What port is SAMBA listening on?
-
-```sh
-netstat -tulpn | grep smbd
-```
-
-### Part 3: Network scanning, backups, scripts
-
-#### Make a bash script that:
-
-- Backups /data to file `data_DDMMYYYY.tar.gz`
-- Check if file exists, if it does, rename it to `*.old`
-- Print if backup was successful or not
-
-```sh
-#!/bin/bash
-BACKUP_FILE="data_$(date +%d%m%Y).tar.gz"
-if [ -f "$BACKUP_FILE" ]; then
-  mv "$BACKUP_FILE" "${BACKUP_FILE}.old"
-fi
-tar -cvpzf "$BACKUP_FILE" /data
-if [ $? -eq 0 ]; then
-  echo "Backup successful: $BACKUP_FILE"
-else
-  echo "Backup failed"
-fi
-```
-
-#### Make an rsync command that copies `home/student` to SAMBA server at `192.168.1.100`, shared folder `backup`
-
-```sh
-# Mount the SAMBA share
-mount -t cifs //192.168.1.100/backup /mnt/backup -o username=student
-# Use rsync to copy files
-rsync -avz /home/student/ /mnt/backup/
-```
-
-#### Print all computers on network `192.168.10.0/24` and show their MAC addresses
-
-```sh
-nmap -sn 192.168.10.0/24
-```
-
-#### Make a CRON job that will run `backup.sh` every day at 21:00
-
-```sh
-0 21 * * * /path/to/backup.sh
-```
-
-#### Command for backing up a directory including file attributes and permissions
-
-```sh
-tar -cvpzf backup.tar.gz /path/to/directory
-```

@@ -14,7 +14,7 @@
     <meta property="og:title" content="Linux Basics | Ondřej Honus&#39; website">
     <meta property="og:description" content="bash scripts, services, linux administration, commands, firewalling.">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="http://localhost:1313/documents/linux-basics/">
+    <meta property="og:url" content="http://localhost:1313/documents/linux-basics-copy/linux-basics/">
     
     
     
@@ -48,7 +48,7 @@
         </div>
         <div class="address-bar">
             
-            http://localhost:1313/documents/linux-basics/
+            http://localhost:1313/documents/linux-basics-copy/linux-basics/
             
         </div>
     </div>
@@ -148,7 +148,7 @@
                     📖 7 min read
                 </span>
                 <span class="post-meta-item">
-                    📊 1404 words
+                    📊 1396 words
                 </span>
                 
                 
@@ -186,93 +186,7 @@
         
         
         <div class="content">
-            <h2 id="exam-example">Exam example</h2>
-<h3 id="part-1-basic-knowledge">Part 1: Basic knowledge</h3>
-<h4 id="print-all-files-in-a-directory-including-hidden-files-permissions-group-and-user-owners">Print all files in a directory, including hidden files, permissions, group and user owners</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ls -la /path/to/directory
-</span></span></code></pre></div><h4 id="print-first-15-lines-of-a-file">Print first 15 lines of a file</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>head -n <span style="color:#ae81ff">15</span> /path/to/file
-</span></span></code></pre></div><h4 id="get-free-memory">Get free memory</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>free -h
-</span></span></code></pre></div><h4 id="show-disk-block-devices">Show disk block devices</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>lsblk
-</span></span></code></pre></div><h4 id="show-all-processes-running-under-root">Show all processes running under root</h4>
-<p>simple way (not 100% correct):</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ps aux | grep root
-</span></span></code></pre></div><p>more correct way:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ps -U root -u root
-</span></span></code></pre></div><h4 id="what-is-grub-and-what-is-it-for">What is GRUB and what is it for?</h4>
-<p>GRUB is a Linux bootloader. It&rsquo;s responsible for loading the kernel, initializing the system and it provides a menu to select an operating system to boot.</p>
-<p>Config file is located at <code>/etc/default/grub</code></p>
-<h3 id="part-2-samba-configuration-and-installation">Part 2: SAMBA configuration and installation</h3>
-<h4 id="install-samba-package">Install samba package</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install samba samba-common-bin
-</span></span></code></pre></div><h4 id="create-two-users-and-them-to-samba">Create two users and them to samba</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>useradd student1
-</span></span><span style="display:flex;"><span>useradd student2
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>smbpasswd -a student1
-</span></span><span style="display:flex;"><span>smbpasswd -a student2
-</span></span></code></pre></div><h4 id="create-directory-data-and-set-permissions">Create directory /data and set permissions:</h4>
-<ul>
-<li>Owner: student</li>
-<li>Group: users</li>
-<li>Permissions: read, write, browsable</li>
-<li>Others: no permissions</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mkdir -p /data
-</span></span><span style="display:flex;"><span>chown student:users /data
-</span></span><span style="display:flex;"><span>chmod <span style="color:#ae81ff">770</span> /data
-</span></span></code></pre></div><h4 id="where-are-samba-logs-info-about-logins-errors">Where are SAMBA logs (info about logins, errors)</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>/var/log/samba/
-</span></span></code></pre></div><h4 id="what-port-is-samba-listening-on">What port is SAMBA listening on?</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>netstat -tulpn | grep smbd
-</span></span></code></pre></div><h3 id="part-3-network-scanning-backups-scripts">Part 3: Network scanning, backups, scripts</h3>
-<h4 id="make-a-bash-script-that">Make a bash script that:</h4>
-<ul>
-<li>Backups /data to file <code>data_DDMMYYYY.tar.gz</code></li>
-<li>Check if file exists, if it does, rename it to <code>*.old</code></li>
-<li>Print if backup was successful or not</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span>BACKUP_FILE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;data_</span><span style="color:#66d9ef">$(</span>date +%d%m%Y<span style="color:#66d9ef">)</span><span style="color:#e6db74">.tar.gz&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -f <span style="color:#e6db74">&#34;</span>$BACKUP_FILE<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
-</span></span><span style="display:flex;"><span>  mv <span style="color:#e6db74">&#34;</span>$BACKUP_FILE<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>BACKUP_FILE<span style="color:#e6db74">}</span><span style="color:#e6db74">.old&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
-</span></span><span style="display:flex;"><span>tar -cvpzf <span style="color:#e6db74">&#34;</span>$BACKUP_FILE<span style="color:#e6db74">&#34;</span> /data
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $? -eq <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
-</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Backup successful: </span>$BACKUP_FILE<span style="color:#e6db74">&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
-</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Backup failed&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
-</span></span></code></pre></div><h4 id="make-an-rsync-command-that-copies-homestudent-to-samba-server-at-1921681100-shared-folder-backup">Make an rsync command that copies <code>home/student</code> to SAMBA server at <code>192.168.1.100</code>, shared folder <code>backup</code></h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Mount the SAMBA share</span>
-</span></span><span style="display:flex;"><span>mount -t cifs //192.168.1.100/backup /mnt/backup -o username<span style="color:#f92672">=</span>student
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Use rsync to copy files</span>
-</span></span><span style="display:flex;"><span>rsync -avz /home/student/ /mnt/backup/
-</span></span></code></pre></div><h4 id="print-all-computers-on-network-19216810024-and-show-their-mac-addresses">Print all computers on network <code>192.168.10.0/24</code> and show their MAC addresses</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nmap -sn 192.168.10.0/24
-</span></span></code></pre></div><h4 id="make-a-cron-job-that-will-run-backupsh-every-day-at-2100">Make a CRON job that will run <code>backup.sh</code> every day at 21:00</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">21</span> * * * /path/to/backup.sh
-</span></span></code></pre></div><h4 id="command-for-backing-up-a-directory-including-file-attributes-and-permissions">Command for backing up a directory including file attributes and permissions</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>tar -cvpzf backup.tar.gz /path/to/directory
-</span></span></code></pre></div><h3 id="table-of-contents">Table of contents</h3>
-<ul>
-<li><a href="#bash-scripts">Bash Scripts</a></li>
-<li><a href="#service-installation">Service Installation</a></li>
-<li><a href="#service-administration">Service Administration</a></li>
-<li><a href="#command-knowledge">Command Knowledge</a></li>
-<li><a href="#firewalling">Firewalling</a></li>
-<li><a href="#list-of-basic-commands">List of basic commands</a></li>
-<li><a href="#exam-example">Exam example</a>
-<ul>
-<li><a href="#part-1-basic-knowledge">Part 1: Basic knowledge</a></li>
-<li><a href="#part-2-samba-configuration-and-installation">Part 2: SAMBA configuration and installation</a></li>
-<li><a href="#part-3-network-scanning-backups-scripts">Part 3: Network scanning, backups, scripts</a></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h3 id="list-of-basic-commands">List of basic commands</h3>
+            <h3 id="list-of-basic-commands">List of basic commands</h3>
 <ul>
 <li><code>ls</code> &ndash; list files in directory
 <ul>
@@ -332,6 +246,24 @@
 <li><code>journalctl</code> &ndash; print system logs</li>
 <li><code>rsync</code> &ndash; synchronize files between directories or hosts</li>
 </ul>
+<hr>
+<h3 id="table-of-contents">Table of contents</h3>
+<ul>
+<li><a href="#bash-scripts">Bash Scripts</a></li>
+<li><a href="#service-installation">Service Installation</a></li>
+<li><a href="#service-administration">Service Administration</a></li>
+<li><a href="#command-knowledge">Command Knowledge</a></li>
+<li><a href="#firewalling">Firewalling</a></li>
+<li><a href="#list-of-basic-commands">List of basic commands</a></li>
+<li><a href="#exam-example">Exam example</a>
+<ul>
+<li><a href="#part-1-basic-knowledge">Part 1: Basic knowledge</a></li>
+<li><a href="#part-2-samba-configuration-and-installation">Part 2: SAMBA configuration and installation</a></li>
+<li><a href="#part-3-network-scanning-backups-scripts">Part 3: Network scanning, backups, scripts</a></li>
+</ul>
+</li>
+</ul>
+<hr>
 <ol>
 <li>
 <h3 id="bash-scripts"><strong>Bash Scripts</strong></h3>
@@ -635,7 +567,76 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
 </li>
 </ol>
 <hr>
-
+<h2 id="exam-example">Exam example</h2>
+<h3 id="part-1-basic-knowledge">Part 1: Basic knowledge</h3>
+<h4 id="print-all-files-in-a-directory">Print all files in a directory</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ls -la /path/to/directory
+</span></span></code></pre></div><h4 id="print-first-15-lines-of-a-file">Print first 15 lines of a file</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>head -n <span style="color:#ae81ff">15</span> /path/to/file
+</span></span></code></pre></div><h4 id="get-free-memory">Get free memory</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>free -h
+</span></span></code></pre></div><h4 id="show-disk-block-devices">Show disk block devices</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>lsblk
+</span></span></code></pre></div><h4 id="show-all-processes-running-under-root">Show all processes running under root</h4>
+<p>simple way (not 100% correct):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ps aux | grep root
+</span></span></code></pre></div><p>more correct way:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ps -U root -u root
+</span></span></code></pre></div><h4 id="what-is-grub-and-what-is-it-for">What is GRUB and what is it for?</h4>
+<p>GRUB is a Linux bootloader. It&rsquo;s responsible for loading the kernel, initializing the system and it provides a menu to select an operating system to boot.</p>
+<p>Config file is located at <code>/etc/default/grub</code></p>
+<h3 id="part-2-samba-configuration-and-installation">Part 2: SAMBA configuration and installation</h3>
+<h4 id="install-samba-package">Install samba package</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>apt install samba samba-common-bin
+</span></span></code></pre></div><h4 id="create-two-users-and-them-to-samba">Create two users and them to samba</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>useradd student1
+</span></span><span style="display:flex;"><span>useradd student2
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>smbpasswd -a student1
+</span></span><span style="display:flex;"><span>smbpasswd -a student2
+</span></span></code></pre></div><h4 id="create-directory-data-and-set-permissions">Create directory /data and set permissions:</h4>
+<ul>
+<li>Owner: student</li>
+<li>Group: users</li>
+<li>Permissions: read, write, browsable</li>
+<li>Others: no permissions</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>mkdir -p /data
+</span></span><span style="display:flex;"><span>chown student:users /data
+</span></span><span style="display:flex;"><span>chmod <span style="color:#ae81ff">770</span> /data
+</span></span></code></pre></div><h4 id="where-are-samba-logs-info-about-logins-errors">Where are SAMBA logs (info about logins, errors)</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>/var/log/samba/
+</span></span></code></pre></div><h4 id="what-port-is-samba-listening-on">What port is SAMBA listening on?</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>netstat -tulpn | grep smbd
+</span></span></code></pre></div><h3 id="part-3-network-scanning-backups-scripts">Part 3: Network scanning, backups, scripts</h3>
+<h4 id="make-a-bash-script-that">Make a bash script that:</h4>
+<ul>
+<li>Backups /data to file <code>data_DDMMYYYY.tar.gz</code></li>
+<li>Check if file exists, if it does, rename it to <code>*.old</code></li>
+<li>Print if backup was successful or not</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span>BACKUP_FILE<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;data_</span><span style="color:#66d9ef">$(</span>date +%d%m%Y<span style="color:#66d9ef">)</span><span style="color:#e6db74">.tar.gz&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -f <span style="color:#e6db74">&#34;</span>$BACKUP_FILE<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  mv <span style="color:#e6db74">&#34;</span>$BACKUP_FILE<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>BACKUP_FILE<span style="color:#e6db74">}</span><span style="color:#e6db74">.old&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>tar -cvpzf <span style="color:#e6db74">&#34;</span>$BACKUP_FILE<span style="color:#e6db74">&#34;</span> /data
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> $? -eq <span style="color:#ae81ff">0</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Backup successful: </span>$BACKUP_FILE<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>  echo <span style="color:#e6db74">&#34;Backup failed&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span></code></pre></div><h4 id="make-an-rsync-command-that-copies-homestudent-to-samba-server-at-1921681100-shared-folder-backup">Make an rsync command that copies <code>home/student</code> to SAMBA server at <code>192.168.1.100</code>, shared folder <code>backup</code></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Mount the SAMBA share</span>
+</span></span><span style="display:flex;"><span>mount -t cifs //192.168.1.100/backup /mnt/backup -o username<span style="color:#f92672">=</span>student
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Use rsync to copy files</span>
+</span></span><span style="display:flex;"><span>rsync -avz /home/student/ /mnt/backup/
+</span></span></code></pre></div><h4 id="print-all-computers-on-network-19216810024-and-show-their-mac-addresses">Print all computers on network <code>192.168.10.0/24</code> and show their MAC addresses</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>nmap -sn 192.168.10.0/24
+</span></span></code></pre></div><h4 id="make-a-cron-job-that-will-run-backupsh-every-day-at-2100">Make a CRON job that will run <code>backup.sh</code> every day at 21:00</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#ae81ff">0</span> <span style="color:#ae81ff">21</span> * * * /path/to/backup.sh
+</span></span></code></pre></div><h4 id="command-for-backing-up-a-directory-including-file-attributes-and-permissions">Command for backing up a directory including file attributes and permissions</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>tar -cvpzf backup.tar.gz /path/to/directory
+</span></span></code></pre></div>
         </div>
         
         
@@ -646,13 +647,13 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
             <div class="sharing" style="margin-bottom: 12px;">
                 <div style="font-weight: bold; margin-bottom: 6px;">📤 Share this post:</div>
                 <div style="display: flex; gap: 4px; flex-wrap: wrap;">
-                    <a href="https://twitter.com/intent/tweet?text=Linux%20Basics&url=http%3a%2f%2flocalhost%3a1313%2fdocuments%2flinux-basics%2f" 
+                    <a href="https://twitter.com/intent/tweet?text=Linux%20Basics&url=http%3a%2f%2flocalhost%3a1313%2fdocuments%2flinux-basics-copy%2flinux-basics%2f" 
                        target="_blank" class="btn" style="font-size: 10px;">Twitter</a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fdocuments%2flinux-basics%2f" 
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fdocuments%2flinux-basics-copy%2flinux-basics%2f" 
                        target="_blank" class="btn" style="font-size: 10px;">Facebook</a>
-                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fdocuments%2flinux-basics%2f" 
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fdocuments%2flinux-basics-copy%2flinux-basics%2f" 
                        target="_blank" class="btn" style="font-size: 10px;">LinkedIn</a>
-                    <a href="mailto:?subject=Linux%20Basics&body=http%3a%2f%2flocalhost%3a1313%2fdocuments%2flinux-basics%2f" 
+                    <a href="mailto:?subject=Linux%20Basics&body=http%3a%2f%2flocalhost%3a1313%2fdocuments%2flinux-basics-copy%2flinux-basics%2f" 
                        class="btn" style="font-size: 10px;">Email</a>
                 </div>
             </div>
@@ -669,18 +670,18 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
                 <ul style="padding-left: 1rem; margin: 0; font-size: 10px;">
                     
                     <li style="margin: 2px 0;">
-                        <a href="http://localhost:1313/snippets/distrobox-xdg-open/">Fix Distrobox xdg-open</a>
+                        <a href="http://localhost:1313/documents/linux-basics-copy/linux-basics/linux-basics/">Linux Basics</a>
                         <span style="color: var(--text-secondary);"> - Mar 16</span>
                     </li>
                     
                     <li style="margin: 2px 0;">
-                        <a href="http://localhost:1313/posts/thinkpad-story/">My Story With ThinkPads</a>
-                        <span style="color: var(--text-secondary);"> - Jan 24</span>
+                        <a href="http://localhost:1313/documents/linux-basics-copy/">Linux Basics</a>
+                        <span style="color: var(--text-secondary);"> - Mar 16</span>
                     </li>
                     
                     <li style="margin: 2px 0;">
-                        <a href="http://localhost:1313/apps/distro-chooser/">Linux Distro Chooser</a>
-                        <span style="color: var(--text-secondary);"> - Jan 24</span>
+                        <a href="http://localhost:1313/documents/linux-basics/">Linux Basics</a>
+                        <span style="color: var(--text-secondary);"> - Mar 16</span>
                     </li>
                     
                 </ul>
@@ -696,7 +697,22 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
 
 <nav class="post-nav" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0;">
     
-    <div></div>
+    <div class="window">
+        <div class="window-header">
+            <span class="window-title">← Previous Post</span>
+            <div class="window-controls">
+                <span class="window-button">_</span>
+                <span class="window-button">□</span>
+                <span class="window-button">×</span>
+            </div>
+        </div>
+        <div class="window-content">
+            <a href="http://localhost:1313/documents/linux-basics-copy/linux-basics/linux-basics/" style="text-decoration: none; color: inherit;">
+                <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">Linux Basics</div>
+                <div style="font-size: 9px; color: var(--text-secondary);">Mar 16, 2026</div>
+            </a>
+        </div>
+    </div>
     
     
     
@@ -710,9 +726,9 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
             </div>
         </div>
         <div class="window-content">
-            <a href="http://localhost:1313/documents/cool-commands/" style="text-decoration: none; color: inherit;">
-                <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">Cool Linux tools</div>
-                <div style="font-size: 9px; color: var(--text-secondary);">Mar 18, 2026</div>
+            <a href="http://localhost:1313/documents/linux-basics-copy/" style="text-decoration: none; color: inherit;">
+                <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">Linux Basics</div>
+                <div style="font-size: 9px; color: var(--text-secondary);">Mar 16, 2026</div>
             </a>
         </div>
     </div>
@@ -763,11 +779,11 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
     <div class="tag-cloud">
         
         <a href="/tags/linux">
-            linux (5)
+            linux (8)
         </a>
         
         <a href="/tags/bash">
-            bash (2)
+            bash (5)
         </a>
         
         <a href="/tags/kvm">
@@ -868,7 +884,7 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
         </div>
         <div>
             The current Unix timestamp is:
-            <span style="background: #000; color: #00ff00; padding: 2px 4px; font-family: 'Courier New', monospace;">1773861968</span>
+            <span style="background: #000; color: #00ff00; padding: 2px 4px; font-family: 'Courier New', monospace;">1773849156</span>
         </div>
         <div>
             Best viewed on a Thinkpad X230 and older
@@ -964,7 +980,7 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
                 <div style="font-size: 8px; margin-top: 4px;">
                     Current Unix timestamp: 
                     <span style="background: #000; color: #00ff00; padding: 1px 3px; font-family: 'Courier New', monospace;">
-                        1773861968
+                        1773849156
                     </span>
                 </div>
             </div>
@@ -986,12 +1002,12 @@ Syntax of cron job &ndash; <code>* * * * * command</code> &ndash; minute, hour, 
     <div class="status-bar">
         <div class="status-left">
             <span class="status-item">Wed 18 Mar 2026</span>
-            <span class="status-item">20:26</span>
+            <span class="status-item">16:52</span>
         </div>
         <div class="status-right">
             <span class="status-item">Ondřej Honus&#39; website</span>
             
-            <span class="status-item">1404 words</span>
+            <span class="status-item">1396 words</span>
             
         </div>
     </div>

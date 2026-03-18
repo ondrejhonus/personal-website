@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on Ondřej Honus&#39; website</title>
+    <link>http://localhost:1313/tags/software/</link>
+    <description>Recent content in Software on Ondřej Honus&#39; website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Mar 2026 15:30:59 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cool Linux tools</title>
+      <link>http://localhost:1313/documents/cool-commands/</link>
+      <pubDate>Wed, 18 Mar 2026 15:30:59 +0000</pubDate>
+      <guid>http://localhost:1313/documents/cool-commands/</guid>
+      <description>&lt;h3 id=&#34;-a-terminal-based-file-manager&#34;&gt;&amp;gt; A terminal based file manager&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;yazi&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;&#xA;&lt;p&gt;Package name: &lt;code&gt;yazi&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h3 id=&#34;-a-set-of-eyes-on-your-screen-that-follow-your-cursor-if-the-window-is-running-through-xwayland-good-way-to-check-wayland-compatibility&#34;&gt;&amp;gt; A set of eyes on your screen that follow your cursor if the window is running through XWayland. Good way to check Wayland compatibility.&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;xeyes&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;&#xA;&lt;p&gt;Package name: &lt;code&gt;xeyes&lt;/code&gt;, &lt;code&gt;xorg-xeyes&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-terminal-that-has-built-in-image-compatibility-and-doesnt-require-weird-commands-for-using-ssh-and-stuff-like-kitty-does&#34;&gt;&amp;gt; Terminal that has built in image compatibility, and doesnt require weird commands for using ssh and stuff like kitty does.&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;foot&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;&#xA;&lt;p&gt;Package name: &lt;code&gt;foot&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;-tool-for-displaying-images-in-a-terminal-goes-well-with-foot&#34;&gt;&amp;gt; Tool for displaying images in a terminal (goes well with &lt;code&gt;foot&lt;/code&gt;)&lt;/h3&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chafa &amp;lt;image_file&amp;gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;&#xA;&lt;p&gt;Package name: &lt;code&gt;chafa&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
