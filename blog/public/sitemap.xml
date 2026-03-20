@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/distros/</loc>
+    <lastmod>2026-03-19T10:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/distros-opinion/</loc>
+    <lastmod>2026-03-19T10:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2026-03-19T10:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-03-19T10:30:59+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-03-19T10:30:59+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/bash/</loc>
     <lastmod>2026-03-18T15:30:59+00:00</lastmod>
   </url><url>
@@ -11,13 +26,7 @@
     <loc>http://localhost:1313/documents/</loc>
     <lastmod>2026-03-18T15:30:59+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
-    <lastmod>2026-03-18T15:30:59+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/software/</loc>
-    <lastmod>2026-03-18T15:30:59+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-03-18T15:30:59+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/snippets/html-current-year/</loc>
@@ -48,9 +57,6 @@
     <lastmod>2026-03-15T15:49:59+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/thinkpad-story/</loc>
-    <lastmod>2026-01-24T21:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-01-24T21:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/thinkpad/</loc>

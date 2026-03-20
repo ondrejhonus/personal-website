@@ -6,8 +6,15 @@
     <description>Recent content in Ondřej Honus&#39; blog on Ondřej Honus&#39; website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 15:30:59 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 10:30:59 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Honest Opinions on Linux Distros</title>
+      <link>http://localhost:1313/posts/distros-opinion/</link>
+      <pubDate>Thu, 19 Mar 2026 10:30:59 +0000</pubDate>
+      <guid>http://localhost:1313/posts/distros-opinion/</guid>
+      <description>&lt;p&gt;Note that this will soon change with the release of new systemd&amp;hellip; They&amp;rsquo;re going to add age verification, and I&amp;rsquo;m heavily against that.&lt;/p&gt;&#xA;&lt;h3 id=&#34;my-rating-of-linux-distros&#34;&gt;My rating of Linux distros&lt;/h3&gt;&#xA;&lt;h4 id=&#34;1-opensuse-tumbleweed&#34;&gt;1. OpenSUSE Tumbleweed&lt;/h4&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This one is honestly the best Linux distro I think you can use, by far. You have the goodness of rolling release with stability. It&amp;rsquo;s literally the only good rolling release Linux distro you won&amp;rsquo;t tear you hair out using.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Cool Linux tools</title>
       <link>http://localhost:1313/documents/cool-commands/</link>
@@ -62,7 +69,7 @@
       <link>http://localhost:1313/apps/distro-chooser/</link>
       <pubDate>Sat, 24 Jan 2026 01:20:00 +0000</pubDate>
       <guid>http://localhost:1313/apps/distro-chooser/</guid>
-      <description>&lt;h2 id=&#34;decide-on-the-perfect-linux-distro-for-you&#34;&gt;Decide on the perfect Linux distro for you!&lt;/h2&gt;&#xA;&lt;p&gt;This is a simple Linux Distro Chooser tool that I created to help people find the perfect Linux distribution for&#xA;their needs. It is based on my personal experience and recommendations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;try-it-out&#34;&gt;Try it out!&lt;/h2&gt;&#xA;&lt;script&#xA;  defer&#xA;  src=&#34;https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js&#34;&#xA;&gt;&lt;/script&gt;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/minigame-styles.css?v=1773861968&#34; /&gt;&#xA;&lt;script src=&#34;http://localhost:1313/js/distro-chooser.js&#34;&gt;&lt;/script&gt;&#xA;&#xA;&lt;div class=&#34;box-mg&#34;&gt;&#xA;  &lt;div x-data=&#34;distroChooser()&#34; class=&#34;distro-widget&#34;&gt;&#xA;    &lt;div x-show=&#34;step === 0&#34;&gt;&#xA;      &lt;h3&gt;Find the perfect Linux distribution for you!&lt;/h3&gt;&#xA;      &lt;p&gt;&#xA;        Answer a few simple questions and get an answer, that&#39;s based on my&#xA;        experience and reccomendation.&#xA;      &lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;decide-on-the-perfect-linux-distro-for-you&#34;&gt;Decide on the perfect Linux distro for you!&lt;/h2&gt;&#xA;&lt;p&gt;This is a simple Linux Distro Chooser tool that I created to help people find the perfect Linux distribution for&#xA;their needs. It is based on my personal experience and recommendations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;try-it-out&#34;&gt;Try it out!&lt;/h2&gt;&#xA;&lt;script&#xA;  defer&#xA;  src=&#34;https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js&#34;&#xA;&gt;&lt;/script&gt;&#xA;&lt;link rel=&#34;stylesheet&#34; href=&#34;http://localhost:1313/css/minigame-styles.css?v=1773943029&#34; /&gt;&#xA;&lt;script src=&#34;http://localhost:1313/js/distro-chooser.js&#34;&gt;&lt;/script&gt;&#xA;&#xA;&lt;div class=&#34;box-mg&#34;&gt;&#xA;  &lt;div x-data=&#34;distroChooser()&#34; class=&#34;distro-widget&#34;&gt;&#xA;    &lt;div x-show=&#34;step === 0&#34;&gt;&#xA;      &lt;h3&gt;Find the perfect Linux distribution for you!&lt;/h3&gt;&#xA;      &lt;p&gt;&#xA;        Answer a few simple questions and get an answer, that&#39;s based on my&#xA;        experience and reccomendation.&#xA;      &lt;/p&gt;</description>
     </item>
     <item>
       <title>Vege Dreams: My Vegetarian Recipe Collection</title>

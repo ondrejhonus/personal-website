@@ -6,8 +6,15 @@
     <description>Recent content in Posts on Ondřej Honus&#39; website</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Jan 2026 21:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 10:30:59 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Honest Opinions on Linux Distros</title>
+      <link>http://localhost:1313/posts/distros-opinion/</link>
+      <pubDate>Thu, 19 Mar 2026 10:30:59 +0000</pubDate>
+      <guid>http://localhost:1313/posts/distros-opinion/</guid>
+      <description>&lt;p&gt;Note that this will soon change with the release of new systemd&amp;hellip; They&amp;rsquo;re going to add age verification, and I&amp;rsquo;m heavily against that.&lt;/p&gt;&#xA;&lt;h3 id=&#34;my-rating-of-linux-distros&#34;&gt;My rating of Linux distros&lt;/h3&gt;&#xA;&lt;h4 id=&#34;1-opensuse-tumbleweed&#34;&gt;1. OpenSUSE Tumbleweed&lt;/h4&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;This one is honestly the best Linux distro I think you can use, by far. You have the goodness of rolling release with stability. It&amp;rsquo;s literally the only good rolling release Linux distro you won&amp;rsquo;t tear you hair out using.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My Story With ThinkPads</title>
       <link>http://localhost:1313/posts/thinkpad-story/</link>
