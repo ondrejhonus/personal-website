@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Ondřej Honus' website</title><link>https://ondrejhonus.com/tags/linux/</link><description>Recent content in Linux on Ondřej Honus' website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 19 Mar 2026 10:30:59 +0000</lastBuildDate><atom:link href="https://ondrejhonus.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Honest Opinions on Linux Distros</title><link>https://ondrejhonus.com/posts/distros-opinion/</link><pubDate>Thu, 19 Mar 2026 10:30:59 +0000</pubDate><guid>https://ondrejhonus.com/posts/distros-opinion/</guid><description>&lt;p&gt;Note that this will soon change with the release of new systemd&amp;hellip; They&amp;rsquo;re going to add age verification, and I&amp;rsquo;m heavily against that.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Ondřej Honus' website</title><link>https://ondrejhonus.com/tags/linux/</link><description>Recent content in Linux on Ondřej Honus' website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 20 Mar 2026 11:30:59 +0000</lastBuildDate><atom:link href="https://ondrejhonus.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Rsync /home to drive</title><link>https://ondrejhonus.com/snippets/rsync-home/</link><pubDate>Fri, 20 Mar 2026 11:30:59 +0000</pubDate><guid>https://ondrejhonus.com/snippets/rsync-home/</guid><description>&lt;p&gt;Save exclude files to /var/tmp/ignorelist:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget https://raw.githubusercontent.com/rubo77/rsync-homedir-excludes/master/rsync-homedir-excludes.txt -O /var/tmp/ignorelist
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;You have to mount your drive to /media/&lt;!-- raw HTML omitted --&gt;/homebackup !&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Rsync home folder to /media/&lt;!-- raw HTML omitted --&gt;/backup:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo rsync -aP --exclude-from&lt;span style="color:#f92672"&gt;=&lt;/span&gt;/var/tmp/ignorelist /home/$USER/ /media/$USER/homebackup
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Honest Opinions on Linux Distros</title><link>https://ondrejhonus.com/posts/distros-opinion/</link><pubDate>Thu, 19 Mar 2026 10:30:59 +0000</pubDate><guid>https://ondrejhonus.com/posts/distros-opinion/</guid><description>&lt;p&gt;Note that this will soon change with the release of new systemd&amp;hellip; They&amp;rsquo;re going to add age verification, and I&amp;rsquo;m heavily against that.&lt;/p&gt;
 &lt;h3 id="my-rating-of-linux-distros"&gt;My rating of Linux distros&lt;/h3&gt;
 &lt;h4 id="1-opensuse-tumbleweed"&gt;1. OpenSUSE Tumbleweed&lt;/h4&gt;
 &lt;blockquote&gt;
@@ -91,7 +98,7 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  defer
  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
 &gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1774002045" /&gt;
+&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1774007877" /&gt;
 &lt;script src="https://ondrejhonus.com/js/distro-chooser.js"&gt;&lt;/script&gt;
 
 &lt;div class="box-mg"&gt;
