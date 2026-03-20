@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Ondřej Honus' website</title><link>https://ondrejhonus.com/tags/linux/</link><description>Recent content in Linux on Ondřej Honus' website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 18 Mar 2026 15:30:59 +0000</lastBuildDate><atom:link href="https://ondrejhonus.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Cool Linux tools</title><link>https://ondrejhonus.com/documents/cool-commands/</link><pubDate>Wed, 18 Mar 2026 15:30:59 +0000</pubDate><guid>https://ondrejhonus.com/documents/cool-commands/</guid><description>&lt;h3 id="-a-terminal-based-file-manager"&gt;&amp;gt; A terminal based file manager&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on Ondřej Honus' website</title><link>https://ondrejhonus.com/tags/linux/</link><description>Recent content in Linux on Ondřej Honus' website</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 19 Mar 2026 10:30:59 +0000</lastBuildDate><atom:link href="https://ondrejhonus.com/tags/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Honest Opinions on Linux Distros</title><link>https://ondrejhonus.com/posts/distros-opinion/</link><pubDate>Thu, 19 Mar 2026 10:30:59 +0000</pubDate><guid>https://ondrejhonus.com/posts/distros-opinion/</guid><description>&lt;p&gt;Note that this will soon change with the release of new systemd&amp;hellip; They&amp;rsquo;re going to add age verification, and I&amp;rsquo;m heavily against that.&lt;/p&gt;
+&lt;h3 id="my-rating-of-linux-distros"&gt;My rating of Linux distros&lt;/h3&gt;
+&lt;h4 id="1-opensuse-tumbleweed"&gt;1. OpenSUSE Tumbleweed&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This one is honestly the best Linux distro I think you can use, by far. You have the goodness of rolling release with stability. It&amp;rsquo;s literally the only good rolling release Linux distro you won&amp;rsquo;t tear you hair out using.&lt;/p&gt;</description></item><item><title>Cool Linux tools</title><link>https://ondrejhonus.com/documents/cool-commands/</link><pubDate>Wed, 18 Mar 2026 15:30:59 +0000</pubDate><guid>https://ondrejhonus.com/documents/cool-commands/</guid><description>&lt;h3 id="-a-terminal-based-file-manager"&gt;&amp;gt; A terminal based file manager&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;yazi
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Package name: &lt;code&gt;yazi&lt;/code&gt;&lt;/p&gt;
@@ -87,7 +91,7 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  defer
  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
 &gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1773862054" /&gt;
+&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1774002045" /&gt;
 &lt;script src="https://ondrejhonus.com/js/distro-chooser.js"&gt;&lt;/script&gt;
 
 &lt;div class="box-mg"&gt;
