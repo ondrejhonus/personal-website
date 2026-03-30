@@ -13,7 +13,7 @@ I don&amp;rsquo;t know why, it might be because you build it to your needs, but 
 &lt;blockquote&gt;
 &lt;p&gt;backup.py&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; sys&lt;span style="color:#f92672"&gt;,&lt;/span&gt; subprocess
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; sys&lt;span style="color:#f92672"&gt;,&lt;/span&gt; subprocess&lt;span style="color:#f92672"&gt;,&lt;/span&gt; os
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; len(sys&lt;span style="color:#f92672"&gt;.&lt;/span&gt;argv) &lt;span style="color:#f92672"&gt;!=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(&lt;span style="color:#e6db74"&gt;&amp;#34;No destination file provided&amp;#34;&lt;/span&gt;)
@@ -21,6 +21,9 @@ I don&amp;rsquo;t know why, it might be because you build it to your needs, but 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;source &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;/home/u1/Plocha/&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;target &lt;span style="color:#f92672"&gt;=&lt;/span&gt; sys&lt;span style="color:#f92672"&gt;.&lt;/span&gt;argv[&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; &lt;span style="color:#f92672"&gt;not&lt;/span&gt; os&lt;span style="color:#f92672"&gt;.&lt;/span&gt;path&lt;span style="color:#f92672"&gt;.&lt;/span&gt;exists(target)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; os&lt;span style="color:#f92672"&gt;.&lt;/span&gt;makedirs(target)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;result &lt;span style="color:#f92672"&gt;=&lt;/span&gt; subprocess&lt;span style="color:#f92672"&gt;.&lt;/span&gt;run([&lt;span style="color:#e6db74"&gt;&amp;#34;rsync&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;-av&amp;#34;&lt;/span&gt;, source, target])
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
@@ -129,7 +132,7 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  defer
  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
 &gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1774876194" /&gt;
+&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1774876563" /&gt;
 &lt;script src="https://ondrejhonus.com/js/distro-chooser.js"&gt;&lt;/script&gt;
 
 &lt;div class="box-mg"&gt;
