@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Backup on Ondřej Honus&#39; website</title>
+    <link>http://localhost:1313/tags/backup/</link>
+    <description>Recent content in Backup on Ondřej Honus&#39; website</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Mar 2026 11:30:59 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rsync /home to drive</title>
+      <link>http://localhost:1313/snippets/rsync-home/</link>
+      <pubDate>Fri, 20 Mar 2026 11:30:59 +0000</pubDate>
+      <guid>http://localhost:1313/snippets/rsync-home/</guid>
+      <description>&lt;p&gt;Save exclude files to /var/tmp/ignorelist:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget https://raw.githubusercontent.com/rubo77/rsync-homedir-excludes/master/rsync-homedir-excludes.txt -O /var/tmp/ignorelist&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;&#xA;&lt;p&gt;You have to mount your drive to /media/&lt;!-- raw HTML omitted --&gt;/homebackup !&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Rsync home folder to /media/&lt;!-- raw HTML omitted --&gt;/backup:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo rsync -aP --exclude-from&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;/var/tmp/ignorelist /home/$USER/ /media/$USER/homebackup&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

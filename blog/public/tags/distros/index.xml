@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/distros-opinion/</link>
       <pubDate>Thu, 19 Mar 2026 10:30:59 +0000</pubDate>
       <guid>http://localhost:1313/posts/distros-opinion/</guid>
-      <description>&lt;p&gt;Note that this will soon change with the release of new systemd&amp;hellip; They&amp;rsquo;re going to add age verification, and I&amp;rsquo;m heavily against that.&lt;/p&gt;&#xA;&lt;h3 id=&#34;my-rating-of-linux-distros&#34;&gt;My rating of Linux distros&lt;/h3&gt;&#xA;&lt;h4 id=&#34;1-void-linux&#34;&gt;1. Void Linux&lt;/h4&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Void linux is #1 only because it doesn&amp;rsquo;t use &lt;code&gt;systemd &lt;/code&gt; as an init system&amp;hellip; Okay also because of it&amp;rsquo;s blazingly fast package manager&amp;hellip; And customizability also &amp;gt;~&amp;lt;&#xA;I don&amp;rsquo;t know why, it might be because you build it to your needs, but I find it very snappy and comfortable to use. I for some reason really like it, and I can&amp;rsquo;t really explain why.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;my-rating-of-linux-distros&#34;&gt;My rating of Linux distros&lt;/h3&gt;&#xA;&lt;h4 id=&#34;1-void-linux&#34;&gt;1. Void Linux&lt;/h4&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Void linux is #1 only because it doesn&amp;rsquo;t use &lt;code&gt;systemd&lt;/code&gt; as an init system&amp;hellip; Okay also because of it&amp;rsquo;s blazingly fast package manager&amp;hellip; And customizability also &amp;gt;~&amp;lt;&#xA;I don&amp;rsquo;t know why, it might be because you build it to your needs, but I find it very snappy and comfortable to use. I for some reason really like it, and I can&amp;rsquo;t really explain why.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

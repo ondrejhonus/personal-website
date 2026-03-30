@@ -3,28 +3,27 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Categories | Ondřej Honus&#39; website</title>
+    <title>Rsync /home to drive | Ondřej Honus&#39; website</title>
     
     
     
-    <meta name="description" content="Ondřej Honus&#39; website">
+    <meta name="description" content="Current year in HTML.">
     
     
     
-    <meta property="og:title" content="Categories | Ondřej Honus&#39; website">
-    <meta property="og:description" content="Ondřej Honus&#39; website">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/categories/">
+    <meta property="og:title" content="Rsync /home to drive | Ondřej Honus&#39; website">
+    <meta property="og:description" content="Current year in HTML.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/snippets/rsync-home/">
     
     
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Categories | Ondřej Honus&#39; website">
-    <meta name="twitter:description" content="Ondřej Honus&#39; website">
+    <meta name="twitter:title" content="Rsync /home to drive | Ondřej Honus&#39; website">
+    <meta name="twitter:description" content="Current year in HTML.">
     
     
     
-    <link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/categories/index.xml" title="Ondřej Honus&#39; website">
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
@@ -49,7 +48,7 @@
         </div>
         <div class="address-bar">
             
-            http://localhost:1313/categories/
+            http://localhost:1313/snippets/rsync-home/
             
         </div>
     </div>
@@ -126,14 +125,9 @@
         
         <main class="main-content">
             
-<div class="window">
+<article class="window">
     <div class="window-header">
-        <span class="window-title">
-            
-                Categories (0 posts)
-            
-            
-        </span>
+        <span class="window-title">Rsync /home to drive</span>
         <div class="window-controls">
             <span class="window-button">_</span>
             <span class="window-button">□</span>
@@ -141,75 +135,148 @@
         </div>
     </div>
     <div class="window-content">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div id="listView" class="posts-view">
+        <header class="content-header">
+            <h1 class="post-title">Rsync /home to drive</h1>
             
-            <div style="text-align: center; padding: 20px; color: var(--text-secondary);">
-                📭 No posts found in this section.
+            
+            <div class="post-meta">
+                <span class="post-meta-item">
+                    📅 Published: Friday, March 20, 2026
+                </span>
+                
+                <span class="post-meta-item">
+                    📖 1 min read
+                </span>
+                <span class="post-meta-item">
+                    📊 29 words
+                </span>
+                
+                
+                
+                
+                
+                
+                <span class="post-meta-item">
+                    🏷️ Tags: 
+                    
+                        
+                        <a href="/tags/linux">linux</a>
+                    
+                        , 
+                        <a href="/tags/backup">backup</a>
+                    
+                </span>
+                
+                
+                
             </div>
             
+            
+            
+            <div class="post-description" style="font-style: italic; margin: 8px 0; padding: 4px 8px; background: var(--bg-secondary); border: 1px inset var(--border-dark);">
+                Current year in HTML.
+            </div>
+            
+            
+            
+        </header>
+        
+        
+        
+        
+        
+        <div class="content">
+            <p>Save exclude files to /var/tmp/ignorelist:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>wget https://raw.githubusercontent.com/rubo77/rsync-homedir-excludes/master/rsync-homedir-excludes.txt -O /var/tmp/ignorelist
+</span></span></code></pre></div><blockquote>
+<p>You have to mount your drive to /media/<!-- raw HTML omitted -->/homebackup !</p>
+</blockquote>
+<p>Rsync home folder to /media/<!-- raw HTML omitted -->/backup:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo rsync -aP --exclude-from<span style="color:#f92672">=</span>/var/tmp/ignorelist /home/$USER/ /media/$USER/homebackup
+</span></span></code></pre></div>
         </div>
         
         
-        <div id="gridView" class="posts-view" style="display: none;">
+        <footer class="post-footer" style="margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--border-dark);">
             
+            
+            
+            <div class="sharing" style="margin-bottom: 12px;">
+                <div style="font-weight: bold; margin-bottom: 6px;">📤 Share this post:</div>
+                <div style="display: flex; gap: 4px; flex-wrap: wrap;">
+                    <a href="https://twitter.com/intent/tweet?text=Rsync%20%2fhome%20to%20drive&url=http%3a%2f%2flocalhost%3a1313%2fsnippets%2frsync-home%2f" 
+                       target="_blank" class="btn" style="font-size: 10px;">Twitter</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fsnippets%2frsync-home%2f" 
+                       target="_blank" class="btn" style="font-size: 10px;">Facebook</a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fsnippets%2frsync-home%2f" 
+                       target="_blank" class="btn" style="font-size: 10px;">LinkedIn</a>
+                    <a href="mailto:?subject=Rsync%20%2fhome%20to%20drive&body=http%3a%2f%2flocalhost%3a1313%2fsnippets%2frsync-home%2f" 
+                       class="btn" style="font-size: 10px;">Email</a>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="related-posts" style="background: var(--bg-secondary); border: 1px inset var(--border-dark); padding: 8px; margin: 12px 0;">
+                <div style="font-weight: bold; margin-bottom: 6px;">🔗 Related Posts:</div>
+                <ul style="padding-left: 1rem; margin: 0; font-size: 10px;">
+                    
+                    <li style="margin: 2px 0;">
+                        <a href="http://localhost:1313/posts/distros-opinion/">Honest Opinions on Linux Distros</a>
+                        <span style="color: var(--text-secondary);"> - Mar 19</span>
+                    </li>
+                    
+                    <li style="margin: 2px 0;">
+                        <a href="http://localhost:1313/documents/scheduled-backup/">Linux scheduled backup with CRON</a>
+                        <span style="color: var(--text-secondary);"> - Mar 19</span>
+                    </li>
+                    
+                    <li style="margin: 2px 0;">
+                        <a href="http://localhost:1313/documents/cool-commands/">Cool Linux tools</a>
+                        <span style="color: var(--text-secondary);"> - Mar 18</span>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            
+            
+        </footer>
+    </div>
+</article>
+
+
+<nav class="post-nav" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0;">
+    
+    <div class="window">
+        <div class="window-header">
+            <span class="window-title">← Previous Post</span>
+            <div class="window-controls">
+                <span class="window-button">_</span>
+                <span class="window-button">□</span>
+                <span class="window-button">×</span>
+            </div>
         </div>
-        
-        
-        <div id="archiveView" class="posts-view" style="display: none;">
-            
+        <div class="window-content">
+            <a href="http://localhost:1313/snippets/html-current-year/" style="text-decoration: none; color: inherit;">
+                <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">Current year in HTML</div>
+                <div style="font-size: 9px; color: var(--text-secondary);">Mar 16, 2026</div>
+            </a>
         </div>
     </div>
-</div>
-
-
-
-
-
-
-
-
-
-<script>
-function toggleView(viewType) {
-    
-    document.getElementById('listView').style.display = 'none';
-    document.getElementById('gridView').style.display = 'none';
-    document.getElementById('archiveView').style.display = 'none';
     
     
-    document.querySelectorAll('.view-options .btn').forEach(btn => {
-        btn.style.background = 'var(--button-face)';
-        btn.style.border = '1px outset var(--button-face)';
-    });
     
-    
-    document.getElementById(viewType + 'View').style.display = 'block';
-    document.getElementById(viewType + 'Btn').style.background = 'var(--highlight)';
-    document.getElementById(viewType + 'Btn').style.color = 'white';
-    document.getElementById(viewType + 'Btn').style.border = '1px inset var(--button-face)';
-    
-    
-    localStorage.setItem('preferredView', viewType);
-}
+</nav>
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const preferredView = localStorage.getItem('preferredView') || 'list';
-    toggleView(preferredView);
-});
-</script>
+
 
         </main>
         
@@ -496,6 +563,8 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div class="status-right">
             <span class="status-item">Ondřej Honus&#39; website</span>
+            
+            <span class="status-item">29 words</span>
             
         </div>
     </div>

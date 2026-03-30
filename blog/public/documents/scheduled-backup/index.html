@@ -3,28 +3,27 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Categories | Ondřej Honus&#39; website</title>
+    <title>Linux scheduled backup with CRON | Ondřej Honus&#39; website</title>
     
     
     
-    <meta name="description" content="Ondřej Honus&#39; website">
+    <meta name="description" content="Linux scheduled backup with CRON">
     
     
     
-    <meta property="og:title" content="Categories | Ondřej Honus&#39; website">
-    <meta property="og:description" content="Ondřej Honus&#39; website">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://localhost:1313/categories/">
+    <meta property="og:title" content="Linux scheduled backup with CRON | Ondřej Honus&#39; website">
+    <meta property="og:description" content="Linux scheduled backup with CRON">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://localhost:1313/documents/scheduled-backup/">
     
     
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Categories | Ondřej Honus&#39; website">
-    <meta name="twitter:description" content="Ondřej Honus&#39; website">
+    <meta name="twitter:title" content="Linux scheduled backup with CRON | Ondřej Honus&#39; website">
+    <meta name="twitter:description" content="Linux scheduled backup with CRON">
     
     
     
-    <link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/categories/index.xml" title="Ondřej Honus&#39; website">
     
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
@@ -49,7 +48,7 @@
         </div>
         <div class="address-bar">
             
-            http://localhost:1313/categories/
+            http://localhost:1313/documents/scheduled-backup/
             
         </div>
     </div>
@@ -126,14 +125,9 @@
         
         <main class="main-content">
             
-<div class="window">
+<article class="window">
     <div class="window-header">
-        <span class="window-title">
-            
-                Categories (0 posts)
-            
-            
-        </span>
+        <span class="window-title">Linux scheduled backup with CRON</span>
         <div class="window-controls">
             <span class="window-button">_</span>
             <span class="window-button">□</span>
@@ -141,75 +135,175 @@
         </div>
     </div>
     <div class="window-content">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <div id="listView" class="posts-view">
+        <header class="content-header">
+            <h1 class="post-title">Linux scheduled backup with CRON</h1>
             
-            <div style="text-align: center; padding: 20px; color: var(--text-secondary);">
-                📭 No posts found in this section.
+            
+            <div class="post-meta">
+                <span class="post-meta-item">
+                    📅 Published: Thursday, March 19, 2026
+                </span>
+                
+                <span class="post-meta-item">
+                    📖 1 min read
+                </span>
+                <span class="post-meta-item">
+                    📊 93 words
+                </span>
+                
+                
+                
+                
+                
+                
+                <span class="post-meta-item">
+                    🏷️ Tags: 
+                    
+                        
+                        <a href="/tags/script">script</a>
+                    
+                        , 
+                        <a href="/tags/linux">linux</a>
+                    
+                        , 
+                        <a href="/tags/python">python</a>
+                    
+                </span>
+                
+                
+                
             </div>
             
+            
+            
+            <div class="post-description" style="font-style: italic; margin: 8px 0; padding: 4px 8px; background: var(--bg-secondary); border: 1px inset var(--border-dark);">
+                Linux scheduled backup with CRON
+            </div>
+            
+            
+            
+        </header>
+        
+        
+        
+        
+        
+        <div class="content">
+            <h2 id="python-script-to-backup">Python script to backup</h2>
+<blockquote>
+<p>backup.py</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> sys<span style="color:#f92672">,</span> subprocess
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> len(sys<span style="color:#f92672">.</span>argv) <span style="color:#f92672">!=</span> <span style="color:#ae81ff">2</span>:
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;No destination file provided&#34;</span>)
+</span></span><span style="display:flex;"><span>  sys<span style="color:#f92672">.</span>exit(<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>source <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/home/u1/Plocha/&#34;</span>
+</span></span><span style="display:flex;"><span>target <span style="color:#f92672">=</span> sys<span style="color:#f92672">.</span>argv[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> subprocess<span style="color:#f92672">.</span>run([<span style="color:#e6db74">&#34;rsync&#34;</span>, <span style="color:#e6db74">&#34;-av&#34;</span>, source, target])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> result<span style="color:#f92672">.</span>returncode <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Rsync backup was successful&#34;</span>)
+</span></span><span style="display:flex;"><span>  sys<span style="color:#f92672">.</span>exit(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>  print(<span style="color:#e6db74">&#34;Error while backing up&#34;</span>, result<span style="color:#f92672">.</span>returncode)
+</span></span><span style="display:flex;"><span>  sys<span style="color:#f92672">.</span>exit(<span style="color:#ae81ff">1</span>)
+</span></span></code></pre></div><h2 id="add-to-crontab">Add to crontab</h2>
+<p>Backup every day at 3:00</p>
+<pre tabindex="0"><code>sudo crontab -e
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span><span style="color:#75715e"># m h  dom mon dow   command</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">0</span> <span style="color:#ae81ff">3</span>  *   *   *     /usr/bin/python3 /home/u1/backup.py /home/u1/backup/
+</span></span></code></pre></div><hr>
+<h2 id="reboot-every-monday-at-501">Reboot every monday at 5:01</h2>
+<pre tabindex="0"><code>sudo crontab -e
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span><span style="color:#75715e"># m h  dom mon dow   command</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">5</span>  *   *   <span style="color:#ae81ff">1</span>     /bin/systemctl reboot
+</span></span></code></pre></div>
         </div>
         
         
-        <div id="gridView" class="posts-view" style="display: none;">
+        <footer class="post-footer" style="margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--border-dark);">
             
+            
+            
+            <div class="sharing" style="margin-bottom: 12px;">
+                <div style="font-weight: bold; margin-bottom: 6px;">📤 Share this post:</div>
+                <div style="display: flex; gap: 4px; flex-wrap: wrap;">
+                    <a href="https://twitter.com/intent/tweet?text=Linux%20scheduled%20backup%20with%20CRON&url=http%3a%2f%2flocalhost%3a1313%2fdocuments%2fscheduled-backup%2f" 
+                       target="_blank" class="btn" style="font-size: 10px;">Twitter</a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fdocuments%2fscheduled-backup%2f" 
+                       target="_blank" class="btn" style="font-size: 10px;">Facebook</a>
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url=http%3a%2f%2flocalhost%3a1313%2fdocuments%2fscheduled-backup%2f" 
+                       target="_blank" class="btn" style="font-size: 10px;">LinkedIn</a>
+                    <a href="mailto:?subject=Linux%20scheduled%20backup%20with%20CRON&body=http%3a%2f%2flocalhost%3a1313%2fdocuments%2fscheduled-backup%2f" 
+                       class="btn" style="font-size: 10px;">Email</a>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="related-posts" style="background: var(--bg-secondary); border: 1px inset var(--border-dark); padding: 8px; margin: 12px 0;">
+                <div style="font-weight: bold; margin-bottom: 6px;">🔗 Related Posts:</div>
+                <ul style="padding-left: 1rem; margin: 0; font-size: 10px;">
+                    
+                    <li style="margin: 2px 0;">
+                        <a href="http://localhost:1313/posts/distros-opinion/">Honest Opinions on Linux Distros</a>
+                        <span style="color: var(--text-secondary);"> - Mar 19</span>
+                    </li>
+                    
+                    <li style="margin: 2px 0;">
+                        <a href="http://localhost:1313/documents/cool-commands/">Cool Linux tools</a>
+                        <span style="color: var(--text-secondary);"> - Mar 18</span>
+                    </li>
+                    
+                    <li style="margin: 2px 0;">
+                        <a href="http://localhost:1313/documents/linux-basics/">Linux Basics</a>
+                        <span style="color: var(--text-secondary);"> - Mar 16</span>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+            
+            
+            
+        </footer>
+    </div>
+</article>
+
+
+<nav class="post-nav" style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0;">
+    
+    <div class="window">
+        <div class="window-header">
+            <span class="window-title">← Previous Post</span>
+            <div class="window-controls">
+                <span class="window-button">_</span>
+                <span class="window-button">□</span>
+                <span class="window-button">×</span>
+            </div>
         </div>
-        
-        
-        <div id="archiveView" class="posts-view" style="display: none;">
-            
+        <div class="window-content">
+            <a href="http://localhost:1313/documents/cool-commands/" style="text-decoration: none; color: inherit;">
+                <div style="font-weight: bold; font-size: 10px; margin-bottom: 2px;">Cool Linux tools</div>
+                <div style="font-size: 9px; color: var(--text-secondary);">Mar 18, 2026</div>
+            </a>
         </div>
     </div>
-</div>
-
-
-
-
-
-
-
-
-
-<script>
-function toggleView(viewType) {
-    
-    document.getElementById('listView').style.display = 'none';
-    document.getElementById('gridView').style.display = 'none';
-    document.getElementById('archiveView').style.display = 'none';
     
     
-    document.querySelectorAll('.view-options .btn').forEach(btn => {
-        btn.style.background = 'var(--button-face)';
-        btn.style.border = '1px outset var(--button-face)';
-    });
     
-    
-    document.getElementById(viewType + 'View').style.display = 'block';
-    document.getElementById(viewType + 'Btn').style.background = 'var(--highlight)';
-    document.getElementById(viewType + 'Btn').style.color = 'white';
-    document.getElementById(viewType + 'Btn').style.border = '1px inset var(--button-face)';
-    
-    
-    localStorage.setItem('preferredView', viewType);
-}
+</nav>
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const preferredView = localStorage.getItem('preferredView') || 'list';
-    toggleView(preferredView);
-});
-</script>
+
 
         </main>
         
@@ -374,7 +468,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <div>
             The current Unix timestamp is:
-            <span style="background: #000; color: #00ff00; padding: 2px 4px; font-family: 'Courier New', monospace;">1774875111</span>
+            <span style="background: #000; color: #00ff00; padding: 2px 4px; font-family: 'Courier New', monospace;">1774876160</span>
         </div>
         <div>
             Best viewed on a Thinkpad X230 and older
@@ -470,7 +564,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div style="font-size: 8px; margin-top: 4px;">
                     Current Unix timestamp: 
                     <span style="background: #000; color: #00ff00; padding: 1px 3px; font-family: 'Courier New', monospace;">
-                        1774875111
+                        1774876160
                     </span>
                 </div>
             </div>
@@ -492,10 +586,12 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="status-bar">
         <div class="status-left">
             <span class="status-item">Mon 30 Mar 2026</span>
-            <span class="status-item">14:51</span>
+            <span class="status-item">15:09</span>
         </div>
         <div class="status-right">
             <span class="status-item">Ondřej Honus&#39; website</span>
+            
+            <span class="status-item">93 words</span>
             
         </div>
     </div>
