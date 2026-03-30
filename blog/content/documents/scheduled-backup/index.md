@@ -9,7 +9,7 @@ tags: ["script", "linux", "python"]
 
 > backup.py 
 ```python
-import sys, subprocess
+import sys, subprocess, os
 
 if len(sys.argv) != 2:
   print("No destination file provided")
@@ -17,6 +17,9 @@ if len(sys.argv) != 2:
 
 source = "/home/u1/Plocha/"
 target = sys.argv[1]
+
+if not os.path.exists(target)
+    os.makedirs(target)
 
 result = subprocess.run(["rsync", "-av", source, target])
 
