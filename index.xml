@@ -9,7 +9,38 @@
 &lt;h4 id="1-void-linux"&gt;1. Void Linux&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Void linux is #1 only because it doesn&amp;rsquo;t use &lt;code&gt;systemd&lt;/code&gt; as an init system&amp;hellip; Okay also because of it&amp;rsquo;s blazingly fast package manager&amp;hellip; And customizability also &amp;gt;~&amp;lt;
-I don&amp;rsquo;t know why, it might be because you build it to your needs, but I find it very snappy and comfortable to use. I for some reason really like it, and I can&amp;rsquo;t really explain why.&lt;/p&gt;</description></item><item><title>Cool Linux tools</title><link>https://ondrejhonus.com/documents/cool-commands/</link><pubDate>Wed, 18 Mar 2026 15:30:59 +0000</pubDate><guid>https://ondrejhonus.com/documents/cool-commands/</guid><description>&lt;h3 id="-a-terminal-based-file-manager"&gt;&amp;gt; A terminal based file manager&lt;/h3&gt;
+I don&amp;rsquo;t know why, it might be because you build it to your needs, but I find it very snappy and comfortable to use. I for some reason really like it, and I can&amp;rsquo;t really explain why.&lt;/p&gt;</description></item><item><title>Linux scheduled backup with CRON</title><link>https://ondrejhonus.com/documents/scheduled-backup/</link><pubDate>Thu, 19 Mar 2026 10:30:59 +0000</pubDate><guid>https://ondrejhonus.com/documents/scheduled-backup/</guid><description>&lt;h2 id="python-script-to-backup"&gt;Python script to backup&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;backup.py&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;import&lt;/span&gt; sys&lt;span style="color:#f92672"&gt;,&lt;/span&gt; subprocess
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; len(sys&lt;span style="color:#f92672"&gt;.&lt;/span&gt;argv) &lt;span style="color:#f92672"&gt;!=&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;2&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(&lt;span style="color:#e6db74"&gt;&amp;#34;No destination file provided&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; sys&lt;span style="color:#f92672"&gt;.&lt;/span&gt;exit(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;source &lt;span style="color:#f92672"&gt;=&lt;/span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;/home/u1/Plocha/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;target &lt;span style="color:#f92672"&gt;=&lt;/span&gt; sys&lt;span style="color:#f92672"&gt;.&lt;/span&gt;argv[&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;result &lt;span style="color:#f92672"&gt;=&lt;/span&gt; subprocess&lt;span style="color:#f92672"&gt;.&lt;/span&gt;run([&lt;span style="color:#e6db74"&gt;&amp;#34;rsync&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;-av&amp;#34;&lt;/span&gt;, source, target])
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;if&lt;/span&gt; result&lt;span style="color:#f92672"&gt;.&lt;/span&gt;returncode &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(&lt;span style="color:#e6db74"&gt;&amp;#34;Rsync backup was successful&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; sys&lt;span style="color:#f92672"&gt;.&lt;/span&gt;exit(&lt;span style="color:#ae81ff"&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;else&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; print(&lt;span style="color:#e6db74"&gt;&amp;#34;Error while backing up&amp;#34;&lt;/span&gt;, result&lt;span style="color:#f92672"&gt;.&lt;/span&gt;returncode)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; sys&lt;span style="color:#f92672"&gt;.&lt;/span&gt;exit(&lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="add-to-crontab"&gt;Add to crontab&lt;/h2&gt;
+&lt;p&gt;Backup every day at 3:00&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sudo crontab -e
+&lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-zsh" data-lang="zsh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# m h dom mon dow command&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ae81ff"&gt;0&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;3&lt;/span&gt; * * * /usr/bin/python3 /home/u1/backup.py /home/u1/backup/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="reboot-every-monday-at-501"&gt;Reboot every monday at 5:01&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;sudo crontab -e
+&lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-zsh" data-lang="zsh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# m h dom mon dow command&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;5&lt;/span&gt; * * &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt; /bin/systemctl reboot
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>Cool Linux tools</title><link>https://ondrejhonus.com/documents/cool-commands/</link><pubDate>Wed, 18 Mar 2026 15:30:59 +0000</pubDate><guid>https://ondrejhonus.com/documents/cool-commands/</guid><description>&lt;h3 id="-a-terminal-based-file-manager"&gt;&amp;gt; A terminal based file manager&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;yazi
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
 &lt;p&gt;Package name: &lt;code&gt;yazi&lt;/code&gt;&lt;/p&gt;
@@ -107,7 +138,7 @@ their needs. It is based on my personal experience and recommendations.&lt;/p&gt
  defer
  src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
 &gt;&lt;/script&gt;
-&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1774340152" /&gt;
+&lt;link rel="stylesheet" href="https://ondrejhonus.com/css/minigame-styles.css?v=1774876194" /&gt;
 &lt;script src="https://ondrejhonus.com/js/distro-chooser.js"&gt;&lt;/script&gt;
 
 &lt;div class="box-mg"&gt;
