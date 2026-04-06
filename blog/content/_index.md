@@ -34,6 +34,7 @@ Another thing I prefer to host for my own is a password manager (Bitwarden).
 
 ★ What projects am I working on!
 
+- **TUI Pet**- Take care care of a pet in your terminal in real time. (Evolution, hunger, calculate state based on last feed/sleep/whatever). 
 - **ESP32 Digital Audio Player** -- Music on the go. [GitHub link](https://github.com/ondrejhonus/esp32-dap)
 
 ### 💻 My daily drivers 💻
